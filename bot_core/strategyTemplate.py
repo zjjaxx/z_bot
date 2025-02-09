@@ -102,7 +102,7 @@ class StrategyTemplate:
                                                            exc_value,
                                                            exc_traceback)))
     def queryStockData(self,symbol):
-        stock_zh_a_hist_df = ak.stock_zh_a_hist(symbol=symbol, period="daily", start_date=(datetime.now()-timedelta(days=365*2)).strftime('%Y%m%d'), end_date=datetime.now().strftime('%Y%m%d'), adjust="")
+        stock_zh_a_hist_df = ak.stock_zh_a_hist(symbol=symbol, period="daily", start_date=(datetime.now()-timedelta(days=365*2)).strftime('%Y%m%d'), end_date=datetime.now().strftime('%Y%m%d'), adjust="hfq")
         return stock_zh_a_hist_df
     
     # 千股千评
