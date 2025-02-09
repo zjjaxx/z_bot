@@ -9,7 +9,7 @@ import arrow
 
 
 
-beforeOpenTime=datetime.time(2,58,10)
+beforeOpenTime=datetime.time(8,30,0)
 
 class QuetationEngine:
     """行情推送引擎基类"""

@@ -6,6 +6,11 @@ import sys
 import logbook
 from logbook import Logger, StreamHandler, FileHandler
 
+from datetime import datetime,timedelta
+from pybroker import Strategy, StrategyConfig, ExecContext
+from pybroker.ext.data import AKShare
+import akshare as ak
+
 logbook.set_datetime_format('local')
 
 class StrategyTemplate:
@@ -14,7 +19,15 @@ class StrategyTemplate:
     def __init__(self):
         self.logger=None
         self.init()
-        self.initLogger( name='logInfo', log_type='file', filepath='./logger/info.log', loglevel='DEBUG')
+        # 初始化日志
+        self.initLogger( name='logInfo', log_type='stdout', filepath='./logger/info.log', loglevel='DEBUG')
+        # 回溯
+        self.config = StrategyConfig(bootstrap_sample_size=100)
+        self.strategy = Strategy(
+            data_source=AKShare(),
+            start_date=datetime.now()-timedelta(days=365*2),
+            end_date=datetime.now(),
+            config=self.config)
 
     def initLogger(self, name='logInfo', log_type='stdout', filepath='logInfo.log', loglevel='DEBUG'):
         """Log对象
@@ -80,6 +93,31 @@ class StrategyTemplate:
             print(repr(traceback.format_exception(exc_type,
                                                            exc_value,
                                                            exc_traceback)))
+    def queryStockData(self,symbol):
+        stock_zh_a_hist_df = ak.stock_zh_a_hist(symbol=symbol, period="daily", start_date=(datetime.now()-timedelta(days=365*2)).strftime('%Y%m%d'), end_date=datetime.now().strftime('%Y%m%d'), adjust="")
+        return stock_zh_a_hist_df
+    
+    # 千股千评
+    def searchStock(self):
+        df = ak.stock_comment_em()
+        df = df[df["最新价"] < df["主力成本"]]
+        # 2. 标准化指标
+        # 综合得分：越高越好，直接标准化
+        df["综合得分_标准化"] = (df["综合得分"] - df["综合得分"].min()) / (df["综合得分"].max() - df["综合得分"].min())
+
+        # 目前排名：越低越好，反向标准化
+        df["目前排名_标准化"] = 1 / df["目前排名"]
+
+        # 3. 计算综合评分（权重均为 1/3）
+        df["综合评分"] = (df["综合得分_标准化"] + df["目前排名_标准化"]) / 2
+
+        # 4. 按综合评分降序排序，取前10只股票
+        top_10 = df.sort_values(by="综合评分", ascending=False).head(10)
+        return top_10
+
+    def hot_stock(self):
+        stock_hot_follow_xq_df = ak.stock_hot_follow_xq(symbol="最热门")
+        return stock_hot_follow_xq_df.head(10)
 
     def beforeOpen(self, event):
         pass
