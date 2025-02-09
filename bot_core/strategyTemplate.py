@@ -10,9 +10,17 @@ from datetime import datetime,timedelta
 from pybroker import Strategy, StrategyConfig, ExecContext
 from pybroker.ext.data import AKShare
 import akshare as ak
+import requests
+import json
 
 logbook.set_datetime_format('local')
 
+token="d37e7e9a1d4857e2457f107b973cb35a178649de1560b83689dfbe31057c29d4"
+channel_id="963253371"
+headers={
+    'Authorization': 'Bearer '+token
+}
+url = 'http://127.0.0.1:5500/v1/message.create'
 class StrategyTemplate:
     name = 'DefaultStrategyTemplate'
 
@@ -121,4 +129,26 @@ class StrategyTemplate:
 
     def beforeOpen(self, event):
         pass
+
+    
+    def convert_to_json(self,obj):
+        # 判断是否是字符串
+        if isinstance(obj, str):
+            return obj  # 如果已经是字符串，直接返回
+        else:
+            return json.dumps(obj)  # 否则，转换为 JSON 字符串
+        
+    def send_message(self,message):
+        try:
+            requests.post(url, headers=headers,json={
+                "channel_id":channel_id,
+                "content":self.convert_to_json(message) 
+            })
+        except requests.exceptions.RequestException as e:
+            # 捕获请求异常（例如连接错误，超时等）
+            print(f"Request failed: {e}")
+        
+        except Exception as e:
+            # 捕获其他异常
+            print(f"An unexpected error occurred: {e}")
 
