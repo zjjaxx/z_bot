@@ -49,11 +49,8 @@ class Strategy(StrategyTemplate):
         if(pnl_rate>20):
             stock_data=self.queryStockData(symbol)
             self.indicatorCalc(stock_data,symbol)
-            self.send_message("股票代码:"+str(symbol)+"2年10万本金收益为:"+str(total_pnl))
-            self.send_message("2年10万本金浮盈收益(还有股票未卖出)为:"+str(unrealized_pnl))
-            self.send_message("2年10万本金总收益为:"+str(all_pnl))
-            self.send_message("胜率为:"+str(win_rate)+"%")
-            self.send_message("🌈✨🎉 Thank you for using the service! 🎉✨🌈")
+            message=f"MACD金叉策略 股票代码: {str(symbol)} \n 2年10万本金,回测结果:\n 收益: {str(total_pnl)} \n 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} \n 总收益: {str(all_pnl)} \n 胜率: {str(win_rate)}% \n 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
+            self.send_message(message=message)
             
 
     def indicatorCalc(self,data,symbol):
