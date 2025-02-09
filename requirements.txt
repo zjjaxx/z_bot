@@ -1,0 +1,6 @@
+akshare==1.15.83
+arrow==1.2.3
+Django==5.1.6
+holidays==0.66
+Logbook==1.8.0
+python_dateutil==2.9.0.post0
