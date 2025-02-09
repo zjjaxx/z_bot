@@ -59,9 +59,9 @@ class Strategy(StrategyTemplate):
         macd_dea=macd[1]
         # macd金叉提醒
         if macd_dif[-1]>macd_dea[-1] and macd_dif[-2]<=macd_dea[-2]:
-            self.send_message("macd金叉提醒!!!!!")
+            self.send_message(f"股票代码{symbol}:macd金叉提醒!!!!!")
         elif macd_dif[-1]<macd_dea[-1] and macd_dif[-2]>=macd_dea[-2]:
-            self.send_message(symbol+"macd死叉提醒!!!!!")
+            self.send_message(f"股票代码{symbol}:macd死叉提醒!!!!!")
     
 
         	
