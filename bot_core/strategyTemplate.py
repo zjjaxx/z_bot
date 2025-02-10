@@ -30,7 +30,8 @@ class StrategyTemplate:
         # 初始化日志
         self.initLogger( name='logInfo', log_type='stdout', filepath='./logger/info.log', loglevel='DEBUG')
         # 回溯
-        self.config = StrategyConfig(bootstrap_sample_size=100)
+        # bootstrap_sample_size=100
+        self.config = StrategyConfig()
         self.strategy = Strategy(
             data_source=AKShare(),
             start_date=datetime.now()-timedelta(days=365*2),
@@ -125,7 +126,7 @@ class StrategyTemplate:
 
     def hot_stock(self):
         stock_hot_follow_xq_df = ak.stock_hot_follow_xq(symbol="最热门")
-        return stock_hot_follow_xq_df.head(10)
+        return stock_hot_follow_xq_df.head(300)
 
     def beforeOpen(self, event):
         pass
