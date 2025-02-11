@@ -17,3 +17,11 @@ pip3 install TA-Lib
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 sudo ldconfig
 ```
+
+## 部署命令
+
+```
+pip3 install gunicorn
+
+gunicorn --bind unix:/tmp/47.92.125.144.socket z_bot.wsgi:application
+```
