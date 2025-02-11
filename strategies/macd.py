@@ -20,8 +20,8 @@ class Strategy(StrategyTemplate):
             ctx.buy_shares = ctx.calc_target_shares(1)
 
     def beforeOpen(self, event):
-        self.send_message("开始回测MACD指标~")
-        
+        # self.send_message("开始回测MACD指标~")
+        self.logger.info("开始回测MACD指标~")
         # top_stocks=self.searchStock()
         # symbols=top_stocks['代码'].to_numpy()
         # for symbol in symbols:
@@ -32,7 +32,8 @@ class Strategy(StrategyTemplate):
         for symbol in hot_symbols:
             symbol=re.sub(r'\D', '', symbol) 
             self.exec_backtest(symbol=symbol)
-        self.send_message("回测MACD指标结束~")
+        # self.send_message("回测MACD指标结束~")
+        self.logger.info("开始回测MACD指标~")
          
     def exec_backtest(self,symbol):
         macd_dif = pb.indicator('macd_dif', lambda data: talib.MACD(data.close)[0])
@@ -52,7 +53,8 @@ class Strategy(StrategyTemplate):
         calc_result=self.indicatorCalc(stock_data,symbol)
         if pnl_rate>20 and calc_result:
             message=f"macd金叉提醒!!!!! \n MACD金叉策略 股票代码: {str(symbol)} \n 2年10万本金,回测结果:\n 收益: {str(total_pnl)} \n 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} \n 总收益: {str(all_pnl)} \n 胜率: {str(win_rate)}% \n 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
-            self.send_message(message=message)
+            # self.send_message(message=message)
+            self.logger.info(message)
             
 
     def indicatorCalc(self,data,symbol):
@@ -63,7 +65,8 @@ class Strategy(StrategyTemplate):
         if macd_dif[-1]>macd_dea[-1] and macd_dif[-2]<=macd_dea[-2]:
             return True
         elif macd_dif[-1]<macd_dea[-1] and macd_dif[-2]>=macd_dea[-2]:
-            self.send_message(f"股票代码{symbol}:macd死叉提醒!!!!!")
+            # self.send_message(f"股票代码{symbol}:macd死叉提醒!!!!!")
+            self.logger.info(f"股票代码{symbol}:macd死叉提醒!!!!!")
             return False
         return False
         	
