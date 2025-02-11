@@ -5,4 +5,4 @@ holidays==0.66
 lib_pybroker==1.2.6
 Logbook==1.8.0
 python_dateutil==2.9.0.post0
-TA_Lib==0.4.32
+TA_Lib
