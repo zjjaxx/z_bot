@@ -32,7 +32,7 @@ class StrategyTemplate:
         # 回溯
         # bootstrap_sample_size=100
         self.config = StrategyConfig()
-        self.strategy = Strategy(
+        self.strategyContext = Strategy(
             data_source=AKShare(),
             start_date=datetime.now()-timedelta(days=365*2),
             end_date=datetime.now(),

@@ -40,9 +40,9 @@ class Strategy(StrategyTemplate):
         macd_dea = pb.indicator('macd_dea', lambda data: talib.MACD(data.close)[1])
         macd_hist = pb.indicator('macd_hist', lambda data: talib.MACD(data.close)[2])
 
-        self.strategy.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[macd_dif,macd_dea,macd_hist])
+        self.strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[macd_dif,macd_dea,macd_hist])
         # calc_bootstrap=True
-        result = self.strategy.backtest(adjust="hfq")
+        result = self.strategyContext.backtest(adjust="hfq")
         total_pnl=result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1]
         initial_market_value=result.metrics_df[result.metrics_df['name']=='initial_market_value'].iloc[0,1]
         unrealized_pnl=result.metrics_df[result.metrics_df['name']=='unrealized_pnl'].iloc[0,1]
