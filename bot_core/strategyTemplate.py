@@ -6,8 +6,7 @@ import sys
 import logbook
 from logbook import Logger, StreamHandler, FileHandler
 from datetime import datetime,timedelta
-from pybroker import Strategy, StrategyConfig
-from pybroker.ext.data import AKShare
+
 import akshare as ak
 import requests
 import numpy as np
@@ -32,12 +31,7 @@ class StrategyTemplate:
         self.initLogger( name='logInfo', log_type='stdout', filepath='./logger/info.log', loglevel='DEBUG')
         # 回溯
         # bootstrap_sample_size=100
-        self.config = StrategyConfig()
-        self.strategyContext = Strategy(
-            data_source=AKShare(),
-            start_date=datetime.now()-timedelta(days=365*2),
-            end_date=datetime.now(),
-            config=self.config)
+     
 
     def initLogger(self, name='logInfo', log_type='stdout', filepath='logInfo.log', loglevel='DEBUG'):
         """Log对象

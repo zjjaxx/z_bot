@@ -5,6 +5,9 @@ import re
 from bot_server.form import StockModelForm,StrategyModelForm
 from bot_server.models import StockModel,StrategyModel
 from django.db import transaction
+from pybroker import Strategy as PBStrategy, StrategyConfig as PBStrategyConfig
+from pybroker.ext.data import AKShare
+from datetime import datetime,timedelta
 class Strategy(StrategyTemplate):
     name='macd'
 
@@ -36,10 +39,14 @@ class Strategy(StrategyTemplate):
         macd_dif = pb.indicator('macd_dif', lambda data: talib.MACD(data.close)[0])
         macd_dea = pb.indicator('macd_dea', lambda data: talib.MACD(data.close)[1])
         macd_hist = pb.indicator('macd_hist', lambda data: talib.MACD(data.close)[2])
-
-        self.strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[macd_dif,macd_dea,macd_hist])
+        strategyContext = PBStrategy(
+            data_source=AKShare(),
+            start_date=datetime.now()-timedelta(days=365*2),
+            end_date=datetime.now(),
+            config=PBStrategyConfig())
+        strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[macd_dif,macd_dea,macd_hist])
         # calc_bootstrap=True
-        result = self.strategyContext.backtest(adjust="hfq")
+        result = strategyContext.backtest(adjust="hfq")
         total_pnl=result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1]
         initial_market_value=result.metrics_df[result.metrics_df['name']=='initial_market_value'].iloc[0,1]
         unrealized_pnl=result.metrics_df[result.metrics_df['name']=='unrealized_pnl'].iloc[0,1]
