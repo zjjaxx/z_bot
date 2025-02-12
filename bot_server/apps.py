@@ -9,7 +9,7 @@ class BotServerConfig(AppConfig):
 
     def ready(self):
         __thread=Thread(target=self.runTask,name="bot_task",daemon=True)
-        __thread.start()
+        # __thread.start()
 
     def runTask(self):
         main_engine=MainEngine()

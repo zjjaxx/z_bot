@@ -28,7 +28,7 @@ class StrategyTemplate:
         self.logger=None
         self.init()
         # 初始化日志
-        self.initLogger( name='logInfo', log_type='file', filepath='./logger/info.log', loglevel='DEBUG')
+        self.initLogger( name='logInfo', log_type='stdout', filepath='./logger/info.log', loglevel='DEBUG')
         # 回溯
         # bootstrap_sample_size=100
         self.config = StrategyConfig()
@@ -126,7 +126,7 @@ class StrategyTemplate:
 
     def hot_stock(self):
         stock_hot_follow_xq_df = ak.stock_hot_follow_xq(symbol="最热门")
-        return stock_hot_follow_xq_df.head(300)
+        return stock_hot_follow_xq_df.head(30)
 
     def beforeOpen(self, event):
         pass
