@@ -16,6 +16,7 @@ def is_trade_date(now_time):
     return  not (is_holiday(now_time) or is_weekend(now_time))
 
 
+
 def get_next_trade_date(now_time):
     """
     :param now_time: datetime.datetime
