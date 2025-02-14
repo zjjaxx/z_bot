@@ -8,7 +8,9 @@ from django.db import transaction
 from pybroker import Strategy as PBStrategy, StrategyConfig as PBStrategyConfig
 from pybroker.ext.data import AKShare
 from datetime import datetime,timedelta
+
 class Strategy(StrategyTemplate):
+    # unique唯一
     name='macd'
 
     def init(self):
@@ -55,7 +57,7 @@ class Strategy(StrategyTemplate):
         pnl_rate=all_pnl/initial_market_value*100
         stock_data=self.queryStockHistoryData(symbol)
         calc_result=self.indicatorCalc(stock_data,symbol)
-        if pnl_rate>20 and calc_result:
+        if pnl_rate>20 and not calc_result==None:
             message=f"macd金叉提醒!!!!! \n MACD金叉策略 股票代码: {str(symbol)} \n 2年10万本金,回测结果:\n 收益: {str(total_pnl)} \n 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} \n 总收益: {str(all_pnl)} \n 胜率: {str(win_rate)}% \n 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
             # self.send_message(message=message)
             self.logger.info(message)
@@ -66,31 +68,35 @@ class Strategy(StrategyTemplate):
                     # 1. 检查 StockModel 是否存在，如果不存在则创建它
                     stock, _ = StockModel.objects.get_or_create(code=symbol)
                      # 2. 检查是否已经存在与 StockModel 相关联的 StrategyModel 数据
-                    existing_strategy = StrategyModel.objects.filter(code=stock).first()
-                    if existing_strategy:
-                        print(f"Strategy for stock {symbol} already exists.")
+                    existing_strategy = StrategyModel.objects.filter(stock=stock,strateType=Strategy.name).first()
+                    # 死叉
+                    if existing_strategy and calc_result=='sell':
+                        existing_strategy.strateOperate='sell'
+                        existing_strategy.strateOperateTime=datetime.now().date()
+                        existing_strategy.save()
                     else:
                         # 2. 准备策略数据并创建 StrategyModel
                         strategy_data = {
-                            "code": stock,  # 使用已经创建或存在的 StockModel 实例
-                            "strateType": 1,  # 策略类型
+                            "stock": stock,  # 使用已经创建或存在的 StockModel 实例
+                            "strateType": Strategy.name,  # 策略类型
                             "strateDesc": "MACD金叉买入死叉卖出策略",  # 策略描述
                             "winRate": win_rate,
+                            "strateOperate":"buy",
+                            "strateOperateTime":datetime.now().date(),
                             "pnl": all_pnl,
                             "pnl_desc": message  # 限制 pnl_desc 最大长度为 100
                         }
 
                         # 使用 StrategyModelForm 创建表单并校验
                         strate_form = StrategyModelForm(data=strategy_data)
-
                         # 校验表单
                         if strate_form.is_valid():
                             # 保存 StrategyModel 实例
                             strate_form.save()
                         else:
-                            print(strate_form.errors)
+                            self.logger.info(strate_form.errors)
             except Exception as e:
-                print(f"An error occurred: {e}")
+                self.logger.info(f"An error occurred: {e}")
 
     def indicatorCalc(self,data,symbol):
         macd =talib.MACD(data['收盘'].to_numpy())
@@ -98,12 +104,10 @@ class Strategy(StrategyTemplate):
         macd_dea=macd[1]
         # macd金叉提醒
         if macd_dif[-1]>macd_dea[-1] and macd_dif[-2]<=macd_dea[-2]:
-            return True
+            return "buy"
         elif macd_dif[-1]<macd_dea[-1] and macd_dif[-2]>=macd_dea[-2]:
-            # self.send_message(f"股票代码{symbol}:macd死叉提醒!!!!!")
-            # self.logger.info(f"股票代码{symbol}:macd死叉提醒!!!!!")
-            return False
-        return False
+            return "sell"
+        return None
         	
 
 

@@ -6,3 +6,117 @@
 [2025-02-11 15:38:44.656936] INFO: logInfo: 开始回测MACD指标~
 [2025-02-11 15:39:44.395373] INFO: logInfo: 开始回测MACD指标~
 [2025-02-11 15:40:02.340515] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 20:43:38.850941] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 20:44:46.164168] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:00:55.922799] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:01:22.384962] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:01:46.276941] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:07:06.650953] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:09:59.429206] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:10:26.479036] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:10:48.043834] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:11:54.346117] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:12:19.463124] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:12:19.466378] INFO: logInfo: An error occurred: unbound method datetime.date() needs an argument
+[2025-02-13 21:12:43.266497] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:19:24.378597] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:19:53.356078] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:20:16.029697] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:23:06.908934] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:23:34.870093] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:23:59.537732] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:40:48.133711] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:41:14.232019] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:41:14.235411] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
+[2025-02-13 21:41:35.693113] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:41:35.693251] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:45:50.570074] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 21:46:15.217003] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 21:46:15.222804] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
+[2025-02-13 21:46:36.533636] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 21:46:36.533767] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:12:05.490869] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:12:33.238897] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 22:12:33.242372] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
+[2025-02-13 22:12:55.369876] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 22:12:55.369989] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:14:29.757613] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:14:55.097410] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 22:14:55.100834] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
+[2025-02-13 22:15:16.586966] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 22:15:16.587112] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:26:32.445620] INFO: logInfo: 开始回测MACD指标~
+[2025-02-13 22:27:00.347833] INFO: logInfo: macd金叉提醒!!!!! 
+ MACD金叉策略 股票代码: 000584 
+ 2年10万本金,回测结果:
+ 收益: 30690.010000000002 
+ 浮盈收益(还有股票未卖出): -56.12000000000262 
+ 总收益: 30633.89 
+ 胜率: 55.00000000000001% 
+ 🌈✨🎉 Thank you for using the service! 🎉✨🌈
+[2025-02-13 22:27:00.351154] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
+[2025-02-13 22:27:22.114018] INFO: logInfo: 回测MACD指标结束~
+[2025-02-13 22:27:22.115049] INFO: logInfo: 开始回测MACD指标~
