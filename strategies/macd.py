@@ -7,6 +7,7 @@ from bot_server.models import StockModel,StrategyModel
 from django.db import transaction
 from pybroker import Strategy as PBStrategy, StrategyConfig as PBStrategyConfig
 from pybroker.ext.data import AKShare
+
 from datetime import datetime,timedelta
 
 class Strategy(StrategyTemplate):
@@ -29,11 +30,11 @@ class Strategy(StrategyTemplate):
     def beforeOpen(self, event):
         # self.send_message("开始回测MACD指标~")
         self.logger.info("开始回测MACD指标~")
-        symbols=self.seek_stock()
+        # symbols=self.seek_stock()
 
-        for symbol in symbols:
-            symbol=re.sub(r'\D', '', symbol) 
-            self.exec_backtest(symbol=symbol)
+        # for symbol in symbols:
+        #     symbol=re.sub(r'\D', '', symbol) 
+        #     self.exec_backtest(symbol=symbol)
         # self.send_message("回测MACD指标结束~")
         self.logger.info("回测MACD指标结束~")
          

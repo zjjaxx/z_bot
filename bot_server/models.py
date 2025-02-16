@@ -16,15 +16,17 @@ class StockModel(models.Model):
 # 策略模型
 class StrategyModel(models.Model):
     strateOperateChoices=[
-        ('buy',"买入"),
-        ("sell","卖出")
+        (1,"重仓买入"),
+        (3,"轻仓买入"),
+        (-1,"卖出"),
+        (2,"中等仓位")
     ]
     #一对多
     stock = models.ForeignKey(StockModel,on_delete=models.CASCADE)
     # 策略类型，枚举
     strateType = models.CharField(max_length=100,unique=True)
     # 操作
-    strateOperate=models.CharField(max_length=10,choices=strateOperateChoices)
+    strateOperate=models.IntegerField(choices=strateOperateChoices)
     # 操作时间
     strateOperateTime=models.DateField()
     # 策略描述

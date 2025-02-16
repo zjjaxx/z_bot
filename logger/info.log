@@ -1,122 +1,2753 @@
-[2025-02-11 00:27:52.593650] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 00:28:34.806051] INFO: logInfo: 股票代码000895:macd死叉提醒!!!!!
-[2025-02-11 13:04:44.662243] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 15:32:57.075852] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 15:34:20.658028] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 15:38:44.656936] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 15:39:44.395373] INFO: logInfo: 开始回测MACD指标~
-[2025-02-11 15:40:02.340515] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 20:43:38.850941] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 20:44:46.164168] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:00:55.922799] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:01:22.384962] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:01:46.276941] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:07:06.650953] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:09:59.429206] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:10:26.479036] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:10:48.043834] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:11:54.346117] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:12:19.463124] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:12:19.466378] INFO: logInfo: An error occurred: unbound method datetime.date() needs an argument
-[2025-02-13 21:12:43.266497] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:19:24.378597] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:19:53.356078] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:20:16.029697] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:23:06.908934] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:23:34.870093] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:23:59.537732] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:40:48.133711] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:41:14.232019] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:41:14.235411] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
-[2025-02-13 21:41:35.693113] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:41:35.693251] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:45:50.570074] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 21:46:15.217003] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 21:46:15.222804] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
-[2025-02-13 21:46:36.533636] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 21:46:36.533767] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:12:05.490869] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:12:33.238897] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 22:12:33.242372] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
-[2025-02-13 22:12:55.369876] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 22:12:55.369989] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:14:29.757613] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:14:55.097410] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 22:14:55.100834] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
-[2025-02-13 22:15:16.586966] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 22:15:16.587112] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:26:32.445620] INFO: logInfo: 开始回测MACD指标~
-[2025-02-13 22:27:00.347833] INFO: logInfo: macd金叉提醒!!!!! 
- MACD金叉策略 股票代码: 000584 
- 2年10万本金,回测结果:
- 收益: 30690.010000000002 
- 浮盈收益(还有股票未卖出): -56.12000000000262 
- 总收益: 30633.89 
- 胜率: 55.00000000000001% 
- 🌈✨🎉 Thank you for using the service! 🎉✨🌈
-[2025-02-13 22:27:00.351154] INFO: logInfo: <ul class="errorlist"><li>strateType<ul class="errorlist"><li>Strategy model with this StrateType already exists.</li></ul></li></ul>
-[2025-02-13 22:27:22.114018] INFO: logInfo: 回测MACD指标结束~
-[2025-02-13 22:27:22.115049] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:06:40.862915] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:06:40.863001] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:06:40.863030] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:06:43.237584] INFO: logInfo: code: 601398 all_pnl:49508.17999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:06:43.237917] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-02 2024-07-12  49508.18
+[2025-02-17 00:06:43.518455] INFO: logInfo: code: 600941 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:43.518684] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:43.935241] INFO: logInfo: code: 601939 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:43.935455] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:44.479539] INFO: logInfo: code: 600519 all_pnl:-1221.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1221.0 signal:0
+[2025-02-17 00:06:44.479781] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:44.792528] INFO: logInfo: code: 601288 all_pnl:49816.79999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:06:44.792721] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-02 2024-02-06  49816.8
+[2025-02-17 00:06:45.120362] INFO: logInfo: code: 601988 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:45.120578] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:45.482211] INFO: logInfo: code: 601857 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:45.482455] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:45.745785] INFO: logInfo: code: 600938 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:45.746024] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:46.145970] INFO: logInfo: code: 300750 all_pnl:18574.089999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:18574.089999999997 signal:0
+[2025-02-17 00:06:46.146170] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:46.544446] INFO: logInfo: code: 601628 all_pnl:49993.97 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:46.544661] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-11 2024-09-26  49993.97
+[2025-02-17 00:06:47.023058] INFO: logInfo: code: 600036 all_pnl:32508.959999999992 win_rate:0.0 trade_count:0.0 unrealized_pnl:32508.959999999992 signal:0
+[2025-02-17 00:06:47.023295] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:47.441683] INFO: logInfo: code: 002594 all_pnl:49939.51999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:06:47.441887] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-28 2024-10-08  49939.52
+[2025-02-17 00:06:47.855338] INFO: logInfo: code: 601318 all_pnl:51211.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:47.855538] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-14 2024-10-08  51211.16
+[2025-02-17 00:06:48.077526] INFO: logInfo: code: 688981 all_pnl:49996.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:06:48.077727] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-04-04  49996.96
+[2025-02-17 00:06:48.423273] INFO: logInfo: code: 601088 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:48.423476] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:48.834756] INFO: logInfo: code: 600028 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:48.834970] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:49.080516] INFO: logInfo: code: 601728 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:49.080750] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:49.454224] INFO: logInfo: code: 600900 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:49.454429] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:49.880302] INFO: logInfo: code: 000333 all_pnl:49992.48000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:06:49.880505] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-14 2024-05-07  49992.48
+[2025-02-17 00:06:50.253172] INFO: logInfo: code: 601328 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:50.253400] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:50.508059] INFO: logInfo: code: 601658 all_pnl:24763.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:24763.199999999997 signal:0
+[2025-02-17 00:06:50.508256] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:50.998666] INFO: logInfo: code: 000858 all_pnl:34847.79000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:34847.79000000001 signal:0
+[2025-02-17 00:06:50.998879] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:51.320842] INFO: logInfo: code: 601899 all_pnl:49999.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:06:51.321052] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-12  49999.6
+[2025-02-17 00:06:51.726644] INFO: logInfo: code: 601166 all_pnl:37399.67999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:37399.67999999999 signal:0
+[2025-02-17 00:06:51.726836] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:52.011200] INFO: logInfo: code: 601138 all_pnl:49999.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:52.011415] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-03-15  49999.5
+[2025-02-17 00:06:52.551626] INFO: logInfo: code: 600030 all_pnl:51690.369999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:06:52.551828] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-09-30  51690.37
+[2025-02-17 00:06:53.046023] INFO: logInfo: code: 300059 all_pnl:49599.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:53.046226] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-09  49599.5
+[2025-02-17 00:06:53.613358] INFO: logInfo: code: 601998 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:53.613581] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:53.966776] INFO: logInfo: code: 300760 all_pnl:1277.6600000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:1277.6600000000035 signal:0
+[2025-02-17 00:06:53.966974] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:54.150035] INFO: logInfo: code: 688041 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:54.150243] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:54.512235] INFO: logInfo: code: 002475 all_pnl:49991.850000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:06:54.512449] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-01 2024-06-19  49991.85
+[2025-02-17 00:06:54.870231] INFO: logInfo: code: 601601 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:54.870449] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:55.062865] INFO: logInfo: code: 601319 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:55.063069] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:55.529640] INFO: logInfo: code: 600000 all_pnl:49771.119999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:06:55.529839] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-09-27  49771.12
+[2025-02-17 00:06:55.943096] INFO: logInfo: code: 002415 all_pnl:6520.3399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:6520.3399999999965 signal:0
+[2025-02-17 00:06:55.943295] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:56.441625] INFO: logInfo: code: 600276 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:56.441837] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:56.642396] INFO: logInfo: code: 601816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:56.642599] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:56.858812] INFO: logInfo: code: 688256 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:56.859012] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:57.352343] INFO: logInfo: code: 600690 all_pnl:49996.45000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:06:57.352562] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-01 2024-05-06  49996.45
+[2025-02-17 00:06:57.852683] INFO: logInfo: code: 000651 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:57.852892] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:58.211551] INFO: logInfo: code: 601919 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:58.211767] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:58.589427] INFO: logInfo: code: 600809 all_pnl:-16516.979999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-16516.979999999996 signal:0
+[2025-02-17 00:06:58.589627] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:58.914210] INFO: logInfo: code: 603288 all_pnl:-18395.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-18395.399999999994 signal:0
+[2025-02-17 00:06:58.914419] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:59.232094] INFO: logInfo: code: 601668 all_pnl:17335.619999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:17335.619999999995 signal:0
+[2025-02-17 00:06:59.232285] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:59.722676] INFO: logInfo: code: 000001 all_pnl:14067.160000000003 win_rate:0.0 trade_count:0.0 unrealized_pnl:14067.160000000003 signal:0
+[2025-02-17 00:06:59.722877] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:06:59.965483] INFO: logInfo: code: 601818 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:06:59.965682] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:00.314881] INFO: logInfo: code: 002371 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:00.315109] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:00.686216] INFO: logInfo: code: 600309 all_pnl:-8248.919999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8248.919999999998 signal:0
+[2025-02-17 00:07:00.686409] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:01.109332] INFO: logInfo: code: 601766 all_pnl:49998.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:07:01.109528] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-04-21  49998.6
+[2025-02-17 00:07:01.549192] INFO: logInfo: code: 600104 all_pnl:28321.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:28321.649999999994 signal:0
+[2025-02-17 00:07:01.549408] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:01.973624] INFO: logInfo: code: 002714 all_pnl:-14538.779999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14538.779999999999 signal:0
+[2025-02-17 00:07:01.973839] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:02.278405] INFO: logInfo: code: 601225 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:02.278660] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:02.544102] INFO: logInfo: code: 601985 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:02.544335] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:02.925170] INFO: logInfo: code: 002352 all_pnl:-3951.3600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3951.3600000000006 signal:0
+[2025-02-17 00:07:02.925366] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:03.353352] INFO: logInfo: code: 302132 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:03.362454] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:03.755045] INFO: logInfo: code: 601066 all_pnl:49723.140000000014 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:03.755301] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-09 2024-11-08  49723.14
+[2025-02-17 00:07:04.182251] INFO: logInfo: code: 300114 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:04.182609] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:04.571049] INFO: logInfo: code: 600406 all_pnl:14798.009999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:14798.009999999995 signal:0
+[2025-02-17 00:07:04.571260] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:04.931879] INFO: logInfo: code: 000063 all_pnl:27921.309999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:27921.309999999998 signal:0
+[2025-02-17 00:07:04.932116] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:05.254063] INFO: logInfo: code: 003816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:05.254422] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:05.537878] INFO: logInfo: code: 601127 all_pnl:49993.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:05.538100] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-04-26 2023-07-04  49993.62
+[2025-02-17 00:07:05.949793] INFO: logInfo: code: 600016 all_pnl:25903.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:25903.199999999997 signal:0
+[2025-02-17 00:07:05.950008] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:06.360308] INFO: logInfo: code: 300124 all_pnl:20495.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:20495.5 signal:0
+[2025-02-17 00:07:06.360792] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:06.611265] INFO: logInfo: code: 688111 all_pnl:62342.880000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:07:06.611503] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-08-29 2024-10-08  62342.88
+[2025-02-17 00:07:07.084590] INFO: logInfo: code: 000568 all_pnl:12638.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:-37346.4 signal:0
+[2025-02-17 00:07:07.084799] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-28 2023-01-09  49984.4
+[2025-02-17 00:07:07.564768] INFO: logInfo: code: 600887 all_pnl:-7986.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-7986.0 signal:0
+[2025-02-17 00:07:07.565050] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:07.846215] INFO: logInfo: code: 600919 all_pnl:49997.17000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:07.846417] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-06 2024-12-25  49997.17
+[2025-02-17 00:07:08.313957] INFO: logInfo: code: 300999 all_pnl:-9787.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9787.649999999994 signal:0
+[2025-02-17 00:07:08.314155] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:08.774142] INFO: logInfo: code: 002142 all_pnl:-38.80000000000291 win_rate:0.0 trade_count:0.0 unrealized_pnl:-38.80000000000291 signal:0
+[2025-02-17 00:07:08.774341] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:09.145498] INFO: logInfo: code: 300033 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:09.145698] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:09.462489] INFO: logInfo: code: 603501 all_pnl:48240.20000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:09.462714] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-08  48240.2
+[2025-02-17 00:07:09.940471] INFO: logInfo: code: 601688 all_pnl:49830.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:09.940683] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-08-04  49830.0
+[2025-02-17 00:07:10.356823] INFO: logInfo: code: 600999 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:10.357069] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:10.749708] INFO: logInfo: code: 601995 all_pnl:-1546.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1546.479999999996 signal:0
+[2025-02-17 00:07:10.749919] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:10.996300] INFO: logInfo: code: 600025 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:10.996578] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:11.229548] INFO: logInfo: code: 601881 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:11.229791] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:11.579229] INFO: logInfo: code: 601211 all_pnl:49595.70000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:11.579435] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49595.7
+[2025-02-17 00:07:11.894470] INFO: logInfo: code: 603993 all_pnl:49998.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:11.894835] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-21 2023-04-14  49998.96
+[2025-02-17 00:07:12.208880] INFO: logInfo: code: 601800 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:12.209118] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:12.551305] INFO: logInfo: code: 601336 all_pnl:49999.859999999986 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:12.551532] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2023-04-28  49999.86
+[2025-02-17 00:07:13.105640] INFO: logInfo: code: 600150 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:13.106001] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:13.546360] INFO: logInfo: code: 600660 all_pnl:49800.23999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:13.546570] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-05-13  49800.24
+[2025-02-17 00:07:13.997604] INFO: logInfo: code: 600019 all_pnl:81686.82 win_rate:100.0 trade_count:1.0 unrealized_pnl:32595.960000000006 signal:0
+[2025-02-17 00:07:13.997845] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-31 2023-05-09  49090.86
+[2025-02-17 00:07:14.357087] INFO: logInfo: code: 600031 all_pnl:49883.92999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:14.357360] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-30 2024-10-08  49883.93
+[2025-02-17 00:07:14.628728] INFO: logInfo: code: 601390 all_pnl:19322.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:19322.399999999994 signal:0
+[2025-02-17 00:07:14.628943] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:14.992239] INFO: logInfo: code: 300274 all_pnl:51124.92000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:14.992490] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-06-14 2024-10-08  51124.92
+[2025-02-17 00:07:15.265373] INFO: logInfo: code: 601898 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:15.265587] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:15.657460] INFO: logInfo: code: 300433 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:15.657717] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:15.993332] INFO: logInfo: code: 601006 all_pnl:6465.9100000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:6465.9100000000035 signal:0
+[2025-02-17 00:07:15.993614] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:16.413338] INFO: logInfo: code: 600837 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:16.413543] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49998.9
+[2025-02-17 00:07:16.765012] INFO: logInfo: code: 001289 all_pnl:-5023.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5023.259999999995 signal:0
+[2025-02-17 00:07:16.765265] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:17.189823] INFO: logInfo: code: 000625 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:17.190041] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:17.578694] INFO: logInfo: code: 600018 all_pnl:13582.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:13582.649999999994 signal:0
+[2025-02-17 00:07:17.578948] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:18.017871] INFO: logInfo: code: 600188 all_pnl:-28925.61 win_rate:0.0 trade_count:0.0 unrealized_pnl:-28925.61 signal:0
+[2025-02-17 00:07:18.018076] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:18.412505] INFO: logInfo: code: 601727 all_pnl:49999.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:18.412713] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2024-10-23  49999.62
+[2025-02-17 00:07:18.752028] INFO: logInfo: code: 601600 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:18.752287] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:19.000010] INFO: logInfo: code: 601229 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:19.000539] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:19.455203] INFO: logInfo: code: 000166 all_pnl:62951.57999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:19.455408] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2024-10-08  62951.58
+[2025-02-17 00:07:19.816386] INFO: logInfo: code: 000338 all_pnl:49168.350000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:07:19.816584] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-10-25  49168.35
+[2025-02-17 00:07:20.179764] INFO: logInfo: code: 601888 all_pnl:-58149.06 win_rate:0.0 trade_count:0.0 unrealized_pnl:-58149.06 signal:0
+[2025-02-17 00:07:20.179978] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:20.629960] INFO: logInfo: code: 600760 all_pnl:7470.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:7470.399999999994 signal:0
+[2025-02-17 00:07:20.630194] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:21.054219] INFO: logInfo: code: 600436 all_pnl:-8184.690000000002 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8184.690000000002 signal:0
+[2025-02-17 00:07:21.054448] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:21.511890] INFO: logInfo: code: 300015 all_pnl:-31562.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-31562.5 signal:0
+[2025-02-17 00:07:21.512105] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:21.916758] INFO: logInfo: code: 600585 all_pnl:-14578.169999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14578.169999999998 signal:0
+[2025-02-17 00:07:21.916987] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:22.322139] INFO: logInfo: code: 002230 all_pnl:49658.70999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:22.322346] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-02-06  49658.71
+[2025-02-17 00:07:22.743771] INFO: logInfo: code: 601169 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:22.743968] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2024-10-08  49998.9
+[2025-02-17 00:07:23.422284] INFO: logInfo: code: 601111 all_pnl:-12345.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12345.0 signal:0
+[2025-02-17 00:07:23.422536] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:23.687551] INFO: logInfo: code: 600905 all_pnl:-12114.470000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12114.470000000001 signal:0
+[2025-02-17 00:07:23.687762] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:24.016874] INFO: logInfo: code: 600989 all_pnl:29539.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:29539.259999999995 signal:0
+[2025-02-17 00:07:24.017081] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:24.459741] INFO: logInfo: code: 000776 all_pnl:19074.559999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:19074.559999999998 signal:0
+[2025-02-17 00:07:24.459971] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:24.859405] INFO: logInfo: code: 300308 all_pnl:49458.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:07:24.860109] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-22  49458.6
+[2025-02-17 00:07:25.223454] INFO: logInfo: code: 601012 all_pnl:-65260.49 win_rate:0.0 trade_count:0.0 unrealized_pnl:-65260.49 signal:0
+[2025-02-17 00:07:25.223663] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:25.480864] INFO: logInfo: code: 605499 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:25.481122] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:25.948419] INFO: logInfo: code: 002050 all_pnl:49991.22 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:25.948632] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2025-01-24  49991.22
+[2025-02-17 00:07:26.191736] INFO: logInfo: code: 688012 all_pnl:48679.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:26.191931] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-12 2023-03-03  48679.9
+[2025-02-17 00:07:26.617949] INFO: logInfo: code: 002304 all_pnl:-40782.48 win_rate:0.0 trade_count:0.0 unrealized_pnl:-40782.48 signal:0
+[2025-02-17 00:07:26.618167] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:27.102520] INFO: logInfo: code: 600015 all_pnl:49999.67999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:27.102822] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2024-09-27  49999.68
+[2025-02-17 00:07:27.519995] INFO: logInfo: code: 601009 all_pnl:21617.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:21617.199999999997 signal:0
+[2025-02-17 00:07:27.520249] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:27.783283] INFO: logInfo: code: 601689 all_pnl:49982.79000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:07:27.783495] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-30 2025-02-06  49982.79
+[2025-02-17 00:07:28.179940] INFO: logInfo: code: 601186 all_pnl:124890.57 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:07:28.180197] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-04-17  49999.95
+2  2024-09-13 2024-11-18  74890.62
+[2025-02-17 00:07:28.405585] INFO: logInfo: code: 688036 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:28.405851] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:28.710831] INFO: logInfo: code: 600547 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:28.711084] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:29.110461] INFO: logInfo: code: 600346 all_pnl:-5154.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5154.399999999994 signal:0
+[2025-02-17 00:07:29.110759] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:29.467512] INFO: logInfo: code: 603019 all_pnl:47460.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:07:29.467716] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-01  47460.9
+[2025-02-17 00:07:29.859977] INFO: logInfo: code: 300498 all_pnl:-182.36999999999534 win_rate:0.0 trade_count:0.0 unrealized_pnl:-182.36999999999534 signal:0
+[2025-02-17 00:07:29.860178] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:30.236676] INFO: logInfo: code: 600886 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:30.237101] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:30.644338] INFO: logInfo: code: 600029 all_pnl:2821.7599999999948 win_rate:0.0 trade_count:0.0 unrealized_pnl:2821.7599999999948 signal:0
+[2025-02-17 00:07:30.644594] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:31.095751] INFO: logInfo: code: 002736 all_pnl:49589.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:31.095968] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-10-08  49589.16
+[2025-02-17 00:07:31.576193] INFO: logInfo: code: 000538 all_pnl:16870.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:16870.479999999996 signal:0
+[2025-02-17 00:07:31.576415] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:32.009316] INFO: logInfo: code: 600893 all_pnl:10227.600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:10227.600000000006 signal:0
+[2025-02-17 00:07:32.009527] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:32.282021] INFO: logInfo: code: 601989 all_pnl:49998.69 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:07:32.282235] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-05-08  49998.69
+[2025-02-17 00:07:32.609905] INFO: logInfo: code: 600048 all_pnl:-33122.78 win_rate:0.0 trade_count:0.0 unrealized_pnl:-33122.78 signal:0
+[2025-02-17 00:07:32.610131] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:32.956180] INFO: logInfo: code: 600011 all_pnl:-8831.899999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8831.899999999994 signal:3
+[2025-02-17 00:07:32.956435] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:07:32.956721] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场68 负场:24 总收益2333466.9099999997
+[2025-02-17 00:09:01.822808] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:09:01.822882] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:09:01.822910] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:09:04.165414] INFO: logInfo: code: 601398 all_pnl:49508.17999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:04.165697] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-02 2024-07-12  49508.18
+[2025-02-17 00:09:04.391258] INFO: logInfo: code: 600941 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:04.391493] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:04.739522] INFO: logInfo: code: 601939 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:04.739810] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:05.233298] INFO: logInfo: code: 600519 all_pnl:-3873.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3873.5 signal:0
+[2025-02-17 00:09:05.233533] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:05.604645] INFO: logInfo: code: 601288 all_pnl:49816.79999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:05.604860] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-02 2024-02-06  49816.8
+[2025-02-17 00:09:05.930214] INFO: logInfo: code: 601988 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:05.930442] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:06.286784] INFO: logInfo: code: 601857 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:06.286990] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:06.495343] INFO: logInfo: code: 600938 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:06.495554] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:06.864121] INFO: logInfo: code: 300750 all_pnl:18574.089999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:18574.089999999997 signal:0
+[2025-02-17 00:09:06.864346] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:07.312685] INFO: logInfo: code: 601628 all_pnl:49993.97 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:07.312882] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-11 2024-09-26  49993.97
+[2025-02-17 00:09:07.782305] INFO: logInfo: code: 600036 all_pnl:29294.059999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:29294.059999999998 signal:0
+[2025-02-17 00:09:07.782515] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:08.241043] INFO: logInfo: code: 002594 all_pnl:49939.51999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:08.241267] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-28 2024-10-08  49939.52
+[2025-02-17 00:09:08.655886] INFO: logInfo: code: 601318 all_pnl:51211.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:08.656093] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-14 2024-10-08  51211.16
+[2025-02-17 00:09:08.873527] INFO: logInfo: code: 688981 all_pnl:49996.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:08.873732] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-04-04  49996.96
+[2025-02-17 00:09:09.190844] INFO: logInfo: code: 601088 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:09.191068] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:09.671932] INFO: logInfo: code: 600028 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:09.672163] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:09.859230] INFO: logInfo: code: 601728 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:09.859481] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:10.243839] INFO: logInfo: code: 600900 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:10.244058] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:10.665838] INFO: logInfo: code: 000333 all_pnl:49992.48000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:10.666040] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-14 2024-05-07  49992.48
+[2025-02-17 00:09:11.048085] INFO: logInfo: code: 601328 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:11.048355] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:11.347065] INFO: logInfo: code: 601658 all_pnl:23317.839999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:23317.839999999997 signal:0
+[2025-02-17 00:09:11.347257] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:11.721279] INFO: logInfo: code: 000858 all_pnl:34847.79000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:34847.79000000001 signal:0
+[2025-02-17 00:09:11.721500] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:12.096377] INFO: logInfo: code: 601899 all_pnl:49999.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:12.096575] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-12  49999.6
+[2025-02-17 00:09:12.522903] INFO: logInfo: code: 601166 all_pnl:37399.67999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:37399.67999999999 signal:0
+[2025-02-17 00:09:12.523118] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:12.763053] INFO: logInfo: code: 601138 all_pnl:49999.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:12.763243] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-03-15  49999.5
+[2025-02-17 00:09:13.220529] INFO: logInfo: code: 600030 all_pnl:51690.369999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:13.220746] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-09-30  51690.37
+[2025-02-17 00:09:13.748118] INFO: logInfo: code: 300059 all_pnl:49599.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:13.748315] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-09  49599.5
+[2025-02-17 00:09:14.060825] INFO: logInfo: code: 601998 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:14.061030] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:14.469236] INFO: logInfo: code: 300760 all_pnl:-2971.100000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-2971.100000000006 signal:0
+[2025-02-17 00:09:14.469427] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:14.651040] INFO: logInfo: code: 688041 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:14.651262] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:15.165159] INFO: logInfo: code: 002475 all_pnl:49992.67000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:15.165354] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2024-07-11  49992.67
+[2025-02-17 00:09:15.521283] INFO: logInfo: code: 601601 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:15.521498] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:15.794049] INFO: logInfo: code: 601319 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:15.794275] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:16.220919] INFO: logInfo: code: 600000 all_pnl:49771.119999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:16.221132] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-09-27  49771.12
+[2025-02-17 00:09:16.634994] INFO: logInfo: code: 002415 all_pnl:6520.3399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:6520.3399999999965 signal:0
+[2025-02-17 00:09:16.635200] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:17.089395] INFO: logInfo: code: 600276 all_pnl:18270.97 win_rate:0.0 trade_count:0.0 unrealized_pnl:18270.97 signal:0
+[2025-02-17 00:09:17.089609] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:17.303128] INFO: logInfo: code: 601816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:17.303351] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:17.554531] INFO: logInfo: code: 688256 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:17.554750] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:18.127541] INFO: logInfo: code: 600690 all_pnl:49996.32000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:18.127745] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-10-08  49996.32
+[2025-02-17 00:09:18.636186] INFO: logInfo: code: 000651 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:18.636423] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:19.023274] INFO: logInfo: code: 601919 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:19.023480] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:19.502103] INFO: logInfo: code: 600809 all_pnl:-23484.839999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:-23484.839999999997 signal:0
+[2025-02-17 00:09:19.502295] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:19.861603] INFO: logInfo: code: 603288 all_pnl:-18395.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-18395.399999999994 signal:0
+[2025-02-17 00:09:19.861802] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:20.209028] INFO: logInfo: code: 601668 all_pnl:17335.619999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:17335.619999999995 signal:0
+[2025-02-17 00:09:20.209218] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:20.848168] INFO: logInfo: code: 000001 all_pnl:11479.380000000005 win_rate:0.0 trade_count:0.0 unrealized_pnl:11479.380000000005 signal:0
+[2025-02-17 00:09:20.848375] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:21.147792] INFO: logInfo: code: 601818 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:21.148011] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:21.563833] INFO: logInfo: code: 002371 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:21.564056] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:21.996404] INFO: logInfo: code: 600309 all_pnl:-8248.919999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8248.919999999998 signal:0
+[2025-02-17 00:09:21.996637] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:22.320486] INFO: logInfo: code: 601766 all_pnl:49998.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:22.320696] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-04-21  49998.6
+[2025-02-17 00:09:22.810622] INFO: logInfo: code: 600104 all_pnl:28321.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:28321.649999999994 signal:0
+[2025-02-17 00:09:22.810822] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:23.236831] INFO: logInfo: code: 002714 all_pnl:-14538.779999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14538.779999999999 signal:0
+[2025-02-17 00:09:23.237083] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:23.571163] INFO: logInfo: code: 601225 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:23.571383] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:23.847249] INFO: logInfo: code: 601985 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:23.847469] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:24.374932] INFO: logInfo: code: 002352 all_pnl:-3951.3600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3951.3600000000006 signal:0
+[2025-02-17 00:09:24.375118] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:24.874204] INFO: logInfo: code: 302132 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:24.874431] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:25.193695] INFO: logInfo: code: 601066 all_pnl:49723.140000000014 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:25.193900] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-09 2024-11-08  49723.14
+[2025-02-17 00:09:25.583968] INFO: logInfo: code: 300114 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:25.584194] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:26.033761] INFO: logInfo: code: 600406 all_pnl:14798.009999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:14798.009999999995 signal:0
+[2025-02-17 00:09:26.033942] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:26.517193] INFO: logInfo: code: 000063 all_pnl:27921.309999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:27921.309999999998 signal:0
+[2025-02-17 00:09:26.517385] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:26.835918] INFO: logInfo: code: 003816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:26.836138] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:27.147743] INFO: logInfo: code: 601127 all_pnl:49993.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:27.147952] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-04-26 2023-07-04  49993.62
+[2025-02-17 00:09:27.602912] INFO: logInfo: code: 600016 all_pnl:25903.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:25903.199999999997 signal:0
+[2025-02-17 00:09:27.603104] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:28.054906] INFO: logInfo: code: 300124 all_pnl:16604.460000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:16604.460000000006 signal:0
+[2025-02-17 00:09:28.055116] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:28.298848] INFO: logInfo: code: 688111 all_pnl:62342.880000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:28.299051] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-08-29 2024-10-08  62342.88
+[2025-02-17 00:09:28.908679] INFO: logInfo: code: 000568 all_pnl:3944.4900000000052 win_rate:100.0 trade_count:1.0 unrealized_pnl:-45619.85999999999 signal:0
+[2025-02-17 00:09:28.908897] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2023-02-13  49564.35
+[2025-02-17 00:09:29.488955] INFO: logInfo: code: 600887 all_pnl:-15190.320000000007 win_rate:0.0 trade_count:0.0 unrealized_pnl:-15190.320000000007 signal:0
+[2025-02-17 00:09:29.489181] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:29.791126] INFO: logInfo: code: 600919 all_pnl:41043.75 win_rate:0.0 trade_count:0.0 unrealized_pnl:41043.75 signal:0
+[2025-02-17 00:09:29.791326] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:30.111995] INFO: logInfo: code: 300999 all_pnl:-9787.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9787.649999999994 signal:0
+[2025-02-17 00:09:30.112206] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:30.648469] INFO: logInfo: code: 002142 all_pnl:-15519.210000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-15519.210000000006 signal:0
+[2025-02-17 00:09:30.648662] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:31.084794] INFO: logInfo: code: 300033 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:31.085020] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:31.430808] INFO: logInfo: code: 603501 all_pnl:48240.20000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:31.431015] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-08  48240.2
+[2025-02-17 00:09:31.795894] INFO: logInfo: code: 601688 all_pnl:49830.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:31.796111] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-08-04  49830.0
+[2025-02-17 00:09:32.119836] INFO: logInfo: code: 600999 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:32.120063] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:32.427593] INFO: logInfo: code: 601995 all_pnl:-1546.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1546.479999999996 signal:0
+[2025-02-17 00:09:32.427795] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:32.660507] INFO: logInfo: code: 600025 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:32.660721] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:32.932411] INFO: logInfo: code: 601881 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:32.932635] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:33.258337] INFO: logInfo: code: 601211 all_pnl:49595.70000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:33.258576] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49595.7
+[2025-02-17 00:09:33.580136] INFO: logInfo: code: 603993 all_pnl:49998.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:33.580351] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-21 2023-04-14  49998.96
+[2025-02-17 00:09:33.960158] INFO: logInfo: code: 601800 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:33.960409] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:34.280411] INFO: logInfo: code: 601336 all_pnl:49999.859999999986 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:34.280616] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2023-04-28  49999.86
+[2025-02-17 00:09:34.737749] INFO: logInfo: code: 600150 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:34.737982] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:35.266748] INFO: logInfo: code: 600660 all_pnl:49800.23999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:35.266968] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-05-13  49800.24
+[2025-02-17 00:09:35.723134] INFO: logInfo: code: 600019 all_pnl:79591.9 win_rate:100.0 trade_count:1.0 unrealized_pnl:30501.039999999994 signal:0
+[2025-02-17 00:09:35.723379] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-31 2023-05-09  49090.86
+[2025-02-17 00:09:36.151990] INFO: logInfo: code: 600031 all_pnl:49883.92999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:36.152178] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-30 2024-10-08  49883.93
+[2025-02-17 00:09:36.535731] INFO: logInfo: code: 601390 all_pnl:19322.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:19322.399999999994 signal:0
+[2025-02-17 00:09:36.535919] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:36.995293] INFO: logInfo: code: 300274 all_pnl:48884.42000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:36.995507] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-10-26 2024-10-08  48884.42
+[2025-02-17 00:09:37.371995] INFO: logInfo: code: 601898 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:37.372215] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:37.757556] INFO: logInfo: code: 300433 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:37.757773] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:38.133462] INFO: logInfo: code: 601006 all_pnl:6465.9100000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:6465.9100000000035 signal:0
+[2025-02-17 00:09:38.133645] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:38.666385] INFO: logInfo: code: 600837 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:38.666626] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49998.9
+[2025-02-17 00:09:39.005296] INFO: logInfo: code: 001289 all_pnl:-5023.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5023.259999999995 signal:0
+[2025-02-17 00:09:39.005501] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:39.537924] INFO: logInfo: code: 000625 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:39.538146] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:39.999174] INFO: logInfo: code: 600018 all_pnl:13582.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:13582.649999999994 signal:0
+[2025-02-17 00:09:39.999388] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:40.520800] INFO: logInfo: code: 600188 all_pnl:-28925.61 win_rate:0.0 trade_count:0.0 unrealized_pnl:-28925.61 signal:0
+[2025-02-17 00:09:40.521021] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:40.886802] INFO: logInfo: code: 601727 all_pnl:49999.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:40.887001] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2024-10-23  49999.62
+[2025-02-17 00:09:41.274071] INFO: logInfo: code: 601600 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:41.274308] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:41.581744] INFO: logInfo: code: 601229 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:41.581983] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:42.017385] INFO: logInfo: code: 000166 all_pnl:62951.57999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:42.017582] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2024-10-08  62951.58
+[2025-02-17 00:09:42.534554] INFO: logInfo: code: 000338 all_pnl:49168.350000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:42.534765] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-10-25  49168.35
+[2025-02-17 00:09:42.897468] INFO: logInfo: code: 601888 all_pnl:-58149.06 win_rate:0.0 trade_count:0.0 unrealized_pnl:-58149.06 signal:0
+[2025-02-17 00:09:42.897657] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:43.448907] INFO: logInfo: code: 600760 all_pnl:7470.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:7470.399999999994 signal:0
+[2025-02-17 00:09:43.449101] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:43.928175] INFO: logInfo: code: 600436 all_pnl:-17421.690000000002 win_rate:0.0 trade_count:0.0 unrealized_pnl:-17421.690000000002 signal:0
+[2025-02-17 00:09:43.928376] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:44.382171] INFO: logInfo: code: 300015 all_pnl:-31562.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-31562.5 signal:0
+[2025-02-17 00:09:44.382361] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:44.897253] INFO: logInfo: code: 600585 all_pnl:-14578.169999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14578.169999999998 signal:0
+[2025-02-17 00:09:44.897461] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:45.338804] INFO: logInfo: code: 002230 all_pnl:49658.70999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:45.339003] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-02-06  49658.71
+[2025-02-17 00:09:45.744680] INFO: logInfo: code: 601169 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:45.744889] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2024-10-08  49998.9
+[2025-02-17 00:09:46.206651] INFO: logInfo: code: 601111 all_pnl:-11808.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-11808.0 signal:0
+[2025-02-17 00:09:46.206853] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:46.451413] INFO: logInfo: code: 600905 all_pnl:-12114.470000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12114.470000000001 signal:0
+[2025-02-17 00:09:46.451606] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:46.785225] INFO: logInfo: code: 600989 all_pnl:29539.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:29539.259999999995 signal:0
+[2025-02-17 00:09:46.785421] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:47.257114] INFO: logInfo: code: 000776 all_pnl:19074.559999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:19074.559999999998 signal:0
+[2025-02-17 00:09:47.257317] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:47.677053] INFO: logInfo: code: 300308 all_pnl:49458.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:09:47.677244] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-22  49458.6
+[2025-02-17 00:09:48.091967] INFO: logInfo: code: 601012 all_pnl:-65260.49 win_rate:0.0 trade_count:0.0 unrealized_pnl:-65260.49 signal:0
+[2025-02-17 00:09:48.092189] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:48.290772] INFO: logInfo: code: 605499 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:48.290976] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:48.799510] INFO: logInfo: code: 002050 all_pnl:49991.22 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:48.799711] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2025-01-24  49991.22
+[2025-02-17 00:09:49.072107] INFO: logInfo: code: 688012 all_pnl:48679.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:49.072309] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-12 2023-03-03  48679.9
+[2025-02-17 00:09:49.511559] INFO: logInfo: code: 002304 all_pnl:-41957.41 win_rate:0.0 trade_count:0.0 unrealized_pnl:-41957.41 signal:0
+[2025-02-17 00:09:49.511756] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:49.940296] INFO: logInfo: code: 600015 all_pnl:49999.67999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:49.940501] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2024-09-27  49999.68
+[2025-02-17 00:09:50.329278] INFO: logInfo: code: 601009 all_pnl:21617.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:21617.199999999997 signal:0
+[2025-02-17 00:09:50.329477] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:50.675776] INFO: logInfo: code: 601689 all_pnl:49215.869999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:50.675971] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-29 2025-02-07  49215.87
+[2025-02-17 00:09:51.009540] INFO: logInfo: code: 601186 all_pnl:124890.57 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:09:51.009734] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-04-17  49999.95
+2  2024-09-13 2024-11-18  74890.62
+[2025-02-17 00:09:51.270326] INFO: logInfo: code: 688036 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:51.270535] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:51.686667] INFO: logInfo: code: 600547 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:51.686882] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:52.094091] INFO: logInfo: code: 600346 all_pnl:-5154.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5154.399999999994 signal:0
+[2025-02-17 00:09:52.094286] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:52.383468] INFO: logInfo: code: 603019 all_pnl:47460.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:09:52.383663] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-01  47460.9
+[2025-02-17 00:09:52.741901] INFO: logInfo: code: 300498 all_pnl:-2636.0399999999936 win_rate:0.0 trade_count:0.0 unrealized_pnl:-2636.0399999999936 signal:0
+[2025-02-17 00:09:52.742107] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:53.163574] INFO: logInfo: code: 600886 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:53.163777] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:53.617131] INFO: logInfo: code: 600029 all_pnl:690.8399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:690.8399999999965 signal:0
+[2025-02-17 00:09:53.617344] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:54.112540] INFO: logInfo: code: 002736 all_pnl:49589.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:54.112731] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-10-08  49589.16
+[2025-02-17 00:09:54.678295] INFO: logInfo: code: 000538 all_pnl:16870.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:16870.479999999996 signal:0
+[2025-02-17 00:09:54.678494] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:55.174721] INFO: logInfo: code: 600893 all_pnl:3511.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:3511.199999999997 signal:0
+[2025-02-17 00:09:55.174920] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:55.537083] INFO: logInfo: code: 601989 all_pnl:49998.69 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:09:55.537276] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-05-08  49998.69
+[2025-02-17 00:09:55.924396] INFO: logInfo: code: 600048 all_pnl:-33949.380000000005 win_rate:0.0 trade_count:0.0 unrealized_pnl:-33949.380000000005 signal:0
+[2025-02-17 00:09:55.924597] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:56.334488] INFO: logInfo: code: 600011 all_pnl:-9128.600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9128.600000000006 signal:3
+[2025-02-17 00:09:56.334682] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:09:56.334915] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场68 负场:25 总收益2258997.1499999985
+[2025-02-17 00:11:47.502634] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:11:47.502711] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:11:47.502743] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:11:49.747803] INFO: logInfo: code: 601398 all_pnl:49508.17999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:11:49.748077] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-02 2024-07-12  49508.18
+[2025-02-17 00:11:49.970803] INFO: logInfo: code: 600941 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:49.971032] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:50.280317] INFO: logInfo: code: 601939 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:50.280567] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:50.765568] INFO: logInfo: code: 600519 all_pnl:-3873.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3873.5 signal:0
+[2025-02-17 00:11:50.765776] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:51.121781] INFO: logInfo: code: 601288 all_pnl:49816.79999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:11:51.121979] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-02 2024-02-06  49816.8
+[2025-02-17 00:11:51.442772] INFO: logInfo: code: 601988 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:51.443017] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:51.765595] INFO: logInfo: code: 601857 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:51.765858] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:51.964380] INFO: logInfo: code: 600938 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:51.964603] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:52.332722] INFO: logInfo: code: 300750 all_pnl:18574.089999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:18574.089999999997 signal:0
+[2025-02-17 00:11:52.332928] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:52.716667] INFO: logInfo: code: 601628 all_pnl:49993.97 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:52.716863] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-11 2024-09-26  49993.97
+[2025-02-17 00:11:53.139822] INFO: logInfo: code: 600036 all_pnl:29294.059999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:29294.059999999998 signal:0
+[2025-02-17 00:11:53.140035] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:53.554487] INFO: logInfo: code: 002594 all_pnl:49939.51999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:11:53.554696] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-28 2024-10-08  49939.52
+[2025-02-17 00:11:54.002022] INFO: logInfo: code: 601318 all_pnl:51211.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:54.002442] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-14 2024-10-08  51211.16
+[2025-02-17 00:11:54.233555] INFO: logInfo: code: 688981 all_pnl:49996.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:11:54.233767] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-04-04  49996.96
+[2025-02-17 00:11:54.611491] INFO: logInfo: code: 601088 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:54.611722] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:55.072191] INFO: logInfo: code: 600028 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:55.072432] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:55.275275] INFO: logInfo: code: 601728 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:55.275498] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:55.636530] INFO: logInfo: code: 600900 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:55.636765] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:56.045182] INFO: logInfo: code: 000333 all_pnl:49992.48000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:11:56.045414] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-14 2024-05-07  49992.48
+[2025-02-17 00:11:56.387108] INFO: logInfo: code: 601328 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:56.387330] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:56.689907] INFO: logInfo: code: 601658 all_pnl:23317.839999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:23317.839999999997 signal:0
+[2025-02-17 00:11:56.690108] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:57.069086] INFO: logInfo: code: 000858 all_pnl:34847.79000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:34847.79000000001 signal:0
+[2025-02-17 00:11:57.069305] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:57.385850] INFO: logInfo: code: 601899 all_pnl:49999.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:11:57.386071] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-12  49999.6
+[2025-02-17 00:11:57.769003] INFO: logInfo: code: 601166 all_pnl:37399.67999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:37399.67999999999 signal:0
+[2025-02-17 00:11:57.769210] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:58.100731] INFO: logInfo: code: 601138 all_pnl:49999.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:58.100940] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-03-15  49999.5
+[2025-02-17 00:11:58.533345] INFO: logInfo: code: 600030 all_pnl:51690.369999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:11:58.533570] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-09-30  51690.37
+[2025-02-17 00:11:59.015551] INFO: logInfo: code: 300059 all_pnl:49599.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:59.015758] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-09  49599.5
+[2025-02-17 00:11:59.291920] INFO: logInfo: code: 601998 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:59.292136] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:59.613820] INFO: logInfo: code: 300760 all_pnl:-2971.100000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-2971.100000000006 signal:0
+[2025-02-17 00:11:59.614025] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:11:59.804337] INFO: logInfo: code: 688041 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:11:59.804571] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:00.263474] INFO: logInfo: code: 002475 all_pnl:49992.67000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:00.263710] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2024-07-11  49992.67
+[2025-02-17 00:12:00.570186] INFO: logInfo: code: 601601 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:00.570408] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:00.816693] INFO: logInfo: code: 601319 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:00.816920] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:01.291773] INFO: logInfo: code: 600000 all_pnl:49771.119999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:01.291980] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-09-27  49771.12
+[2025-02-17 00:12:01.693427] INFO: logInfo: code: 002415 all_pnl:6520.3399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:6520.3399999999965 signal:0
+[2025-02-17 00:12:01.693632] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:02.163200] INFO: logInfo: code: 600276 all_pnl:18270.97 win_rate:0.0 trade_count:0.0 unrealized_pnl:18270.97 signal:0
+[2025-02-17 00:12:02.163398] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:02.351427] INFO: logInfo: code: 601816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:02.351633] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:02.545654] INFO: logInfo: code: 688256 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:02.545879] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:03.064551] INFO: logInfo: code: 600690 all_pnl:49996.32000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:12:03.064769] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-10-08  49996.32
+[2025-02-17 00:12:03.628351] INFO: logInfo: code: 000651 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:03.628571] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:03.975460] INFO: logInfo: code: 601919 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:03.975707] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:04.593686] INFO: logInfo: code: 600809 all_pnl:-23484.839999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:-23484.839999999997 signal:0
+[2025-02-17 00:12:04.593896] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:04.948529] INFO: logInfo: code: 603288 all_pnl:-18395.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-18395.399999999994 signal:0
+[2025-02-17 00:12:04.948730] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:05.289562] INFO: logInfo: code: 601668 all_pnl:17335.619999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:17335.619999999995 signal:0
+[2025-02-17 00:12:05.289761] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:05.957174] INFO: logInfo: code: 000001 all_pnl:11479.380000000005 win_rate:0.0 trade_count:0.0 unrealized_pnl:11479.380000000005 signal:0
+[2025-02-17 00:12:05.957370] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:06.254994] INFO: logInfo: code: 601818 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:06.255200] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:06.611693] INFO: logInfo: code: 002371 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:06.611926] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:07.081615] INFO: logInfo: code: 600309 all_pnl:-8248.919999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8248.919999999998 signal:0
+[2025-02-17 00:12:07.081820] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:07.425306] INFO: logInfo: code: 601766 all_pnl:49998.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:12:07.425520] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-04-21  49998.6
+[2025-02-17 00:12:07.977958] INFO: logInfo: code: 600104 all_pnl:28321.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:28321.649999999994 signal:0
+[2025-02-17 00:12:07.978198] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:08.411999] INFO: logInfo: code: 002714 all_pnl:-14538.779999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14538.779999999999 signal:0
+[2025-02-17 00:12:08.412199] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:08.720886] INFO: logInfo: code: 601225 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:08.721120] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:08.990390] INFO: logInfo: code: 601985 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:08.990621] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:09.438536] INFO: logInfo: code: 002352 all_pnl:-3951.3600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3951.3600000000006 signal:0
+[2025-02-17 00:12:09.438746] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:09.851467] INFO: logInfo: code: 302132 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:09.851697] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:10.123784] INFO: logInfo: code: 601066 all_pnl:49723.140000000014 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:10.123981] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-09 2024-11-08  49723.14
+[2025-02-17 00:12:10.508748] INFO: logInfo: code: 300114 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:10.508977] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:10.932970] INFO: logInfo: code: 600406 all_pnl:14798.009999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:14798.009999999995 signal:0
+[2025-02-17 00:12:10.933172] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:11.343078] INFO: logInfo: code: 000063 all_pnl:27921.309999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:27921.309999999998 signal:0
+[2025-02-17 00:12:11.343278] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:11.622276] INFO: logInfo: code: 003816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:11.622515] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:11.927642] INFO: logInfo: code: 601127 all_pnl:49993.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:11.927858] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-04-26 2023-07-04  49993.62
+[2025-02-17 00:12:12.344615] INFO: logInfo: code: 600016 all_pnl:25903.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:25903.199999999997 signal:0
+[2025-02-17 00:12:12.344824] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:12.780449] INFO: logInfo: code: 300124 all_pnl:16604.460000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:16604.460000000006 signal:0
+[2025-02-17 00:12:12.780652] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:13.030612] INFO: logInfo: code: 688111 all_pnl:62342.880000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:12:13.030828] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-08-29 2024-10-08  62342.88
+[2025-02-17 00:12:13.649925] INFO: logInfo: code: 000568 all_pnl:3944.4900000000052 win_rate:100.0 trade_count:1.0 unrealized_pnl:-45619.85999999999 signal:0
+[2025-02-17 00:12:13.650153] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2023-02-13  49564.35
+[2025-02-17 00:12:14.180428] INFO: logInfo: code: 600887 all_pnl:-15190.320000000007 win_rate:0.0 trade_count:0.0 unrealized_pnl:-15190.320000000007 signal:0
+[2025-02-17 00:12:14.180640] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:14.466653] INFO: logInfo: code: 600919 all_pnl:41043.75 win_rate:0.0 trade_count:0.0 unrealized_pnl:41043.75 signal:0
+[2025-02-17 00:12:14.466846] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:14.786250] INFO: logInfo: code: 300999 all_pnl:-9787.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9787.649999999994 signal:0
+[2025-02-17 00:12:14.786446] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:15.249371] INFO: logInfo: code: 002142 all_pnl:-15519.210000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-15519.210000000006 signal:0
+[2025-02-17 00:12:15.249606] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:15.624625] INFO: logInfo: code: 300033 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:15.624856] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:15.931786] INFO: logInfo: code: 603501 all_pnl:48240.20000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:15.931991] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-08  48240.2
+[2025-02-17 00:12:16.308418] INFO: logInfo: code: 601688 all_pnl:49830.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:16.308620] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-08-04  49830.0
+[2025-02-17 00:12:16.645003] INFO: logInfo: code: 600999 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:16.645235] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:16.919748] INFO: logInfo: code: 601995 all_pnl:-1546.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1546.479999999996 signal:0
+[2025-02-17 00:12:16.919987] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:17.235119] INFO: logInfo: code: 600025 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:17.235358] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:17.500354] INFO: logInfo: code: 601881 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:17.500577] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:17.879829] INFO: logInfo: code: 601211 all_pnl:49595.70000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:17.880026] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49595.7
+[2025-02-17 00:12:18.203310] INFO: logInfo: code: 603993 all_pnl:49998.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:18.203515] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-21 2023-04-14  49998.96
+[2025-02-17 00:12:18.466167] INFO: logInfo: code: 601800 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:18.466398] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:18.817622] INFO: logInfo: code: 601336 all_pnl:49999.859999999986 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:18.817826] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2023-04-28  49999.86
+[2025-02-17 00:12:19.186491] INFO: logInfo: code: 600150 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:19.186701] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:19.752225] INFO: logInfo: code: 600660 all_pnl:49800.23999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:19.752650] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-05-13  49800.24
+[2025-02-17 00:12:20.123597] INFO: logInfo: code: 600019 all_pnl:79591.9 win_rate:100.0 trade_count:1.0 unrealized_pnl:30501.039999999994 signal:0
+[2025-02-17 00:12:20.123818] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-31 2023-05-09  49090.86
+[2025-02-17 00:12:20.547478] INFO: logInfo: code: 600031 all_pnl:49883.92999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:20.547687] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-30 2024-10-08  49883.93
+[2025-02-17 00:12:20.884622] INFO: logInfo: code: 601390 all_pnl:19322.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:19322.399999999994 signal:0
+[2025-02-17 00:12:20.884830] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:21.360455] INFO: logInfo: code: 300274 all_pnl:48884.42000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:21.360670] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-10-26 2024-10-08  48884.42
+[2025-02-17 00:12:21.700910] INFO: logInfo: code: 601898 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:21.701131] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:22.043875] INFO: logInfo: code: 300433 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:22.044114] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:22.423309] INFO: logInfo: code: 601006 all_pnl:6465.9100000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:6465.9100000000035 signal:0
+[2025-02-17 00:12:22.423504] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:22.924468] INFO: logInfo: code: 600837 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:22.924700] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49998.9
+[2025-02-17 00:12:23.249256] INFO: logInfo: code: 001289 all_pnl:-5023.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5023.259999999995 signal:0
+[2025-02-17 00:12:23.249474] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:23.870105] INFO: logInfo: code: 000625 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:23.870316] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:24.234819] INFO: logInfo: code: 600018 all_pnl:13582.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:13582.649999999994 signal:0
+[2025-02-17 00:12:24.235030] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:24.862198] INFO: logInfo: code: 600188 all_pnl:-28925.61 win_rate:0.0 trade_count:0.0 unrealized_pnl:-28925.61 signal:0
+[2025-02-17 00:12:24.862406] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:25.168172] INFO: logInfo: code: 601727 all_pnl:49999.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:25.168385] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2024-10-23  49999.62
+[2025-02-17 00:12:25.507649] INFO: logInfo: code: 601600 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:25.507866] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:25.776788] INFO: logInfo: code: 601229 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:25.777027] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:26.138587] INFO: logInfo: code: 000166 all_pnl:62951.57999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:26.138793] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2024-10-08  62951.58
+[2025-02-17 00:12:26.532759] INFO: logInfo: code: 000338 all_pnl:49168.350000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:12:26.532962] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-10-25  49168.35
+[2025-02-17 00:12:26.923723] INFO: logInfo: code: 601888 all_pnl:-58149.06 win_rate:0.0 trade_count:0.0 unrealized_pnl:-58149.06 signal:0
+[2025-02-17 00:12:26.923938] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:27.410357] INFO: logInfo: code: 600760 all_pnl:7470.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:7470.399999999994 signal:0
+[2025-02-17 00:12:27.410599] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:27.916785] INFO: logInfo: code: 600436 all_pnl:-17421.690000000002 win_rate:0.0 trade_count:0.0 unrealized_pnl:-17421.690000000002 signal:0
+[2025-02-17 00:12:27.916984] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:28.310155] INFO: logInfo: code: 300015 all_pnl:-31562.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-31562.5 signal:0
+[2025-02-17 00:12:28.310362] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:28.846854] INFO: logInfo: code: 600585 all_pnl:-14578.169999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14578.169999999998 signal:0
+[2025-02-17 00:12:28.847062] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:29.290183] INFO: logInfo: code: 002230 all_pnl:49658.70999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:29.290392] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-02-06  49658.71
+[2025-02-17 00:12:29.739797] INFO: logInfo: code: 601169 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:29.740012] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2024-10-08  49998.9
+[2025-02-17 00:12:30.120332] INFO: logInfo: code: 601111 all_pnl:-11808.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-11808.0 signal:0
+[2025-02-17 00:12:30.120546] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:30.361899] INFO: logInfo: code: 600905 all_pnl:-12114.470000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12114.470000000001 signal:0
+[2025-02-17 00:12:30.362104] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:30.679081] INFO: logInfo: code: 600989 all_pnl:29539.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:29539.259999999995 signal:0
+[2025-02-17 00:12:30.679298] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:31.137729] INFO: logInfo: code: 000776 all_pnl:19074.559999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:19074.559999999998 signal:0
+[2025-02-17 00:12:31.137925] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:31.497540] INFO: logInfo: code: 300308 all_pnl:49458.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:12:31.497758] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-22  49458.6
+[2025-02-17 00:12:31.853712] INFO: logInfo: code: 601012 all_pnl:-65260.49 win_rate:0.0 trade_count:0.0 unrealized_pnl:-65260.49 signal:0
+[2025-02-17 00:12:31.853924] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:32.045279] INFO: logInfo: code: 605499 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:32.045496] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:32.420052] INFO: logInfo: code: 002050 all_pnl:49991.22 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:32.420259] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2025-01-24  49991.22
+[2025-02-17 00:12:32.642438] INFO: logInfo: code: 688012 all_pnl:48679.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:32.642640] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-12 2023-03-03  48679.9
+[2025-02-17 00:12:33.120549] INFO: logInfo: code: 002304 all_pnl:-41957.41 win_rate:0.0 trade_count:0.0 unrealized_pnl:-41957.41 signal:0
+[2025-02-17 00:12:33.120765] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:33.523616] INFO: logInfo: code: 600015 all_pnl:49999.67999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:33.523816] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2024-09-27  49999.68
+[2025-02-17 00:12:33.936343] INFO: logInfo: code: 601009 all_pnl:21617.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:21617.199999999997 signal:0
+[2025-02-17 00:12:33.936548] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:34.258811] INFO: logInfo: code: 601689 all_pnl:49215.869999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:34.259058] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-29 2025-02-07  49215.87
+[2025-02-17 00:12:34.592248] INFO: logInfo: code: 601186 all_pnl:124890.57 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:12:34.592491] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-04-17  49999.95
+2  2024-09-13 2024-11-18  74890.62
+[2025-02-17 00:12:34.811120] INFO: logInfo: code: 688036 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:34.811339] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:35.217158] INFO: logInfo: code: 600547 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:35.217385] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:35.700413] INFO: logInfo: code: 600346 all_pnl:-5154.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5154.399999999994 signal:0
+[2025-02-17 00:12:35.701540] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:36.003026] INFO: logInfo: code: 603019 all_pnl:47460.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:12:36.003239] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-01  47460.9
+[2025-02-17 00:12:36.362114] INFO: logInfo: code: 300498 all_pnl:-2636.0399999999936 win_rate:0.0 trade_count:0.0 unrealized_pnl:-2636.0399999999936 signal:0
+[2025-02-17 00:12:36.362330] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:36.773290] INFO: logInfo: code: 600886 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:36.773497] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:37.204590] INFO: logInfo: code: 600029 all_pnl:690.8399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:690.8399999999965 signal:0
+[2025-02-17 00:12:37.204808] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:37.581751] INFO: logInfo: code: 002736 all_pnl:49589.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:37.581943] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-10-08  49589.16
+[2025-02-17 00:12:38.189336] INFO: logInfo: code: 000538 all_pnl:16870.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:16870.479999999996 signal:0
+[2025-02-17 00:12:38.189539] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:38.644900] INFO: logInfo: code: 600893 all_pnl:3511.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:3511.199999999997 signal:0
+[2025-02-17 00:12:38.645093] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:38.961113] INFO: logInfo: code: 601989 all_pnl:49998.69 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:12:38.961317] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-05-08  49998.69
+[2025-02-17 00:12:39.362678] INFO: logInfo: code: 600048 all_pnl:-33949.380000000005 win_rate:0.0 trade_count:0.0 unrealized_pnl:-33949.380000000005 signal:0
+[2025-02-17 00:12:39.362877] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:39.753973] INFO: logInfo: code: 600011 all_pnl:-9128.600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9128.600000000006 signal:3
+[2025-02-17 00:12:39.754178] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:12:39.754420] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场68 负场:25 总收益2258997.1499999985
+[2025-02-17 00:13:11.084911] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:13:11.084990] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:13:11.085023] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:13:13.331021] INFO: logInfo: code: 601398 all_pnl:49508.17999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:13.331305] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-02 2024-07-12  49508.18
+[2025-02-17 00:13:13.539847] INFO: logInfo: code: 600941 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:13.540096] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:13.864417] INFO: logInfo: code: 601939 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:13.864661] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:14.345918] INFO: logInfo: code: 600519 all_pnl:-1221.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1221.0 signal:0
+[2025-02-17 00:13:14.346122] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:14.708502] INFO: logInfo: code: 601288 all_pnl:49816.79999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:14.708705] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-02 2024-02-06  49816.8
+[2025-02-17 00:13:15.074625] INFO: logInfo: code: 601988 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:15.074865] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:15.378750] INFO: logInfo: code: 601857 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:15.378970] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:15.559724] INFO: logInfo: code: 600938 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:15.559951] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:15.929607] INFO: logInfo: code: 300750 all_pnl:18574.089999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:18574.089999999997 signal:0
+[2025-02-17 00:13:15.929815] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:16.340873] INFO: logInfo: code: 601628 all_pnl:49993.97 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:16.341082] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-11 2024-09-26  49993.97
+[2025-02-17 00:13:16.817469] INFO: logInfo: code: 600036 all_pnl:32508.959999999992 win_rate:0.0 trade_count:0.0 unrealized_pnl:32508.959999999992 signal:0
+[2025-02-17 00:13:16.817673] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:17.184755] INFO: logInfo: code: 002594 all_pnl:49939.51999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:17.184966] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-28 2024-10-08  49939.52
+[2025-02-17 00:13:17.587396] INFO: logInfo: code: 601318 all_pnl:51211.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:17.587604] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-14 2024-10-08  51211.16
+[2025-02-17 00:13:17.793495] INFO: logInfo: code: 688981 all_pnl:49996.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:17.793694] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-04-04  49996.96
+[2025-02-17 00:13:18.119228] INFO: logInfo: code: 601088 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:18.119462] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:18.512363] INFO: logInfo: code: 600028 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:18.512586] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:18.722185] INFO: logInfo: code: 601728 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:18.722411] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:19.120314] INFO: logInfo: code: 600900 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:19.120541] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:19.571786] INFO: logInfo: code: 000333 all_pnl:49992.48000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:19.571991] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-14 2024-05-07  49992.48
+[2025-02-17 00:13:19.871782] INFO: logInfo: code: 601328 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:19.872011] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:20.159238] INFO: logInfo: code: 601658 all_pnl:24763.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:24763.199999999997 signal:0
+[2025-02-17 00:13:20.159435] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:20.565702] INFO: logInfo: code: 000858 all_pnl:34847.79000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:34847.79000000001 signal:0
+[2025-02-17 00:13:20.565908] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:20.961868] INFO: logInfo: code: 601899 all_pnl:49999.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:20.962081] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-12  49999.6
+[2025-02-17 00:13:21.438145] INFO: logInfo: code: 601166 all_pnl:37399.67999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:37399.67999999999 signal:0
+[2025-02-17 00:13:21.438374] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:21.724244] INFO: logInfo: code: 601138 all_pnl:49999.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:21.724449] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-03-15  49999.5
+[2025-02-17 00:13:22.259661] INFO: logInfo: code: 600030 all_pnl:51690.369999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:22.259909] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-09-30  51690.37
+[2025-02-17 00:13:22.738591] INFO: logInfo: code: 300059 all_pnl:49599.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:22.738872] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-09  49599.5
+[2025-02-17 00:13:23.041834] INFO: logInfo: code: 601998 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:23.042058] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:23.385686] INFO: logInfo: code: 300760 all_pnl:1277.6600000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:1277.6600000000035 signal:0
+[2025-02-17 00:13:23.385888] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:23.579326] INFO: logInfo: code: 688041 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:23.579550] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:23.992784] INFO: logInfo: code: 002475 all_pnl:49991.850000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:23.993012] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-01 2024-06-19  49991.85
+[2025-02-17 00:13:24.336308] INFO: logInfo: code: 601601 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:24.336535] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:24.538747] INFO: logInfo: code: 601319 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:24.538958] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:25.000714] INFO: logInfo: code: 600000 all_pnl:49771.119999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:25.000923] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-09-27  49771.12
+[2025-02-17 00:13:25.384926] INFO: logInfo: code: 002415 all_pnl:6520.3399999999965 win_rate:0.0 trade_count:0.0 unrealized_pnl:6520.3399999999965 signal:0
+[2025-02-17 00:13:25.385145] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:25.873895] INFO: logInfo: code: 600276 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:25.874107] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:26.082922] INFO: logInfo: code: 601816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:26.083134] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:26.293956] INFO: logInfo: code: 688256 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:26.294195] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:26.773137] INFO: logInfo: code: 600690 all_pnl:49996.45000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:26.773343] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-01 2024-05-06  49996.45
+[2025-02-17 00:13:27.286192] INFO: logInfo: code: 000651 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:27.286415] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:27.644419] INFO: logInfo: code: 601919 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:27.644647] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:28.089580] INFO: logInfo: code: 600809 all_pnl:-16516.979999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-16516.979999999996 signal:0
+[2025-02-17 00:13:28.089794] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:28.394903] INFO: logInfo: code: 603288 all_pnl:-18395.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-18395.399999999994 signal:0
+[2025-02-17 00:13:28.395102] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:28.740158] INFO: logInfo: code: 601668 all_pnl:17335.619999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:17335.619999999995 signal:0
+[2025-02-17 00:13:28.740357] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:29.321823] INFO: logInfo: code: 000001 all_pnl:14067.160000000003 win_rate:0.0 trade_count:0.0 unrealized_pnl:14067.160000000003 signal:0
+[2025-02-17 00:13:29.322035] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:29.610113] INFO: logInfo: code: 601818 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:29.610343] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:29.993274] INFO: logInfo: code: 002371 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:29.993545] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:30.409813] INFO: logInfo: code: 600309 all_pnl:-8248.919999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8248.919999999998 signal:0
+[2025-02-17 00:13:30.410020] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:30.737759] INFO: logInfo: code: 601766 all_pnl:49998.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:30.737990] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-04-21  49998.6
+[2025-02-17 00:13:31.189285] INFO: logInfo: code: 600104 all_pnl:28321.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:28321.649999999994 signal:0
+[2025-02-17 00:13:31.189498] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:31.564823] INFO: logInfo: code: 002714 all_pnl:-14538.779999999999 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14538.779999999999 signal:0
+[2025-02-17 00:13:31.565023] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:31.856833] INFO: logInfo: code: 601225 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:31.857062] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:32.130982] INFO: logInfo: code: 601985 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:32.131202] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:32.596652] INFO: logInfo: code: 002352 all_pnl:-3951.3600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3951.3600000000006 signal:0
+[2025-02-17 00:13:32.596847] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:33.001256] INFO: logInfo: code: 302132 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:33.001495] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:33.281939] INFO: logInfo: code: 601066 all_pnl:49723.140000000014 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:33.282140] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-09 2024-11-08  49723.14
+[2025-02-17 00:13:33.652059] INFO: logInfo: code: 300114 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:33.652675] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:34.032136] INFO: logInfo: code: 600406 all_pnl:14798.009999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:14798.009999999995 signal:0
+[2025-02-17 00:13:34.032350] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:34.427085] INFO: logInfo: code: 000063 all_pnl:27921.309999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:27921.309999999998 signal:0
+[2025-02-17 00:13:34.427297] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:34.738614] INFO: logInfo: code: 003816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:34.738850] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:35.011699] INFO: logInfo: code: 601127 all_pnl:49993.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:35.011934] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-04-26 2023-07-04  49993.62
+[2025-02-17 00:13:35.407331] INFO: logInfo: code: 600016 all_pnl:25903.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:25903.199999999997 signal:0
+[2025-02-17 00:13:35.407539] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:35.889437] INFO: logInfo: code: 300124 all_pnl:20495.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:20495.5 signal:0
+[2025-02-17 00:13:35.889636] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:36.165615] INFO: logInfo: code: 688111 all_pnl:62342.880000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:36.165832] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-08-29 2024-10-08  62342.88
+[2025-02-17 00:13:36.644713] INFO: logInfo: code: 000568 all_pnl:12638.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:-37346.4 signal:0
+[2025-02-17 00:13:36.644911] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-28 2023-01-09  49984.4
+[2025-02-17 00:13:37.206424] INFO: logInfo: code: 600887 all_pnl:-7986.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-7986.0 signal:0
+[2025-02-17 00:13:37.206626] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:37.490792] INFO: logInfo: code: 600919 all_pnl:49997.17000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:37.490993] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-06 2024-12-25  49997.17
+[2025-02-17 00:13:37.837840] INFO: logInfo: code: 300999 all_pnl:-9787.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9787.649999999994 signal:0
+[2025-02-17 00:13:37.838049] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:38.350455] INFO: logInfo: code: 002142 all_pnl:-38.80000000000291 win_rate:0.0 trade_count:0.0 unrealized_pnl:-38.80000000000291 signal:0
+[2025-02-17 00:13:38.350746] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:38.691202] INFO: logInfo: code: 300033 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:38.691418] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:39.040878] INFO: logInfo: code: 603501 all_pnl:48240.20000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:39.041084] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-08  48240.2
+[2025-02-17 00:13:39.370446] INFO: logInfo: code: 601688 all_pnl:49830.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:39.370642] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-08-04  49830.0
+[2025-02-17 00:13:39.674507] INFO: logInfo: code: 600999 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:39.674750] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:39.987928] INFO: logInfo: code: 601995 all_pnl:-1546.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1546.479999999996 signal:0
+[2025-02-17 00:13:39.988174] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:40.216082] INFO: logInfo: code: 600025 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:40.216289] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:40.496472] INFO: logInfo: code: 601881 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:40.496698] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:40.862673] INFO: logInfo: code: 601211 all_pnl:49595.70000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:40.862881] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49595.7
+[2025-02-17 00:13:41.147455] INFO: logInfo: code: 603993 all_pnl:49998.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:41.147658] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-21 2023-04-14  49998.96
+[2025-02-17 00:13:41.452353] INFO: logInfo: code: 601800 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:41.452582] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:41.762523] INFO: logInfo: code: 601336 all_pnl:49999.859999999986 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:41.762731] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2023-04-28  49999.86
+[2025-02-17 00:13:42.145564] INFO: logInfo: code: 600150 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:42.145787] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:42.630143] INFO: logInfo: code: 600660 all_pnl:49800.23999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:42.630343] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2024-05-13  49800.24
+[2025-02-17 00:13:43.085283] INFO: logInfo: code: 600019 all_pnl:81686.82 win_rate:100.0 trade_count:1.0 unrealized_pnl:32595.960000000006 signal:0
+[2025-02-17 00:13:43.085486] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-31 2023-05-09  49090.86
+[2025-02-17 00:13:43.443397] INFO: logInfo: code: 600031 all_pnl:49883.92999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:43.443596] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-11-30 2024-10-08  49883.93
+[2025-02-17 00:13:43.809947] INFO: logInfo: code: 601390 all_pnl:19322.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:19322.399999999994 signal:0
+[2025-02-17 00:13:43.810153] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:44.230358] INFO: logInfo: code: 300274 all_pnl:51124.92000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:44.230578] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-06-14 2024-10-08  51124.92
+[2025-02-17 00:13:44.555639] INFO: logInfo: code: 601898 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:44.555859] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:44.896111] INFO: logInfo: code: 300433 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:44.896340] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:45.244040] INFO: logInfo: code: 601006 all_pnl:6465.9100000000035 win_rate:0.0 trade_count:0.0 unrealized_pnl:6465.9100000000035 signal:0
+[2025-02-17 00:13:45.244264] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:45.762662] INFO: logInfo: code: 600837 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:45.762863] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2024-10-18  49998.9
+[2025-02-17 00:13:46.062715] INFO: logInfo: code: 001289 all_pnl:-5023.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5023.259999999995 signal:0
+[2025-02-17 00:13:46.062933] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:46.496529] INFO: logInfo: code: 000625 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:46.496734] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:46.847353] INFO: logInfo: code: 600018 all_pnl:13582.649999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:13582.649999999994 signal:0
+[2025-02-17 00:13:46.847554] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:47.320850] INFO: logInfo: code: 600188 all_pnl:-28925.61 win_rate:0.0 trade_count:0.0 unrealized_pnl:-28925.61 signal:0
+[2025-02-17 00:13:47.321061] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:47.630703] INFO: logInfo: code: 601727 all_pnl:49999.619999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:47.630901] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2024-10-23  49999.62
+[2025-02-17 00:13:47.938120] INFO: logInfo: code: 601600 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:47.938332] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:48.201601] INFO: logInfo: code: 601229 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:48.201829] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:48.637336] INFO: logInfo: code: 000166 all_pnl:62951.57999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:48.637554] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2024-10-08  62951.58
+[2025-02-17 00:13:49.096564] INFO: logInfo: code: 000338 all_pnl:49168.350000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:49.096768] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-10-25  49168.35
+[2025-02-17 00:13:49.508224] INFO: logInfo: code: 601888 all_pnl:-58149.06 win_rate:0.0 trade_count:0.0 unrealized_pnl:-58149.06 signal:0
+[2025-02-17 00:13:49.508428] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:49.962633] INFO: logInfo: code: 600760 all_pnl:7470.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:7470.399999999994 signal:0
+[2025-02-17 00:13:49.962839] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:50.418460] INFO: logInfo: code: 600436 all_pnl:-8184.690000000002 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8184.690000000002 signal:0
+[2025-02-17 00:13:50.418663] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:50.835394] INFO: logInfo: code: 300015 all_pnl:-31562.5 win_rate:0.0 trade_count:0.0 unrealized_pnl:-31562.5 signal:0
+[2025-02-17 00:13:50.835600] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:51.261534] INFO: logInfo: code: 600585 all_pnl:-14578.169999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:-14578.169999999998 signal:0
+[2025-02-17 00:13:51.261761] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:51.699004] INFO: logInfo: code: 002230 all_pnl:49658.70999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:51.699209] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-02-06  49658.71
+[2025-02-17 00:13:52.049020] INFO: logInfo: code: 601169 all_pnl:49998.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:52.049257] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2024-10-08  49998.9
+[2025-02-17 00:13:52.458449] INFO: logInfo: code: 601111 all_pnl:-12345.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12345.0 signal:0
+[2025-02-17 00:13:52.458670] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:52.696864] INFO: logInfo: code: 600905 all_pnl:-12114.470000000001 win_rate:0.0 trade_count:0.0 unrealized_pnl:-12114.470000000001 signal:0
+[2025-02-17 00:13:52.697059] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:53.027074] INFO: logInfo: code: 600989 all_pnl:29539.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:29539.259999999995 signal:0
+[2025-02-17 00:13:53.027281] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:53.487077] INFO: logInfo: code: 000776 all_pnl:19074.559999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:19074.559999999998 signal:0
+[2025-02-17 00:13:53.487275] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:53.850615] INFO: logInfo: code: 300308 all_pnl:49458.600000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:53.850813] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-22  49458.6
+[2025-02-17 00:13:54.232553] INFO: logInfo: code: 601012 all_pnl:-65260.49 win_rate:0.0 trade_count:0.0 unrealized_pnl:-65260.49 signal:0
+[2025-02-17 00:13:54.232802] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:54.411464] INFO: logInfo: code: 605499 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:54.411657] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:54.827113] INFO: logInfo: code: 002050 all_pnl:49991.22 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:54.827328] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-06 2025-01-24  49991.22
+[2025-02-17 00:13:55.078829] INFO: logInfo: code: 688012 all_pnl:48679.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:55.079035] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-12 2023-03-03  48679.9
+[2025-02-17 00:13:55.594138] INFO: logInfo: code: 002304 all_pnl:-40782.48 win_rate:0.0 trade_count:0.0 unrealized_pnl:-40782.48 signal:0
+[2025-02-17 00:13:55.594335] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:56.017185] INFO: logInfo: code: 600015 all_pnl:49999.67999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:56.017401] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2024-09-27  49999.68
+[2025-02-17 00:13:56.407465] INFO: logInfo: code: 601009 all_pnl:21617.199999999997 win_rate:0.0 trade_count:0.0 unrealized_pnl:21617.199999999997 signal:0
+[2025-02-17 00:13:56.407675] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:56.719775] INFO: logInfo: code: 601689 all_pnl:49982.79000000001 win_rate:100.0 trade_count:1.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:13:56.719966] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-30 2025-02-06  49982.79
+[2025-02-17 00:13:57.081297] INFO: logInfo: code: 601186 all_pnl:124890.57 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:13:57.081500] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-04-17  49999.95
+2  2024-09-13 2024-11-18  74890.62
+[2025-02-17 00:13:57.321964] INFO: logInfo: code: 688036 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:57.322179] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:57.670866] INFO: logInfo: code: 600547 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:57.671088] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:58.112181] INFO: logInfo: code: 600346 all_pnl:-5154.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5154.399999999994 signal:0
+[2025-02-17 00:13:58.112378] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:58.413718] INFO: logInfo: code: 603019 all_pnl:47460.899999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:13:58.413919] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-01  47460.9
+[2025-02-17 00:13:58.754028] INFO: logInfo: code: 300498 all_pnl:-182.36999999999534 win_rate:0.0 trade_count:0.0 unrealized_pnl:-182.36999999999534 signal:0
+[2025-02-17 00:13:58.754226] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:59.132771] INFO: logInfo: code: 600886 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:59.132972] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:59.515126] INFO: logInfo: code: 600029 all_pnl:2821.7599999999948 win_rate:0.0 trade_count:0.0 unrealized_pnl:2821.7599999999948 signal:0
+[2025-02-17 00:13:59.515319] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:13:59.919512] INFO: logInfo: code: 002736 all_pnl:49589.16 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:13:59.919730] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-10-08  49589.16
+[2025-02-17 00:14:00.429876] INFO: logInfo: code: 000538 all_pnl:16870.479999999996 win_rate:0.0 trade_count:0.0 unrealized_pnl:16870.479999999996 signal:0
+[2025-02-17 00:14:00.430085] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:14:00.909240] INFO: logInfo: code: 600893 all_pnl:10227.600000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:10227.600000000006 signal:0
+[2025-02-17 00:14:00.909438] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:14:01.255055] INFO: logInfo: code: 601989 all_pnl:49998.69 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:14:01.255249] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-05-08  49998.69
+[2025-02-17 00:14:01.653594] INFO: logInfo: code: 600048 all_pnl:-33122.78 win_rate:0.0 trade_count:0.0 unrealized_pnl:-33122.78 signal:0
+[2025-02-17 00:14:01.653796] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:14:02.011847] INFO: logInfo: code: 600011 all_pnl:-8831.899999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-8831.899999999994 signal:3
+[2025-02-17 00:14:02.012062] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:14:02.012321] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场68 负场:24 总收益2333466.9099999997
+[2025-02-17 00:17:02.541303] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:17:02.541378] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:17:02.541408] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:17:04.799779] INFO: logInfo: code: 601398 all_pnl:12376.539999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:17:04.800099] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-11-02 2023-05-05  12376.54
+[2025-02-17 00:17:05.022496] INFO: logInfo: code: 600941 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:05.022737] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:05.377470] INFO: logInfo: code: 601939 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:05.377692] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:05.810018] INFO: logInfo: code: 600519 all_pnl:5851.649999999994 win_rate:100.0 trade_count:2.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:05.810229] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2022-12-01  2837.65
+2  2024-06-20 2024-09-30  3014.00
+[2025-02-17 00:17:06.093783] INFO: logInfo: code: 601288 all_pnl:12454.199999999997 win_rate:100.0 trade_count:1.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:06.093998] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-02 2023-04-19  12454.2
+[2025-02-17 00:17:06.396272] INFO: logInfo: code: 601988 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:06.396465] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:06.667246] INFO: logInfo: code: 601857 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:06.667465] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:06.882193] INFO: logInfo: code: 600938 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:06.882415] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:07.268046] INFO: logInfo: code: 300750 all_pnl:15875.050000000003 win_rate:100.0 trade_count:2.0 unrealized_pnl:3.637978807091713e-12 signal:0
+[2025-02-17 00:17:07.268244] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-04-27 2023-08-10   3024.42
+2  2023-10-24 2024-09-27  12850.63
+[2025-02-17 00:17:07.651437] INFO: logInfo: code: 601628 all_pnl:2999.1199999999953 win_rate:100.0 trade_count:1.0 unrealized_pnl:-4.547473508864641e-12 signal:0
+[2025-02-17 00:17:07.651653] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-01-11 2024-01-25  2999.12
+[2025-02-17 00:17:08.049967] INFO: logInfo: code: 600036 all_pnl:6099.080000000002 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:08.050184] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2022-11-29  2988.37
+2  2023-12-06 2024-01-22  3110.71
+[2025-02-17 00:17:08.417745] INFO: logInfo: code: 002594 all_pnl:2994.279999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.3642420526593924e-12 signal:0
+[2025-02-17 00:17:08.417966] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-11-28 2024-05-07  2994.28
+[2025-02-17 00:17:08.804571] INFO: logInfo: code: 601318 all_pnl:3013.070000000007 win_rate:100.0 trade_count:1.0 unrealized_pnl:6.821210263296962e-12 signal:0
+[2025-02-17 00:17:08.804841] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-12-14 2024-02-19  3013.07
+[2025-02-17 00:17:09.043248] INFO: logInfo: code: 688981 all_pnl:49996.95999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:17:09.043488] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-04-04  49996.96
+[2025-02-17 00:17:09.377042] INFO: logInfo: code: 601088 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:09.377275] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:09.708474] INFO: logInfo: code: 600028 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:09.708697] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:09.900115] INFO: logInfo: code: 601728 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:09.900338] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:10.240348] INFO: logInfo: code: 600900 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:10.240555] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:10.637915] INFO: logInfo: code: 000333 all_pnl:12659.039999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-7.275957614183426e-12 signal:0
+[2025-02-17 00:17:10.638118] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-14 2023-06-21  12659.04
+[2025-02-17 00:17:10.962431] INFO: logInfo: code: 601328 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:10.962641] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:11.206283] INFO: logInfo: code: 601658 all_pnl:12411.080000000002 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:11.206494] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-04-18  12411.08
+[2025-02-17 00:17:11.511603] INFO: logInfo: code: 000858 all_pnl:5625.639999999999 win_rate:100.0 trade_count:2.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:11.511810] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2022-10-17  2819.42
+2  2024-01-09 2024-09-30  2806.22
+[2025-02-17 00:17:11.867445] INFO: logInfo: code: 601899 all_pnl:12498.919999999998 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:11.867660] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2022-11-11  12498.92
+[2025-02-17 00:17:12.241835] INFO: logInfo: code: 601166 all_pnl:15866.600000000006 win_rate:100.0 trade_count:2.0 unrealized_pnl:5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:12.242040] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2022-11-14   3018.4
+2  2023-12-06 2024-05-17  12848.2
+[2025-02-17 00:17:12.514012] INFO: logInfo: code: 601138 all_pnl:49999.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:12.514222] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-03-15  49999.5
+[2025-02-17 00:17:13.020472] INFO: logInfo: code: 600030 all_pnl:19329.5 win_rate:100.0 trade_count:3.0 unrealized_pnl:-0.010000000002037268 signal:0
+[2025-02-17 00:17:13.020684] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-01-16  12506.03
+2  2024-04-16 2024-04-29   3374.15
+3  2024-07-05 2024-07-22   3449.33
+[2025-02-17 00:17:13.426666] INFO: logInfo: code: 300059 all_pnl:54314.109999999986 win_rate:100.0 trade_count:2.0 unrealized_pnl:-0.010000000009313226 signal:0
+[2025-02-17 00:17:13.426872] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2022-11-15   2975.10
+2  2024-07-01 2024-09-27  51339.02
+[2025-02-17 00:17:13.763666] INFO: logInfo: code: 601998 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:13.763875] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:14.108798] INFO: logInfo: code: 300760 all_pnl:12976.800000000003 win_rate:100.0 trade_count:3.0 unrealized_pnl:3715.220000000003 signal:0
+[2025-02-17 00:17:14.109001] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-09-08 2023-10-31  2998.48
+2  2024-07-30 2024-09-30  3003.60
+3  2024-10-18 2024-11-08  3259.50
+[2025-02-17 00:17:14.302034] INFO: logInfo: code: 688041 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:14.302262] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:14.662063] INFO: logInfo: code: 002475 all_pnl:12574.910000000003 win_rate:100.0 trade_count:1.0 unrealized_pnl:3.637978807091713e-12 signal:0
+[2025-02-17 00:17:14.662275] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-02-01 2024-03-22  12574.91
+[2025-02-17 00:17:15.006230] INFO: logInfo: code: 601601 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:15.006452] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:15.248261] INFO: logInfo: code: 601319 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:15.248499] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:15.624721] INFO: logInfo: code: 600000 all_pnl:12442.779999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:15.624920] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-05-20  12442.78
+[2025-02-17 00:17:16.026575] INFO: logInfo: code: 002415 all_pnl:13251.080000000002 win_rate:100.0 trade_count:1.0 unrealized_pnl:10267.400000000001 signal:0
+[2025-02-17 00:17:16.026778] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-07-05 2024-10-08  2983.68
+[2025-02-17 00:17:16.402781] INFO: logInfo: code: 600276 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:16.402999] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:16.628864] INFO: logInfo: code: 601816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:16.629220] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:16.836986] INFO: logInfo: code: 688256 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:16.837206] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:17.214958] INFO: logInfo: code: 600690 all_pnl:6102.289999999994 win_rate:100.0 trade_count:2.0 unrealized_pnl:-6.366462912410498e-12 signal:0
+[2025-02-17 00:17:17.215170] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-01 2022-11-11  3042.62
+2  2023-12-11 2024-01-29  3059.67
+[2025-02-17 00:17:17.699946] INFO: logInfo: code: 000651 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:17.700161] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:18.049224] INFO: logInfo: code: 601919 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:18.049446] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:18.582836] INFO: logInfo: code: 600809 all_pnl:19153.190000000002 win_rate:100.0 trade_count:3.0 unrealized_pnl:9859.490000000002 signal:0
+[2025-02-17 00:17:18.583061] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-05-19 2023-09-01  3007.36
+2  2024-01-18 2024-02-06  3143.77
+3  2024-07-08 2024-09-30  3142.57
+[2025-02-17 00:17:18.965934] INFO: logInfo: code: 603288 all_pnl:-5561.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5561.399999999994 signal:0
+[2025-02-17 00:17:18.966136] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:19.263229] INFO: logInfo: code: 601668 all_pnl:2993.4199999999983 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:19.263438] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-12-18 2024-01-26  2993.42
+[2025-02-17 00:17:19.799961] INFO: logInfo: code: 000001 all_pnl:5822.550000000003 win_rate:100.0 trade_count:2.0 unrealized_pnl:2.7284841053187847e-12 signal:0
+[2025-02-17 00:17:19.800175] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-11-01 2023-01-16  2932.98
+2  2024-01-09 2024-09-30  2889.57
+[2025-02-17 00:17:20.111443] INFO: logInfo: code: 601818 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:20.111661] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:20.481216] INFO: logInfo: code: 002371 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:20.481436] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:20.914969] INFO: logInfo: code: 600309 all_pnl:18017.990000000005 win_rate:100.0 trade_count:2.0 unrealized_pnl:2114.0100000000057 signal:0
+[2025-02-17 00:17:20.915174] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-07 2024-04-01   2988.30
+2  2024-08-06 2024-09-30  12915.68
+[2025-02-17 00:17:21.235774] INFO: logInfo: code: 601766 all_pnl:12525.5 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:21.235992] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-03-02  12525.5
+[2025-02-17 00:17:21.665549] INFO: logInfo: code: 600104 all_pnl:63615.609999999986 win_rate:100.0 trade_count:4.0 unrealized_pnl:-0.010000000009313226 signal:0
+[2025-02-17 00:17:21.665746] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2024-04-08   2994.52
+2  2024-07-09 2024-07-17   3082.52
+3  2024-08-15 2024-10-08   3198.58
+4  2024-10-17 2024-11-25  54340.00
+[2025-02-17 00:17:22.043709] INFO: logInfo: code: 002714 all_pnl:2906.2400000000052 win_rate:100.0 trade_count:1.0 unrealized_pnl:5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:22.043922] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-05-18 2024-05-20  2906.24
+[2025-02-17 00:17:22.317038] INFO: logInfo: code: 601225 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:22.317248] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:22.576051] INFO: logInfo: code: 601985 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:22.576252] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:22.970568] INFO: logInfo: code: 002352 all_pnl:-1975.679999999993 win_rate:0.0 trade_count:0.0 unrealized_pnl:-1975.679999999993 signal:0
+[2025-02-17 00:17:22.970765] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:23.358154] INFO: logInfo: code: 302132 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:23.359343] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:23.623170] INFO: logInfo: code: 601066 all_pnl:2983.6100000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:4.547473508864641e-13 signal:0
+[2025-02-17 00:17:23.623378] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-01-09 2024-09-27  2983.61
+[2025-02-17 00:17:24.001878] INFO: logInfo: code: 300114 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:24.002131] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:24.395098] INFO: logInfo: code: 600406 all_pnl:12329.100000000006 win_rate:100.0 trade_count:1.0 unrealized_pnl:5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:24.395310] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-02-02 2024-04-18  12329.1
+[2025-02-17 00:17:24.788104] INFO: logInfo: code: 000063 all_pnl:5795.919999999998 win_rate:100.0 trade_count:2.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:24.788325] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-13  2931.43
+2  2023-12-15 2024-02-21  2864.49
+[2025-02-17 00:17:25.065529] INFO: logInfo: code: 003816 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:25.065788] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:25.317072] INFO: logInfo: code: 601127 all_pnl:12667.800000000003 win_rate:100.0 trade_count:1.0 unrealized_pnl:3.637978807091713e-12 signal:0
+[2025-02-17 00:17:25.317293] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-04-26 2023-06-19  12667.8
+[2025-02-17 00:17:25.711737] INFO: logInfo: code: 600016 all_pnl:12537.149999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:25.712229] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-09-10 2024-10-08  12537.15
+[2025-02-17 00:17:26.169725] INFO: logInfo: code: 300124 all_pnl:6015.229999999996 win_rate:100.0 trade_count:2.0 unrealized_pnl:-0.010000000003856258 signal:0
+[2025-02-17 00:17:26.171118] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-01-15 2024-02-07  2961.02
+2  2024-06-04 2024-09-30  3054.22
+[2025-02-17 00:17:26.444271] INFO: logInfo: code: 688111 all_pnl:3042.1399999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-4.547473508864641e-13 signal:0
+[2025-02-17 00:17:26.444490] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-08-29 2024-09-25  3042.14
+[2025-02-17 00:17:26.931068] INFO: logInfo: code: 000568 all_pnl:-4110.059999999999 win_rate:100.0 trade_count:2.0 unrealized_pnl:-10208.759999999998 signal:0
+[2025-02-17 00:17:26.931337] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-28 2022-11-02  3031.31
+2  2024-01-09 2024-02-29  3067.39
+[2025-02-17 00:17:27.377255] INFO: logInfo: code: 600887 all_pnl:13924.440000000002 win_rate:100.0 trade_count:1.0 unrealized_pnl:10950.480000000003 signal:0
+[2025-02-17 00:17:27.377518] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-21 2023-01-16  2973.96
+[2025-02-17 00:17:27.638902] INFO: logInfo: code: 600919 all_pnl:12558.240000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:27.639131] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2023-12-06 2024-04-17  12558.24
+[2025-02-17 00:17:28.000982] INFO: logInfo: code: 300999 all_pnl:-4892.100000000006 win_rate:0.0 trade_count:0.0 unrealized_pnl:-4892.100000000006 signal:0
+[2025-02-17 00:17:28.001195] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:28.456652] INFO: logInfo: code: 002142 all_pnl:22672.759999999995 win_rate:100.0 trade_count:4.0 unrealized_pnl:-0.010000000005675247 signal:0
+[2025-02-17 00:17:28.456865] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2022-11-11   2972.86
+2  2023-04-25 2023-05-09   3145.48
+3  2023-05-26 2023-07-28   3195.58
+4  2023-12-05 2024-10-08  13358.85
+[2025-02-17 00:17:28.859161] INFO: logInfo: code: 300033 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:28.859482] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:29.141012] INFO: logInfo: code: 603501 all_pnl:2893.6399999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-4.547473508864641e-13 signal:0
+[2025-02-17 00:17:29.141239] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2022-11-15  2893.64
+[2025-02-17 00:17:29.499510] INFO: logInfo: code: 601688 all_pnl:2989.800000000003 win_rate:100.0 trade_count:1.0 unrealized_pnl:2.7284841053187847e-12 signal:0
+[2025-02-17 00:17:29.499744] INFO: logInfo:    entry_date  exit_date     pnl
+id                              
+1  2022-10-10 2022-11-15  2989.8
+[2025-02-17 00:17:29.815803] INFO: logInfo: code: 600999 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:29.816349] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:30.084307] INFO: logInfo: code: 601995 all_pnl:15915.009999999995 win_rate:100.0 trade_count:2.0 unrealized_pnl:-0.010000000005675247 signal:0
+[2025-02-17 00:17:30.084565] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2023-02-02  12565.48
+2  2024-01-09 2024-09-30   3349.54
+[2025-02-17 00:17:30.333016] INFO: logInfo: code: 600025 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:30.333252] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:30.581856] INFO: logInfo: code: 601881 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:30.582144] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:30.891772] INFO: logInfo: code: 601211 all_pnl:9237.979999999996 win_rate:100.0 trade_count:3.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:30.892009] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-04-04  2975.06
+2  2024-04-11 2024-06-14  3088.21
+3  2024-07-09 2024-08-30  3174.71
+[2025-02-17 00:17:31.231940] INFO: logInfo: code: 603993 all_pnl:12528.630000000005 win_rate:100.0 trade_count:1.0 unrealized_pnl:5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:31.232145] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-21 2023-01-30  12528.63
+[2025-02-17 00:17:31.533989] INFO: logInfo: code: 601800 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:31.534240] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:31.876955] INFO: logInfo: code: 601336 all_pnl:12578.809999999998 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:31.877235] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2022-12-05  12578.81
+[2025-02-17 00:17:32.241360] INFO: logInfo: code: 600150 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:32.241599] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:32.677804] INFO: logInfo: code: 600660 all_pnl:2985.949999999997 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2.7284841053187847e-12 signal:0
+[2025-02-17 00:17:32.678039] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2022-11-04  2985.95
+[2025-02-17 00:17:33.076099] INFO: logInfo: code: 600019 all_pnl:15640.800000000003 win_rate:100.0 trade_count:2.0 unrealized_pnl:-0.0099999999965803 signal:0
+[2025-02-17 00:17:33.076335] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-31 2023-01-16  12272.72
+2  2024-09-12 2024-09-25   3368.09
+[2025-02-17 00:17:33.564240] INFO: logInfo: code: 600031 all_pnl:2992.0800000000017 win_rate:100.0 trade_count:1.0 unrealized_pnl:1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:33.564462] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-11-30 2024-04-02  2992.08
+[2025-02-17 00:17:33.858720] INFO: logInfo: code: 601390 all_pnl:2988.0 win_rate:100.0 trade_count:1.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:33.858947] INFO: logInfo:    entry_date  exit_date     pnl
+id                              
+1  2024-09-18 2024-09-25  2988.0
+[2025-02-17 00:17:34.266178] INFO: logInfo: code: 300274 all_pnl:6033.889999999999 win_rate:100.0 trade_count:2.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:34.266390] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-06-14 2024-07-22  2926.25
+2  2024-07-25 2024-09-11  3107.64
+[2025-02-17 00:17:34.617418] INFO: logInfo: code: 601898 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:34.617649] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:35.044300] INFO: logInfo: code: 300433 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:35.044500] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:35.485813] INFO: logInfo: code: 601006 all_pnl:4099.580000000002 win_rate:100.0 trade_count:1.0 unrealized_pnl:1230.5800000000017 signal:0
+[2025-02-17 00:17:35.486051] INFO: logInfo:    entry_date  exit_date     pnl
+id                              
+1  2024-08-29 2024-10-08  2869.0
+[2025-02-17 00:17:35.995541] INFO: logInfo: code: 600837 all_pnl:6921.899999999994 win_rate:100.0 trade_count:2.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:35.995778] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2023-01-30  3013.68
+2  2024-02-06 2024-10-10  3908.22
+[2025-02-17 00:17:36.323601] INFO: logInfo: code: 001289 all_pnl:-5023.259999999995 win_rate:0.0 trade_count:0.0 unrealized_pnl:-5023.259999999995 signal:0
+[2025-02-17 00:17:36.323798] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:36.821363] INFO: logInfo: code: 000625 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:36.821575] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:37.216130] INFO: logInfo: code: 600018 all_pnl:3005.8399999999965 win_rate:100.0 trade_count:1.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:37.216387] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-08-25 2024-01-29  3005.84
+[2025-02-17 00:17:37.659958] INFO: logInfo: code: 600188 all_pnl:3003.199999999997 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2.7284841053187847e-12 signal:0
+[2025-02-17 00:17:37.660157] INFO: logInfo:    entry_date  exit_date     pnl
+id                              
+1  2023-07-18 2023-09-15  3003.2
+[2025-02-17 00:17:37.994770] INFO: logInfo: code: 601727 all_pnl:6097.649999999994 win_rate:100.0 trade_count:2.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:37.994977] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-02-06 2024-03-01  3062.87
+2  2024-06-24 2024-09-27  3034.78
+[2025-02-17 00:17:38.335734] INFO: logInfo: code: 601600 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:38.335972] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:38.607342] INFO: logInfo: code: 601229 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:38.607574] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:38.977108] INFO: logInfo: code: 000166 all_pnl:62951.57999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.4551915228366852e-11 signal:0
+[2025-02-17 00:17:38.977949] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2024-10-08  62951.58
+[2025-02-17 00:17:39.452894] INFO: logInfo: code: 000338 all_pnl:12290.910000000003 win_rate:100.0 trade_count:1.0 unrealized_pnl:3.637978807091713e-12 signal:0
+[2025-02-17 00:17:39.453204] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-02-06  12290.91
+[2025-02-17 00:17:39.874008] INFO: logInfo: code: 601888 all_pnl:-17436.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:-17436.0 signal:0
+[2025-02-17 00:17:39.874215] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:40.368673] INFO: logInfo: code: 600760 all_pnl:18160.199999999997 win_rate:100.0 trade_count:1.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:40.368932] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-06-28 2024-11-06  18160.2
+[2025-02-17 00:17:40.821872] INFO: logInfo: code: 600436 all_pnl:6052.940000000002 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:40.822083] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-25 2022-11-02  2949.46
+2  2023-10-23 2024-10-08  3103.48
+[2025-02-17 00:17:41.248466] INFO: logInfo: code: 300015 all_pnl:-9468.75 win_rate:0.0 trade_count:0.0 unrealized_pnl:-9468.75 signal:0
+[2025-02-17 00:17:41.248676] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:41.739553] INFO: logInfo: code: 600585 all_pnl:19232.570000000007 win_rate:100.0 trade_count:1.0 unrealized_pnl:16259.750000000007 signal:0
+[2025-02-17 00:17:41.739763] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2023-02-16  2972.82
+[2025-02-17 00:17:42.314530] INFO: logInfo: code: 002230 all_pnl:14500.279999999999 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:42.314764] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-01-30  14500.28
+[2025-02-17 00:17:42.643235] INFO: logInfo: code: 601169 all_pnl:12499.729999999996 win_rate:100.0 trade_count:1.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:42.643433] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-25 2023-05-08  12499.73
+[2025-02-17 00:17:43.060090] INFO: logInfo: code: 601111 all_pnl:6104.970000000001 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:43.060307] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-06-08 2023-07-24  3003.48
+2  2023-09-27 2024-12-10  3101.49
+[2025-02-17 00:17:43.319489] INFO: logInfo: code: 600905 all_pnl:-3634.399999999994 win_rate:0.0 trade_count:0.0 unrealized_pnl:-3634.399999999994 signal:0
+[2025-02-17 00:17:43.319698] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:43.557774] INFO: logInfo: code: 600989 all_pnl:6058.210000000006 win_rate:100.0 trade_count:2.0 unrealized_pnl:6.366462912410498e-12 signal:0
+[2025-02-17 00:17:43.558012] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-11 2022-11-25  2997.32
+2  2022-12-29 2023-01-17  3060.89
+[2025-02-17 00:17:44.048811] INFO: logInfo: code: 000776 all_pnl:19074.559999999998 win_rate:0.0 trade_count:0.0 unrealized_pnl:19074.559999999998 signal:0
+[2025-02-17 00:17:44.049017] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:44.462676] INFO: logInfo: code: 300308 all_pnl:12364.649999999994 win_rate:100.0 trade_count:1.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:44.462886] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-02-06  12364.65
+[2025-02-17 00:17:44.905641] INFO: logInfo: code: 601012 all_pnl:-18901.929999999993 win_rate:100.0 trade_count:1.0 unrealized_pnl:-21849.139999999992 signal:0
+[2025-02-17 00:17:44.905898] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2022-10-10 2022-10-27  2947.21
+[2025-02-17 00:17:45.134927] INFO: logInfo: code: 605499 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:45.135150] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:45.621822] INFO: logInfo: code: 002050 all_pnl:9382.059999999998 win_rate:100.0 trade_count:3.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:45.622042] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-02-06 2024-02-08  3113.52
+2  2024-04-23 2024-04-29  3131.09
+3  2024-06-28 2024-09-27  3137.45
+[2025-02-17 00:17:45.848037] INFO: logInfo: code: 688012 all_pnl:12160.089999999997 win_rate:100.0 trade_count:1.0 unrealized_pnl:-3.637978807091713e-12 signal:0
+[2025-02-17 00:17:45.848254] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-12 2022-10-20  12160.09
+[2025-02-17 00:17:46.281552] INFO: logInfo: code: 002304 all_pnl:-3742.9600000000064 win_rate:100.0 trade_count:2.0 unrealized_pnl:-19963.440000000006 signal:0
+[2025-02-17 00:17:46.281755] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-28 2022-12-14  12744.00
+2  2023-06-30 2023-07-31   3476.48
+[2025-02-17 00:17:46.750600] INFO: logInfo: code: 600015 all_pnl:12499.919999999998 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:46.750829] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-26 2023-05-05  12499.92
+[2025-02-17 00:17:47.174830] INFO: logInfo: code: 601009 all_pnl:2989.4199999999983 win_rate:100.0 trade_count:1.0 unrealized_pnl:-1.8189894035458565e-12 signal:0
+[2025-02-17 00:17:47.175026] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-05-26 2024-05-13  2989.42
+[2025-02-17 00:17:47.493046] INFO: logInfo: code: 601689 all_pnl:16047.820000000007 win_rate:100.0 trade_count:2.0 unrealized_pnl:7.275957614183426e-12 signal:0
+[2025-02-17 00:17:47.493259] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-30 2024-02-23   3049.12
+2  2024-07-22 2024-10-08  12998.70
+[2025-02-17 00:17:47.876208] INFO: logInfo: code: 601186 all_pnl:54454.26000000001 win_rate:100.0 trade_count:2.0 unrealized_pnl:1.4551915228366852e-11 signal:0
+[2025-02-17 00:17:47.876416] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2022-11-22   3021.41
+2  2024-09-13 2024-11-18  51432.85
+[2025-02-17 00:17:48.136413] INFO: logInfo: code: 688036 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:48.136643] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:48.547042] INFO: logInfo: code: 600547 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:48.547275] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:48.952130] INFO: logInfo: code: 600346 all_pnl:15925.61 win_rate:100.0 trade_count:2.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:48.952359] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-11 2023-02-14   2988.62
+2  2024-02-01 2024-04-02  12936.99
+[2025-02-17 00:17:49.248596] INFO: logInfo: code: 603019 all_pnl:15702.300000000003 win_rate:100.0 trade_count:2.0 unrealized_pnl:-0.00999999999839929 signal:0
+[2025-02-17 00:17:49.248820] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2022-10-31   2846.53
+2  2022-11-25 2023-02-14  12855.78
+[2025-02-17 00:17:49.591633] INFO: logInfo: code: 300498 all_pnl:3317.4199999999983 win_rate:100.0 trade_count:1.0 unrealized_pnl:349.5799999999981 signal:0
+[2025-02-17 00:17:49.591857] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-09-11 2024-09-27  2967.84
+[2025-02-17 00:17:50.070276] INFO: logInfo: code: 600886 all_pnl:0.0 win_rate:0.0 trade_count:0.0 unrealized_pnl:0.0 signal:0
+[2025-02-17 00:17:50.070509] INFO: logInfo: Empty DataFrame
+Columns: [entry_date, exit_date, pnl]
+Index: []
+[2025-02-17 00:17:50.552489] INFO: logInfo: code: 600029 all_pnl:6095.020000000004 win_rate:100.0 trade_count:2.0 unrealized_pnl:3.637978807091713e-12 signal:0
+[2025-02-17 00:17:50.552712] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-10-20 2023-10-30  2989.42
+2  2023-12-25 2024-09-30  3105.60
+[2025-02-17 00:17:50.944026] INFO: logInfo: code: 002736 all_pnl:19301.39 win_rate:100.0 trade_count:3.0 unrealized_pnl:0.010000000002037268 signal:0
+[2025-02-17 00:17:50.944244] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2022-12-07   2975.26
+2  2023-12-21 2024-06-06   3070.47
+3  2024-07-09 2024-09-27  13255.65
+[2025-02-17 00:17:51.517277] INFO: logInfo: code: 000538 all_pnl:12546.009999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:51.517506] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2024-01-03 2024-10-08  12546.01
+[2025-02-17 00:17:52.108401] INFO: logInfo: code: 600893 all_pnl:2973.479999999996 win_rate:100.0 trade_count:1.0 unrealized_pnl:-4.092726157978177e-12 signal:0
+[2025-02-17 00:17:52.108599] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2023-10-19 2024-05-10  2973.48
+[2025-02-17 00:17:52.453392] INFO: logInfo: code: 601989 all_pnl:12536.009999999995 win_rate:100.0 trade_count:1.0 unrealized_pnl:-5.4569682106375694e-12 signal:0
+[2025-02-17 00:17:52.453593] INFO: logInfo:    entry_date  exit_date       pnl
+id                                
+1  2022-10-10 2023-04-21  12536.01
+[2025-02-17 00:17:52.895844] INFO: logInfo: code: 600048 all_pnl:-5915.800000000004 win_rate:100.0 trade_count:1.0 unrealized_pnl:-8939.000000000004 signal:0
+[2025-02-17 00:17:52.896044] INFO: logInfo:    entry_date  exit_date     pnl
+id                              
+1  2023-07-06 2023-07-28  3023.2
+[2025-02-17 00:17:53.307169] INFO: logInfo: code: 600011 all_pnl:524.6600000000035 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2500.9599999999964 signal:3
+[2025-02-17 00:17:53.307383] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-08-28 2024-09-30  3025.62
+[2025-02-17 00:17:53.308598] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场81 负场:11 总收益996269.5799999998
+[2025-02-17 00:43:24.104907] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:43:24.105138] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:43:24.105185] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:44:16.970559] INFO: logInfo: code: 600011 all_pnl:1918.5800000000017 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2535.6799999999985 signal:3
+[2025-02-17 00:44:16.971014] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-08-27 2024-10-08  4454.26
+[2025-02-17 00:44:16.972323] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场77 负场:15 总收益1076687.2599999998
+[2025-02-17 00:56:09.428589] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 00:56:09.428657] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 00:56:09.428687] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 00:56:59.546891] INFO: logInfo: code: 600011 all_pnl:1918.5800000000017 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2535.6799999999985 signal:3
+[2025-02-17 00:56:59.547103] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-08-27 2024-10-08  4454.26
+[2025-02-17 00:56:59.553102] INFO: logInfo: <ul class="errorlist"><li>pnl_desc<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+[2025-02-17 00:56:59.557252] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场77 负场:15 总收益1076687.2599999998
+[2025-02-17 01:00:52.762654] INFO: logInfo: 开始回测MACD指标~
+[2025-02-17 01:00:52.762723] INFO: logInfo: 回测MACD指标结束~
+[2025-02-17 01:00:52.762753] INFO: logInfo: 开始回测BOLL_MACD指标~
+[2025-02-17 01:01:41.344597] INFO: logInfo: code: 600011 all_pnl:1918.5800000000017 win_rate:100.0 trade_count:1.0 unrealized_pnl:-2535.6799999999985 signal:3
+[2025-02-17 01:01:41.344814] INFO: logInfo:    entry_date  exit_date      pnl
+id                               
+1  2024-08-27 2024-10-08  4454.26
+[2025-02-17 01:01:41.349817] INFO: logInfo: 回测BOLL_MACD指标结束~ 回测总计: 胜场77 负场:15 总收益1076687.2599999998

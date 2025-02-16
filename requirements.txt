@@ -1,8 +1,13 @@
-akshare==1.15.83
+akshare==1.15.93
 arrow==1.2.3
 Django==5.1.6
 holidays==0.66
 lib_pybroker==1.2.6
 Logbook==1.8.0
+numba==0.60.0
+numpy==2.2.3
+pandas==2.2.3
 python_dateutil==2.9.0.post0
-TA_Lib
+Requests==2.32.3
+TA_Lib==0.4.32
+yahooquery==2.3.7

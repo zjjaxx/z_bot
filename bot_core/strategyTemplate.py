@@ -2,11 +2,10 @@
 import sys
 import traceback
 import os
-import sys
 import logbook
 from logbook import Logger, StreamHandler, FileHandler
 from datetime import datetime,timedelta
-
+import pandas as pd
 import akshare as ak
 import requests
 import numpy as np
@@ -24,8 +23,9 @@ url = 'http://127.0.0.1:5500/v1/message.create'
 class StrategyTemplate:
     name = 'DefaultStrategyTemplate'
 
-    def __init__(self):
+    def __init__(self,event_engine):
         self.logger=None
+        self.event_engine=event_engine
         self.init()
         # 初始化日志
         self.initLogger( name='logInfo', log_type='file', filepath='./logger/info.log', loglevel='DEBUG')
@@ -61,10 +61,7 @@ class StrategyTemplate:
             return tiger_stocks['代码'].to_numpy() 
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
-            print(repr(traceback.format_exception(exc_type,
-                                                           exc_value,
-                                                           exc_traceback)))  
-
+            print(repr(traceback.format_exception(exc_type, exc_value,exc_traceback)))  
 
     def strategy(self, event):
         pass
@@ -74,41 +71,27 @@ class StrategyTemplate:
             self.strategy(event)
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
-            print(repr(traceback.format_exception(exc_type,
-                                                           exc_value,
-                                                           exc_traceback)))
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    
+    # 股票2年历史数据
     def queryStockHistoryData(self,symbol):
         try:
             stock_zh_a_hist_df = ak.stock_zh_a_hist(symbol=symbol, period="daily", start_date=(datetime.now()-timedelta(days=365*2)).strftime('%Y%m%d'), end_date=datetime.now().strftime('%Y%m%d'), adjust="hfq")
             return stock_zh_a_hist_df
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
-            print(repr(traceback.format_exception(exc_type,
-                                                           exc_value,
-                                                           exc_traceback)))
-    
-    # 千股千评
-    def searchStock(self):
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+        
+    # 股票2年历史数据
+    def queryStockHistoryDataPolyfill(self,symbol):
         try:
-            df = ak.stock_comment_em()
-            df = df[df["最新价"] < df["主力成本"]]
-            # 2. 标准化指标
-            # 综合得分：越高越好，直接标准化
-            df["综合得分_标准化"] = (df["综合得分"] - df["综合得分"].min()) / (df["综合得分"].max() - df["综合得分"].min())
-
-            # 目前排名：越低越好，反向标准化
-            df["目前排名_标准化"] = 1 / df["目前排名"]
-
-            # 3. 计算综合评分（权重均为 1/3）
-            df["综合评分"] = (df["综合得分_标准化"] + df["目前排名_标准化"]) / 2
-
-            # 4. 按综合评分降序排序，取前10只股票
-            top_10 = df.sort_values(by="综合评分", ascending=False).head(10)
-            return top_10
+            stock_zh_a_hist_df = ak.index_zh_a_hist(symbol=symbol, period="daily", start_date=(datetime.now()-timedelta(days=365*2)).strftime('%Y%m%d'), end_date=datetime.now().strftime('%Y%m%d'))
+            return stock_zh_a_hist_df
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
-    # 机构评级
+    
+    # 机构评级推荐
     def get_institute_recommend(self):
         try:
             stock_institute_recommend_df = ak.stock_institute_recommend(symbol="股票综合评级").head(seachCount)
@@ -117,14 +100,7 @@ class StrategyTemplate:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
                                                                                                                                                                                                                                                                              
-    def hot_stock(self):
-        try:
-            stock_hot_follow_xq_df = ak.stock_hot_follow_xq(symbol="最热门")
-            hot_stocks=stock_hot_follow_xq_df.head(seachCount) 
-            return hot_stocks['股票代码'].to_numpy()
-        except:
-            exc_type, exc_value, exc_traceback = sys.exc_info()
-            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+
     def beforeOpen(self, event):
         pass
 
@@ -150,11 +126,32 @@ class StrategyTemplate:
             # 捕获其他异常
             print(f"An unexpected error occurred: {e}")
 
+    def get_dragon(self):
+        try:
+            # 获取股票列表
+            stock_info_a_code_name_df = ak.stock_info_a_code_name()
+            # 获取行业龙头
+            stock_board_industry_summary_ths_df = ak.stock_board_industry_summary_ths()
+            stock_board_industry_summary_ths_df["领涨股"]
+            df_merged = stock_board_industry_summary_ths_df.merge(stock_info_a_code_name_df, left_on='领涨股', right_on='name', how='left')
+            return df_merged["code"].to_numpy() 
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    def get_top(self):
+        try: 
+            top_df=pd.read_excel("./strategies/data/top.xlsx", dtype={"代码": str})
+            return top_df['代码'].to_numpy()
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
     def seek_stock(self):
-        hot_symbols=self.hot_stock()
+        dragon_symbols=self.get_dragon()
         tiger_symbols=self.get_tiger()
         institute_recommend_symbols=self.get_institute_recommend()
-        merged_symbols = np.unique(np.concatenate([hot_symbols,institute_recommend_symbols, tiger_symbols]))
-        print("merged_symbols",merged_symbols)
+        dragon_str = [str(s) for s in dragon_symbols]
+        institute_str = [str(s) for s in institute_recommend_symbols]
+        tiger_str = [str(s) for s in tiger_symbols]
+        merged_symbols = np.unique(np.concatenate([dragon_str,institute_str, tiger_str]))
         return merged_symbols
 

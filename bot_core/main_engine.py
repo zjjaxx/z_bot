@@ -20,7 +20,7 @@ class MainEngine:
         for module in self.modules:
             strategyClass= getattr(module, 'Strategy', None)
             if not strategyClass == None :
-                strategy=strategyClass()
+                strategy=strategyClass(self.event_engine)
                 self.strategies.append(strategy)
 
     def registryEvent(self):

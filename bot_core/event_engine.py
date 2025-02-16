@@ -44,7 +44,8 @@ class EventEngine:
         if event.event_type in self.__handlers:
             # 若存在,则按顺序将时间传递给处理函数执行
             for handler in self.__handlers[event.event_type]:
-                handler(event)
+                 handler(event)
+                    
 
     def start(self):
         """引擎启动"""
