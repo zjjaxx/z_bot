@@ -32,15 +32,15 @@ class Strategy(StrategyTemplate):
         if not ctx.long_pos():
             # Buy if the next bar is predicted to have a positive return:
             if ctx.indicator('boll')[-1] ==1:
-                ctx.stop_profit_pct = 60
+                # ctx.stop_profit_pct = 60
                 # ctx.stop_loss_pct = 10
                 ctx.buy_shares = ctx.calc_target_shares(1)
             elif ctx.indicator('boll')[-1] ==2:
-                  ctx.stop_profit_pct = 30
+                #   ctx.stop_profit_pct = 30
                   # ctx.stop_loss_pct = 10
                   ctx.buy_shares = ctx.calc_target_shares(0.6)
             elif ctx.indicator('boll')[-1] ==3:
-                ctx.stop_profit_pct = 15
+                # ctx.stop_profit_pct = 15
                 # ctx.stop_loss_pct = 10
                 ctx.buy_shares = ctx.calc_target_shares(0.3)
         else:
@@ -63,38 +63,7 @@ class Strategy(StrategyTemplate):
             self.exec_backtest(symbol=symbol)
         # self.send_message("回测MACD指标结束~")
         self.logger.info(f"回测BOLL_MACD指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
-    def align_multiframe_signals(self,daily_df, weekly_signals, monthly_signals):
-        """
-        将周K/月K信号对齐到日K时间轴（确保无未来数据）
-        """
-        # 周K信号对齐：仅在周结束后生效（例如周五收盘后信号可用）
-        weekly_signals_aligned = weekly_signals.copy()
-        weekly_signals_aligned.index = weekly_signals_aligned.index + pd.offsets.BDay(1)  # 信号延迟到下周一
-        
-        # 月K信号对齐：在次月第一个交易日生效
-        monthly_signals_aligned = monthly_signals.copy()
-        monthly_signals_aligned.index = monthly_signals_aligned.index + pd.offsets.MonthBegin(1)
-        
-        # 合并信号到日K
-        daily_df = daily_df.merge(
-            weekly_signals_aligned, 
-            left_index=True, 
-            right_index=True, 
-            how='left',
-            suffixes=('', '_weekly')
-        )
-        daily_df = daily_df.merge(
-            monthly_signals_aligned,
-            left_index=True,
-            right_index=True,
-            how='left',
-            suffixes=('', '_monthly')
-        )
-        
-        # 前向填充有效信号（保留未生效期间的NaN）
-        for col in ['buy_signal', 'sell_signal']:
-            daily_df[col] = daily_df[col].ffill(limit=4)  # 最多填充4天（周信号有效期）
-        return daily_df
+    
     def calc_boll_macd(self,data):
         # 策略
         # 选股：A股市值前100多
@@ -121,6 +90,9 @@ class Strategy(StrategyTemplate):
         daily_df['30_quantile'] = daily_df['250_low'].quantile(bottom_threshold)
         daily_df['60_quantile'] = daily_df['250_low'].quantile(middle_threshold)
         daily_df['90_quantile'] = daily_df['250_low'].quantile(top_threshold)
+
+        # 计算60天获利盘比例
+        daily_df['profit_ratio_60d'] = self.get_profit_rate(daily_df)
         
         # 金叉条件：DIF 上穿 DEA
         daily_df['golden_cross'] = (daily_df['macd_dif'] > daily_df['macd_dea']) & (daily_df['macd_dif'].shift(1) <= daily_df['macd_dea'].shift(1))
@@ -144,7 +116,18 @@ class Strategy(StrategyTemplate):
         monthly_df['monthly_middle'] = monthly_middle
         monthly_df['monthly_lower'] = monthly_lower
         monthly_df['monthly_upper'] = monthly_upper
-         # 合并周线数据到日线（按最近周五对齐）
+
+        #2. 计算带宽 ```python # 计算带宽（百分比） 
+        monthly_df["bandwidth"] = (monthly_df["monthly_upper"] - monthly_df["monthly_lower"]) / monthly_df["monthly_middle"] * 100 
+        # 计算带宽的滚动统计量（20日窗口） 20日均值
+        monthly_df["band_ma20"] = monthly_df["bandwidth"].rolling(20).mean()
+        # 20日标准差
+        monthly_df["band_std20"] = monthly_df["bandwidth"].rolling(20).std() 
+        #判断缩窄和扩张 ```python # 缩窄条件：带宽 < 均值 - 1倍标准差 
+        monthly_df["is_squeeze"] = monthly_df["bandwidth"] < (monthly_df["band_ma20"] - monthly_df["band_std20"])
+        # 扩张条件：带宽 > 均值 + 1倍标准差 
+        monthly_df["is_expansion"] = monthly_df["bandwidth"] > (monthly_df["band_ma20"] + monthly_df["band_std20"])
+        # 合并周线数据到日线（按最近周五对齐）
         daily_df = pd.merge_asof(
             daily_df, weekly_df[['weekly_upper', 'weekly_lower']],
             left_index=True, right_index=True, direction='backward'
@@ -152,7 +135,7 @@ class Strategy(StrategyTemplate):
         
         # 合并月线数据到日线（按自然月最后一天对齐）
         daily_df = pd.merge_asof(
-            daily_df, monthly_df[['monthly_middle',"monthly_upper","monthly_lower"]],
+            daily_df, monthly_df[['monthly_middle',"monthly_upper","monthly_lower","is_squeeze"]],
             left_index=True, right_index=True, direction='backward'
         )
         
@@ -174,23 +157,30 @@ class Strategy(StrategyTemplate):
         buy_condition_bottom = (
             (daily_df['close'] <= daily_df['monthly_lower']) 
             & buy_condition_30
+            & daily_df['is_squeeze']
             # (daily_df['close'] > daily_df['monthly_middle']) &
             # & (daily_df['monthly_trend_up'])
         )
         buy_condition_middle = (
             (daily_df['close'] <= daily_df['monthly_lower']) 
             & buy_condition_60
+            & daily_df['is_squeeze']
             # (daily_df['close'] > daily_df['monthly_middle']) &
             # & (daily_df['monthly_trend_up'])
         )
         buy_condition_top = (
             (daily_df['close'] <= daily_df['monthly_lower'])
             & buy_condition_90
+            & daily_df['is_squeeze']
             # (daily_df['close'] > daily_df['monthly_middle']) &
             # & (daily_df['monthly_trend_up'])
         )
 
-        sell_condition = (daily_df['close'] >= daily_df['weekly_upper'])
+        sell_condition = (
+                          (daily_df['close'] >= daily_df['monthly_upper']) 
+                        #     | 
+                        #   (daily_df['profit_ratio_60d'] > 0.8)
+                          )
         daily_df.loc[sell_condition, 'signal'] = -1
         daily_df['signal'] = 0
         daily_df.loc[buy_condition_bottom, 'signal'] = 1
@@ -224,13 +214,13 @@ class Strategy(StrategyTemplate):
     def exec_backtest(self,symbol):
         boll_macd = pb.indicator('boll',self.calc_boll_macd)
         strategyContext = PBStrategy(
-            data_source=CustomAKShare(self.event_engine),
+            data_source=AKShare(),
             start_date=datetime.now()-timedelta(days=365*4),
             end_date=datetime.now(),
             config=PBStrategyConfig(return_signals=True))
         strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[boll_macd])
         # calc_bootstrap=True
-        result = strategyContext.backtest()
+        result = strategyContext.backtest(adjust="hfq")
         signal=result.signals[symbol]['boll'].iloc[-1]
         total_pnl=result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1]
         initial_market_value=result.metrics_df[result.metrics_df['name']=='initial_market_value'].iloc[0,1]
@@ -245,48 +235,49 @@ class Strategy(StrategyTemplate):
         elif all_pnl<0:
             Strategy.back_test_info['loss_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl
-        if not signal==0:
-            self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
-            self.logger.info(result.trades[['entry_date',	'exit_date',"pnl"]])
+        # if not signal==0:
+        self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
+        self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
+        self.logger.info(result.orders[["type","date","shares","fill_price"]])
             # message=f"boll提醒!!!!! \n boll策略 股票代码: {str(symbol)} \n 2年10万本金,回测结果:\n 收益: {str(total_pnl)} \n 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} \n 总收益: {str(all_pnl)} \n 胜率: {str(win_rate)}% \n 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
             # self.send_message(message=message)
             # self.logger.info(message)
             #model 数据写入
             # 使用事务来确保所有操作的原子性
-            try:
-                with transaction.atomic():
-                    # 1. 检查 StockModel 是否存在，如果不存在则创建它
-                    stock, _ = StockModel.objects.get_or_create(code=symbol)
-                     # 2. 检查是否已经存在与 StockModel 相关联的 StrategyModel 数据
-                    existing_strategy = StrategyModel.objects.filter(stock=stock,strateType=Strategy.name).first()
-                    # 死叉
-                    if  signal==-1:
-                        existing_strategy.strateOperate=signal
-                        existing_strategy.strateOperateTime=datetime.now().date()
-                        existing_strategy.save()
-                    else:
-                        # 2. 准备策略数据并创建 StrategyModel
-                        strategy_data = {
-                            "stock": stock,  # 使用已经创建或存在的 StockModel 实例
-                            "strateType": Strategy.name,  # 策略类型
-                            "strateDesc": "boll策略",  # 策略描述
-                            "winRate": win_rate,
-                            "strateOperate":signal,
-                            "strateOperateTime":datetime.now().date(),
-                            "pnl": all_pnl,
-                            "pnl_desc": "mm"  # 限制 pnl_desc 最大长度为 100
-                        }
+            # try:
+            #     with transaction.atomic():
+            #         # 1. 检查 StockModel 是否存在，如果不存在则创建它
+            #         stock, _ = StockModel.objects.get_or_create(code=symbol)
+            #          # 2. 检查是否已经存在与 StockModel 相关联的 StrategyModel 数据
+            #         existing_strategy = StrategyModel.objects.filter(stock=stock,strateType=Strategy.name).first()
+            #         # 死叉
+            #         if  signal==-1:
+            #             existing_strategy.strateOperate=signal
+            #             existing_strategy.strateOperateTime=datetime.now().date()
+            #             existing_strategy.save()
+            #         else:
+            #             # 2. 准备策略数据并创建 StrategyModel
+            #             strategy_data = {
+            #                 "stock": stock,  # 使用已经创建或存在的 StockModel 实例
+            #                 "strateType": Strategy.name,  # 策略类型
+            #                 "strateDesc": "boll策略",  # 策略描述
+            #                 "winRate": win_rate,
+            #                 "strateOperate":signal,
+            #                 "strateOperateTime":datetime.now().date(),
+            #                 "pnl": all_pnl,
+            #                 "pnl_desc": "mm"  # 限制 pnl_desc 最大长度为 100
+            #             }
 
-                        # 使用 StrategyModelForm 创建表单并校验
-                        strate_form = StrategyModelForm(data=strategy_data)
-                        # 校验表单
-                        if strate_form.is_valid():
-                            # 保存 StrategyModel 实例
-                            strate_form.save()
-                        else:
-                            self.logger.info(strate_form.errors)
-            except Exception as e:
-                self.logger.info(f"An error occurred: {e}")
+            #             # 使用 StrategyModelForm 创建表单并校验
+            #             strate_form = StrategyModelForm(data=strategy_data)
+            #             # 校验表单
+            #             if strate_form.is_valid():
+            #                 # 保存 StrategyModel 实例
+            #                 strate_form.save()
+            #             else:
+            #                 self.logger.info(strate_form.errors)
+            # except Exception as e:
+            #     self.logger.info(f"An error occurred: {e}")
 
 
 

@@ -63,7 +63,7 @@ class CustomAKShare(DataSource):
                     event = Event(event_type="beforeOpen")
                     self.event_engine.put(event)
                     print(f"无法获取 {symbols_simple[i]} 的历史数据: {str(e)}")
-                # time.sleep(1)
+                # time.sleep(2)
         if result.columns.empty:
             return pd.DataFrame(
                 columns=[
