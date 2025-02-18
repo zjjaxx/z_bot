@@ -5,9 +5,9 @@ holidays==0.66
 lib_pybroker==1.2.6
 Logbook==1.8.0
 numba==0.60.0
-numpy==2.2.3
+numpy
 pandas==2.2.3
 python_dateutil==2.9.0.post0
 Requests==2.32.3
-TA_Lib==0.4.32
+TA_Lib
 yahooquery==2.3.7
