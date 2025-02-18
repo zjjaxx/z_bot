@@ -35,8 +35,6 @@ class StrategyModel(models.Model):
     winRate=models.FloatField()
     # 总收益比率
     pnl=models.FloatField()
-    # 总收益描述
-    pnl_desc=models.CharField(max_length=1000)
     # 创建时间。默认使用当前时间
     created = models.DateTimeField(default=timezone.now)
     # 更新时间。每次更新时自动更新为当前时间

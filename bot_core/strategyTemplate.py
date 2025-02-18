@@ -99,58 +99,8 @@ class StrategyTemplate:
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
-    def generate_dynamic_bins(self,window_low, window_high, step=0.1):
-        #"""根据窗口内的价格范围生成动态分箱"""
-        min_price = np.floor(window_low * 10) / 10  # 向下取整到0.1的倍数
-        max_price = np.ceil(window_high * 10) / 10   # 向上取整到0.1的倍数
-        bins = np.arange(min_price, max_price + step, step)
-        return bins    
-    def apply_time_decay(self,volumes, decay_rate=0.03):
-        #"""指数衰减权重（时间越近权重越高）"""
-        n = len(volumes)
-        decay_weights = np.exp(decay_rate * np.arange(n))  # 从旧到新：权重递增
-        decay_weights = decay_weights / decay_weights.sum()  # 归一化
-        return volumes * decay_weights
+
                                                                                                                                                                                                                                                   
-    # 获利盘计算
-    def get_profit_rate(self,df, window=120, step=0.1, decay_rate=0.05):
-            profit_ratios = []
-    
-            for i in range(len(df)):
-                if i < window:
-                    profit_ratios.append(np.nan)
-                    continue
-                
-                # 提取窗口数据
-                window_data = df.iloc[i - window:i]
-                window_close = window_data['close'].values
-                window_low = window_data['low'].min()
-                window_high = window_data['high'].max()
-                window_vol = window_data['volume'].values
-                
-                # 动态生成分箱
-                bins = self.generate_dynamic_bins(window_low, window_high, step)
-                
-                # 应用时间衰减后的成交量
-                decayed_vol = self.apply_time_decay(window_vol, decay_rate)
-                
-                # 统计每个分箱的累计成交量
-                bin_vol = np.zeros(len(bins) - 1)  # 分箱区间数
-                for price, vol in zip(window_close, decayed_vol):
-                    bin_idx = np.digitize(price, bins) - 1
-                    if 0 <= bin_idx < len(bin_vol):
-                        bin_vol[bin_idx] += vol
-                
-                # 计算获利盘比例
-                current_price = df.iloc[i]['close']
-                lower_bins = bins[:-1] < current_price  # 当前价格以下的区间
-                profitable_vol = bin_vol[lower_bins].sum()
-                total_vol = bin_vol.sum()
-                
-                ratio = profitable_vol / total_vol if total_vol > 0 else 0.0
-                profit_ratios.append(ratio)
-            
-            return pd.Series(profit_ratios, index=df.index)
 
     def beforeOpen(self, event):
         pass

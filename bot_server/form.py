@@ -13,4 +13,4 @@ class StrategyModelForm(forms.ModelForm):
         # 指明数据模型来源
         model = StrategyModel
         # 定义表单包含的字段
-        fields = ('stock',"strateType","strateOperate","strateOperateTime","strateDesc","winRate","pnl","pnl_desc")
+        fields = ('stock',"strateType","strateOperate","strateOperateTime","strateDesc","winRate","pnl")
