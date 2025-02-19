@@ -10,5 +10,5 @@ pandas==2.2.3
 python_dateutil==2.9.0.post0
 Requests==2.32.3
 schedule==1.2.2
-TA_Lib==0.4.32
+TA_Lib
 yahooquery==2.3.7
