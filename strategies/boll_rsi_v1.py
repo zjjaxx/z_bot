@@ -16,7 +16,7 @@ from .utils.k_format import weekly_format,monthly_format,convert_bar_data_to_df
 
 class Strategy(StrategyTemplate):
     # unique唯一
-    name='boll_rsi'
+    name='boll_rsi_v1'
     back_test_info={
         "win_count":0,
         "loss_count":0,
@@ -55,22 +55,22 @@ class Strategy(StrategyTemplate):
             "pnl":0
         }
         # self.send_message("开始回测MACD指标~")
-        self.logger.info("开始回测BOLL_MACD指标~")
+        self.logger.info("开始回测BOLL_RSI_V1指标~")
         symbols=self.get_top()
         for symbol in symbols:
             symbol=str(symbol)
             # symbol=re.sub(r'\D', '', symbol) 
             self.exec_backtest(symbol=symbol)
         # self.send_message("回测MACD指标结束~")
-        self.logger.info(f"回测BOLL_MACD指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
     
     def calc_boll_macd(self,data):
         # 策略
         # 选股：A股市值大于700亿
         # 买点条件判断：
-        # 1. 当前股价在月K级别突破boll下轨，并且趋势走平或向上、带宽缩窄 同时根据股价是否在历史高位来判断买点
+        # 2. 当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点
         # 卖出条件判断
-        # 1. 当前股价在月K级别RSI超过70
+        # 1. 当前股价在周K级别RSI超过70
         
         macd_dif,macd_dea,macd_hist = talib.MACD(data.close)
         boll_upper,boll_middle,boll_lower = talib.BBANDS(data.close,timeperiod=20,nbdevup=2.2,nbdevdn=1.8,matype=0)
@@ -154,24 +154,21 @@ class Strategy(StrategyTemplate):
         buy_condition_60 = (daily_df['close'] > daily_df['30_quantile']) & (daily_df['close'] <= daily_df['60_quantile'])
         buy_condition_90 = (daily_df['close'] > daily_df['60_quantile']) & (daily_df['close'] <= daily_df['90_quantile'])
 
+        threshold_pct = 0.03  # 3%差异内视为接近
+        daily_df['diff_pct'] = (daily_df['close'] / daily_df['monthly_middle'] - 1).abs()
+        daily_df['is_close'] = daily_df['diff_pct'] < threshold_pct
 
         # 生成信号
         buy_condition_bottom = (
-            (daily_df['close'] <= daily_df['monthly_lower']) 
+            (daily_df['close'] <= daily_df['weekly_lower']) 
+            & daily_df['is_close']
             & buy_condition_30
-            & daily_df['is_squeeze']
             & daily_df['monthly_trend_up']
         ) 
         buy_condition_middle = (
-            (daily_df['close'] <= daily_df['monthly_lower']) 
+            (daily_df['close'] <= daily_df['weekly_lower']) 
+            & daily_df['is_close']
             & buy_condition_60
-            & daily_df['is_squeeze']
-            & daily_df['monthly_trend_up']
-        )
-        buy_condition_top = (
-            (daily_df['close'] <= daily_df['monthly_lower'])
-            & buy_condition_90
-            & daily_df['is_squeeze']
             & daily_df['monthly_trend_up']
         )
        
@@ -180,7 +177,6 @@ class Strategy(StrategyTemplate):
         daily_df['signal'] = 0
         daily_df.loc[buy_condition_bottom, 'signal'] = 1
         daily_df.loc[buy_condition_middle, 'signal'] = 2
-        daily_df.loc[buy_condition_top, 'signal'] = 3
 
         daily_df.loc[sell_condition, 'signal'] = -1
 

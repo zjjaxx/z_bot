@@ -5,6 +5,7 @@ from .utils.time import is_trade_date,is_tradetime,get_next_trade_date
 from dateutil import tz
 from .event_engine import Event
 import datetime 
+import schedule
 import arrow
 
 
@@ -20,7 +21,7 @@ class QuetationEngine:
         self.event_engine = event_engine
         self.next_time=datetime.datetime.combine(self.now.date(),beforeOpenTime)
         # 行情、盘前线程
-        self.quotation_thread = Thread(target=self.push_quotation, name="QuotationEngine.%s" % self.EventType,daemon=True)
+        self.quotation_thread = Thread(target=self.exec_schedule, name="QuotationEngine.%s" % self.EventType,daemon=True)
         self.init()
 
 
@@ -45,7 +46,17 @@ class QuetationEngine:
 
     def start(self):
         self.quotation_thread.start()
-  
+    
+    def exec_schedule(self):
+        self.job()
+        schedule.every().day.at("00:00:00","Asia/Shanghai").do(self.job)
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+
+    def job(self):
+        event = Event(event_type="beforeOpen")
+        self.event_engine.put(event)
 
     def push_quotation(self):
         while True:

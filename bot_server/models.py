@@ -30,7 +30,7 @@ class StrategyModel(models.Model):
     # 操作时间
     strateOperateTime=models.DateField()
     # 策略描述
-    strateDesc = models.CharField(max_length=100)
+    strateDesc = models.CharField(max_length=1000)
       # 胜率
     winRate=models.FloatField()
     # 总收益比率
