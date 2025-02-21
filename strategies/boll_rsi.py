@@ -55,14 +55,14 @@ class Strategy(StrategyTemplate):
             "pnl":0
         }
         # self.send_message("开始回测MACD指标~")
-        self.logger.info("开始回测BOLL_MACD指标~")
+        self.logger.info("开始回测BOLL_RSI指标~")
         symbols=self.get_top()
         for symbol in symbols:
             symbol=str(symbol)
             # symbol=re.sub(r'\D', '', symbol) 
             self.exec_backtest(symbol=symbol)
         # self.send_message("回测MACD指标结束~")
-        self.logger.info(f"回测BOLL_MACD指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        self.logger.info(f"回测BOLL_RSI指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
     
     def calc_boll_macd(self,data):
         # 策略

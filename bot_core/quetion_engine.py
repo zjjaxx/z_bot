@@ -48,7 +48,7 @@ class QuetationEngine:
         self.quotation_thread.start()
     
     def exec_schedule(self):
-        self.job()
+        # self.job()
         schedule.every().day.at("00:00:00","Asia/Shanghai").do(self.job)
         while True:
             schedule.run_pending()
