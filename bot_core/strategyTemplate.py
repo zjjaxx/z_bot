@@ -10,6 +10,9 @@ import akshare as ak
 import requests
 import numpy as np
 import json
+from bot_server.form import StockModelForm,StrategyModelForm
+from bot_server.models import StockModel,StrategyModel
+from django.db import transaction
 
 seachCount=50
 logbook.set_datetime_format('local')
@@ -155,4 +158,50 @@ class StrategyTemplate:
         tiger_str = [str(s) for s in tiger_symbols]
         merged_symbols = np.unique(np.concatenate([dragon_str,institute_str, tiger_str]))
         return merged_symbols
+
+    def save_strategy(self,info):
+        symbol,signal,strateDesc,strateName=info
+        try:
+            with transaction.atomic():
+                # 1. 检查 StockModel 
+                _stock= StockModel.objects.filter(code=symbol).first()
+                # 如果没有股票，并且是卖出的
+                if (not _stock) and signal==-1:
+                    return False
+                stock, _ = StockModel.objects.get_or_create(code=symbol)
+                    # 2. 检查是否已经存在与 StockModel 相关联的 StrategyModel 数据
+                existing_strategy = StrategyModel.objects.filter(stock=stock,strateName=strateName).first()
+                # 已存在 卖出
+                if existing_strategy and signal==-1:
+                    existing_strategy.strateOperate=signal
+                    existing_strategy.strateOperateTime=datetime.now().date()
+                    existing_strategy.save()
+                # 已存在 买入
+                elif existing_strategy and signal>=1:
+                    existing_strategy.strateType=2 if signal>1 else 1
+                    existing_strategy.strateOperate=signal
+                    existing_strategy.strateOperateTime=datetime.now().date()
+                    existing_strategy.save()
+                # 不存在 买入
+                elif not existing_strategy and signal>0:
+                    # 2. 准备策略数据并创建 StrategyModel
+                    strategy_data = {
+                        "stock": stock,  # 使用已经创建或存在的 StockModel 实例
+                        "strateType":2 if signal>1 else 1,
+                        "strateName":strateName,
+                        "strateDesc":strateDesc,  
+                        "strateOperate":signal,
+                        "strateOperateTime":datetime.now().date(),
+                    }
+
+                    # 使用 StrategyModelForm 创建表单并校验
+                    strate_form = StrategyModelForm(data=strategy_data)
+                    # 校验表单
+                    if strate_form.is_valid():
+                        # 保存 StrategyModel 实例
+                        strate_form.save()
+                    else:
+                        self.logger.info(strate_form.errors)
+        except Exception as e:
+            self.logger.info(f"An error occurred: {e}")
 

@@ -207,53 +207,16 @@ class Strategy(StrategyTemplate):
             Strategy.back_test_info['loss_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl
         if not signal==0:
-            self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
-            self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
-            self.logger.info(result.orders[["type","date","shares","fill_price"]])
-            # message=f"boll提醒!!!!! \n boll策略 股票代码: {str(symbol)} \n 2年10万本金,回测结果:\n 收益: {str(total_pnl)} \n 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} \n 总收益: {str(all_pnl)} \n 胜率: {str(win_rate)}% \n 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
+            # self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
+            # self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
+            # self.logger.info(result.orders[["type","date","shares","fill_price"]])
+            # message=f"boll提醒!!!!! </br> boll策略 股票代码: {str(symbol)} </br> 2年10万本金,回测结果:</br> 收益: {str(total_pnl)} </br> 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} </br> 总收益: {str(all_pnl)} </br> 胜率: {str(win_rate)}% </br> 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
             # self.send_message(message=message)
             # self.logger.info(message)
             #model 数据写入
             # 使用事务来确保所有操作的原子性
-            try:
-                with transaction.atomic():
-                    # 1. 检查 StockModel 是否存在，如果不存在则创建它
-                    _stock= StockModel.objects.filter(code=symbol).first()
-                    if (not _stock) and signal==-1:
-                        return False
-                    stock, _ = StockModel.objects.get_or_create(code=symbol)
-                     # 2. 检查是否已经存在与 StockModel 相关联的 StrategyModel 数据
-                    existing_strategy = StrategyModel.objects.filter(stock=stock,strateType=Strategy.name).first()
-                    # 已存在 卖出
-                    if existing_strategy and  signal==-1:
-                        existing_strategy.strateOperate=signal
-                        existing_strategy.strateOperateTime=datetime.now().date()
-                        existing_strategy.pnl=pnl_rate_per_year
-                        existing_strategy.winRate=win_rate
-                        existing_strategy.save()
-                    # 不存在 买入
-                    elif not existing_strategy and signal>0:
-                        # 2. 准备策略数据并创建 StrategyModel
-                        strategy_data = {
-                            "stock": stock,  # 使用已经创建或存在的 StockModel 实例
-                            "strateType": Strategy.name,  # 策略类型
-                            "strateDesc": "boll+rsi策略: \n 选股：A股市值大于700亿 \n 买点条件判断：\n 1. 当前股价在月K级别突破boll下轨，并且趋势走平或向上、带宽缩窄 同时根据股价是否在历史高位来判断买点 \n 2. 当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点 \n 卖出条件判断: \n 1. 当前股价在月K级别RSI超过70",  
-                            "winRate": win_rate,
-                            "strateOperate":signal,
-                            "strateOperateTime":datetime.now().date(),
-                            "pnl": pnl_rate_per_year,
-                        }
+            self.save_strategy([symbol,signal,"boll_rsi_v1策略: </br> 选股：A股市值大于700亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点 </br> 卖出条件判断: </br> 1. 当前股价在月K级别RSI超过70","boll_rsi_v1"])
 
-                        # 使用 StrategyModelForm 创建表单并校验
-                        strate_form = StrategyModelForm(data=strategy_data)
-                        # 校验表单
-                        if strate_form.is_valid():
-                            # 保存 StrategyModel 实例
-                            strate_form.save()
-                        else:
-                            self.logger.info(strate_form.errors)
-            except Exception as e:
-                self.logger.info(f"An error occurred: {e}")
 
 
 
