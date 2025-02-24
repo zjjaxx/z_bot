@@ -27,6 +27,26 @@ def dragon_list(request):
             "msg": "服务暂时不可用，请稍后重试",
             "data": e
         }, status=500)
+def virtual_list(request):
+    try:
+        stock_board_concept_name_em_df = ak.stock_board_concept_name_em()
+        data = []
+        for index, row in stock_board_concept_name_em_df.iterrows():
+            # 创建一个字典，每一列的数据作为键值对
+            data.append({
+                "block": row["板块名称"],
+                "block_rate":row['涨跌幅'],
+                "codeName": row["领涨股票"],
+                "pnl_rate": row["领涨股票-涨跌幅"]
+            })
+        return JsonResponse({"success":True,"msg":"ok","data":data})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
     
 def strategy_top_list(request):
     try:

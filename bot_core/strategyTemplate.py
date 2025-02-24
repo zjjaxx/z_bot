@@ -130,6 +130,21 @@ class StrategyTemplate:
             # 捕获其他异常
             print(f"An unexpected error occurred: {e}")
 
+    def get_block_top(self):
+        codes=[]
+        try:
+            stock_board_industry_name_em_df = ak.stock_board_industry_name_em()
+            block_code_list=stock_board_industry_name_em_df["板块名称"].to_numpy()
+            for block_code in block_code_list:
+                stock_board_industry_cons_em_df = ak.stock_board_industry_cons_em(symbol=block_code)
+                stock_board_industry_cons_em_df=stock_board_industry_cons_em_df.sort_values(by="涨跌幅",ascending=False).head(10)
+                for code in list(stock_board_industry_cons_em_df["代码"].to_numpy()):
+                    codes.append(code)
+            codes = [code for code in codes if not (code.startswith('9') or code.startswith('2'))]
+            return codes
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
     def get_dragon(self):
         try:
             # 获取股票列表
