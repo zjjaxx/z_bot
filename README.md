@@ -18,10 +18,39 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 sudo ldconfig
 ```
 
-## 部署命令
-
+## sqlite3升级
+### 卸载旧版本（慎用！）
 ```
-pip3 install gunicorn
+sudo yum remove sqlite -y
+```
 
-gunicorn --bind unix:/tmp/47.92.125.144.socket z_bot.wsgi:application
+### 安装编译依赖
+```
+sudo yum groupinstall 'Development Tools' -y
+sudo yum install tcl wget -y
+```
+
+# 下载最新版（以 3.45.2 为例）
+```
+wget https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
+tar xzvf sqlite-autoconf-3450200.tar.gz
+cd sqlite-autoconf-3450200
+```
+
+# 编译安装
+```
+./configure --prefix=/usr/local --disable-static --enable-fts5
+make -j $(nproc)
+sudo make install
+```
+
+# 更新库链接
+```
+echo '/usr/local/lib' | sudo tee /etc/ld.so.conf.d/sqlite.conf
+sudo ldconfig
+```
+
+# 验证版本
+```
+/usr/local/bin/sqlite3 --version  # 应显示 3.45.2
 ```

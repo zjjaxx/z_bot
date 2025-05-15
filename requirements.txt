@@ -1,4 +1,4 @@
-akshare==1.15.93
+akshare==1.16.91
 arrow==1.2.3
 Django==5.1.6
 holidays==0.66
