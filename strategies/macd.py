@@ -1,3 +1,4 @@
+# 废弃
 from bot_core.strategyTemplate import StrategyTemplate
 import pybroker as pb
 import talib
@@ -29,14 +30,15 @@ class Strategy(StrategyTemplate):
 
     def beforeOpen(self, event):
         # self.send_message("开始回测MACD指标~")
-        self.logger.info("开始回测MACD指标~")
+        # self.logger.info("开始回测MACD指标~")
         # symbols=self.seek_stock()
 
         # for symbol in symbols:
         #     symbol=re.sub(r'\D', '', symbol) 
         #     self.exec_backtest(symbol=symbol)
         # self.send_message("回测MACD指标结束~")
-        self.logger.info("回测MACD指标结束~")
+        # self.logger.info("回测MACD指标结束~")
+        pass
          
     def exec_backtest(self,symbol):
         macd_dif = pb.indicator('macd_dif', lambda data: talib.MACD(data.close)[0])

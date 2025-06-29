@@ -30,7 +30,7 @@ sudo yum groupinstall 'Development Tools' -y
 sudo yum install tcl wget -y
 ```
 
-# 下载最新版（以 3.45.2 为例）
+### 下载最新版（以 3.45.2 为例）
 ```
 wget https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 tar xzvf sqlite-autoconf-3450200.tar.gz
@@ -44,13 +44,23 @@ make -j $(nproc)
 sudo make install
 ```
 
-# 更新库链接
+### 更新库链接
 ```
 echo '/usr/local/lib' | sudo tee /etc/ld.so.conf.d/sqlite.conf
 sudo ldconfig
 ```
 
-# 验证版本
+### 验证版本
 ```
 /usr/local/bin/sqlite3 --version  # 应显示 3.45.2
+```
+
+## 迁移命令
+比如添加一个字段或删除一个模型，然后运行 makemigrations：
+```bash
+python manage.py makemigrations
+```
+一旦您有了新的迁移文件，您应该将它们应用到您的数据库，以确保它们按预期工作：
+```
+python manage.py migrate
 ```

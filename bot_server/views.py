@@ -3,6 +3,9 @@ import akshare as ak
 from django.http import HttpResponse,JsonResponse,HttpResponseServerError
 from .models import StockModel,StrategyModel
 from .util.time import setAction
+from django.utils import timezone
+from datetime import datetime, time, timedelta
+
 
 
 def dragon_list(request):
@@ -48,6 +51,36 @@ def virtual_list(request):
             "data": e
         }, status=500)
     
+def stock_dayly_recommand(request):
+    try:
+        local_now = timezone.now()
+        today_start = local_now.replace(hour=0, minute=0, second=0, microsecond=0)
+        # 计算当天结束时间
+        today_end = today_start + timedelta(days=1) - timedelta(seconds=1)
+        
+        strategies = StrategyModel.objects.filter(
+            updated__range=(today_start, today_end)
+        ).values()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategies)})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
+    
+def strategy_history_list(request):
+    try:
+        strategies=StrategyModel.objects.values()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategies)})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
 def strategy_top_list(request):
     try:
         strategies=StrategyModel.objects.filter(strateType=1).values()

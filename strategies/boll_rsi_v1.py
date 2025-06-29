@@ -23,6 +23,7 @@ class Strategy(StrategyTemplate):
         "pnl":0
     }
     def init(self):
+        self.stockList=[]
         print(Strategy.name," Strategy init")
 
     def strategy(self, event):
@@ -61,9 +62,20 @@ class Strategy(StrategyTemplate):
             symbol=str(symbol)
             # symbol=re.sub(r'\D', '', symbol) 
             self.exec_backtest(symbol=symbol)
-        # self.send_message("回测MACD指标结束~")
         self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
-    
+        strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
+        for i,value in enumerate(self.stockList):
+            symbol,signal,strateDesc,strateName=value
+            self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
+        self.reset()
+
+    def reset(self):
+        self.stockList=[]
+        Strategy.back_test_info={
+            "win_count":0,
+            "loss_count":0,
+            "pnl":0
+        }
     def calc_boll_macd(self,data):
         # 策略
         # 选股：A股市值大于700亿
@@ -72,13 +84,13 @@ class Strategy(StrategyTemplate):
         # 卖出条件判断
         # 1. 当前股价在周K级别RSI超过70
         
-        macd_dif,macd_dea,macd_hist = talib.MACD(data.close)
-        boll_upper,boll_middle,boll_lower = talib.BBANDS(data.close,timeperiod=20,nbdevup=2.2,nbdevdn=1.8,matype=0)
+        # macd_dif,macd_dea,macd_hist = talib.MACD(data.close)
+        # boll_upper,boll_middle,boll_lower = talib.BBANDS(data.close,timeperiod=20,nbdevup=2.2,nbdevdn=1.8,matype=0)
 
         # 日K
         daily_df=convert_bar_data_to_df(data=data)
-        daily_df['macd_dif']=macd_dif
-        daily_df['macd_dea']=macd_dea
+        # daily_df['macd_dif']=macd_dif
+        # daily_df['macd_dea']=macd_dea
 
         # 增加250日最低价分位判断（当前价处于近1年最低10%区间）
         lookback_period = 250  # 约1年
@@ -93,9 +105,9 @@ class Strategy(StrategyTemplate):
 
         
         # 金叉条件：DIF 上穿 DEA
-        daily_df['golden_cross'] = (daily_df['macd_dif'] > daily_df['macd_dea']) & (daily_df['macd_dif'].shift(1) <= daily_df['macd_dea'].shift(1))
-        # 死叉条件：DIF 下穿 DEA
-        daily_df['death_cross'] = (daily_df['macd_dif'] < daily_df['macd_dea']) & (daily_df['macd_dif'].shift(1) >= daily_df['macd_dea'].shift(1))  
+        # daily_df['golden_cross'] = (daily_df['macd_dif'] > daily_df['macd_dea']) & (daily_df['macd_dif'].shift(1) <= daily_df['macd_dea'].shift(1))
+        # # 死叉条件：DIF 下穿 DEA
+        # daily_df['death_cross'] = (daily_df['macd_dif'] < daily_df['macd_dea']) & (daily_df['macd_dif'].shift(1) >= daily_df['macd_dea'].shift(1))  
         # 周K
         weekly_df=weekly_format(daily_df)
         weekly_close = weekly_df['close'].values
@@ -116,15 +128,15 @@ class Strategy(StrategyTemplate):
         monthly_df['monthly_upper'] = monthly_upper
 
         #2. 计算带宽 ```python # 计算带宽（百分比） 
-        monthly_df["bandwidth"] = (monthly_df["monthly_upper"] - monthly_df["monthly_lower"]) / monthly_df["monthly_middle"] * 100 
-        # 计算带宽的滚动统计量（20日窗口） 20日均值
-        monthly_df["band_ma20"] = monthly_df["bandwidth"].rolling(20).mean()
-        # 20日标准差
-        monthly_df["band_std20"] = monthly_df["bandwidth"].rolling(20).std() 
-        #判断缩窄和扩张 ```python # 缩窄条件：带宽 < 均值 - 1倍标准差 
-        monthly_df["is_squeeze"] = monthly_df["bandwidth"] < (monthly_df["band_ma20"] - monthly_df["band_std20"])
-        # 扩张条件：带宽 > 均值 + 1倍标准差 
-        monthly_df["is_expansion"] = monthly_df["bandwidth"] > (monthly_df["band_ma20"] + monthly_df["band_std20"])
+        # monthly_df["bandwidth"] = (monthly_df["monthly_upper"] - monthly_df["monthly_lower"]) / monthly_df["monthly_middle"] * 100 
+        # # 计算带宽的滚动统计量（20日窗口） 20日均值
+        # monthly_df["band_ma20"] = monthly_df["bandwidth"].rolling(20).mean()
+        # # 20日标准差
+        # monthly_df["band_std20"] = monthly_df["bandwidth"].rolling(20).std() 
+        # #判断缩窄和扩张 ```python # 缩窄条件：带宽 < 均值 - 1倍标准差 
+        # monthly_df["is_squeeze"] = monthly_df["bandwidth"] < (monthly_df["band_ma20"] - monthly_df["band_std20"])
+        # # 扩张条件：带宽 > 均值 + 1倍标准差 
+        # monthly_df["is_expansion"] = monthly_df["bandwidth"] > (monthly_df["band_ma20"] + monthly_df["band_std20"])
         # 合并周线数据到日线（按最近周五对齐）
         daily_df = pd.merge_asof(
             daily_df, weekly_df[['weekly_upper', 'weekly_lower']],
@@ -133,7 +145,7 @@ class Strategy(StrategyTemplate):
         
         # 合并月线数据到日线（按自然月最后一天对齐）
         daily_df = pd.merge_asof(
-            daily_df, monthly_df[['monthly_middle',"monthly_upper","monthly_lower","is_squeeze"]],
+            daily_df, monthly_df[['monthly_middle',"monthly_upper","monthly_lower"]],
             left_index=True, right_index=True, direction='backward'
         )
         
@@ -158,7 +170,7 @@ class Strategy(StrategyTemplate):
         daily_df['diff_pct'] = (daily_df['close'] / daily_df['monthly_middle'] - 1).abs()
         daily_df['is_close'] = daily_df['diff_pct'] < threshold_pct
 
-        # 生成信号
+        # 生成信号 收盘价小于等于周K线boll带下轨，收盘价在月K线BOLL中轨附近，在过去一年的30%分位以下，月k中轨趋势向上
         buy_condition_bottom = (
             (daily_df['close'] <= daily_df['weekly_lower']) 
             & daily_df['is_close']
@@ -206,16 +218,22 @@ class Strategy(StrategyTemplate):
         elif all_pnl<0:
             Strategy.back_test_info['loss_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl
-        if not signal==0:
-            # self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
-            # self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
-            # self.logger.info(result.orders[["type","date","shares","fill_price"]])
-            # message=f"boll提醒!!!!! </br> boll策略 股票代码: {str(symbol)} </br> 2年10万本金,回测结果:</br> 收益: {str(total_pnl)} </br> 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} </br> 总收益: {str(all_pnl)} </br> 胜率: {str(win_rate)}% </br> 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
-            # self.send_message(message=message)
-            # self.logger.info(message)
+        if  signal>0:
+            self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
+            self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
+            self.logger.info(result.orders[["type","date","shares","fill_price"]])
+            message=f"boll提醒!!!!! </br> boll策略 股票代码: {str(symbol)} </br> 2年10万本金,回测结果:</br> 收益: {str(total_pnl)} </br> 浮盈收益(还有股票未卖出): {str(unrealized_pnl)} </br> 总收益: {str(all_pnl)} </br> 胜率: {str(win_rate)}% </br> 🌈✨🎉 Thank you for using the service! 🎉✨🌈"
+            self.send_message(message=message)
+            self.logger.info(message)
             #model 数据写入
             # 使用事务来确保所有操作的原子性
-            self.save_strategy([symbol,signal,"boll_rsi_v1策略: </br> 选股：A股市值大于700亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点 </br> 卖出条件判断: </br> 1. 当前股价在月K级别RSI超过70","boll_rsi_v1"])
+            self.stockList.append([
+                symbol,
+                signal,
+                "boll_rsi_v1策略: </br> 选股：A股市值大于400亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点 </br>",
+                self.name
+            ])
+          
 
 
 
