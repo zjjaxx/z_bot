@@ -212,7 +212,7 @@ class StrategyTemplate:
                         "strateOperate":signal,
                         "strateLossCount":strateLossCount,
                         "strateWinCount":strateWinCount,
-                        "strateBackTestRate.":strateBackTestRate
+                        "strateBackTestRate":strateBackTestRate
                         # "strateOperateTime":datetime.now(),
                     }
 
