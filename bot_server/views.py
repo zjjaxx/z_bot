@@ -94,13 +94,26 @@ def strategy_top_list(request):
             "data": e
         }, status=500)
     
-
-def strategy_middle_list(request):
+def getStockCyq(request):
     try:
-        strategies=StrategyModel.objects.filter(strateType__gt=1).values()
-        strategies=list(map(setAction,strategies)) 
-        return JsonResponse({"success":True,"msg":"ok","data":list(strategies)})
+        print(request.GET.get("code"))
+        stock_cyq_em_df = ak.stock_cyq_em(symbol=request.GET.get("code"), adjust="")
+        data = []
+        for index, row in stock_cyq_em_df.iterrows():
+            # 创建一个字典，每一列的数据作为键值对
+            data.append({
+                "rate": row["获利比例"],
+                "average":row["平均成本"],
+                "90_low":row["90成本-低"],
+                "90_high":row["90成本-高"],
+                "90_concentration":row["90集中度"],
+                "70_low":row["70成本-低"],
+                "70_high":row["70成本-高"],
+                "70_concentration":row["70集中度"],
+            })
+        return JsonResponse({"success":True,"msg":"ok","data":data})
     except Exception as e:
+        print(e)
     # 记录完整错误堆栈
         return JsonResponse({
             "success": False,

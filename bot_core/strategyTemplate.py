@@ -164,6 +164,13 @@ class StrategyTemplate:
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    def get_top_guxi(self):
+        try: 
+            top_df=pd.read_excel("./strategies/data/top-guxi.xlsx", dtype={"代码": str})
+            return top_df['代码'].to_numpy()
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
     def seek_stock(self):
         dragon_symbols=self.get_dragon()
         tiger_symbols=self.get_tiger()

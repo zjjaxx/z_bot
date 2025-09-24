@@ -13,7 +13,7 @@ from numba import njit
 import pandas as pd
 import numpy as np
 from .utils.k_format import weekly_format,monthly_format,convert_bar_data_to_df
-
+pb.enable_data_source_cache('cache_data')
 class Strategy(StrategyTemplate):
     # unique唯一
     name='boll_rsi'
@@ -51,25 +51,23 @@ class Strategy(StrategyTemplate):
                 ctx.sell_shares =ctx.calc_target_shares(1)
 
     def beforeOpen(self, event):
-        Strategy.back_test_info={
-            "win_count":0,
-            "loss_count":0,
-            "pnl":0
-        }
-        # self.send_message("开始回测MACD指标~")
-        self.logger.info("开始回测BOLL_RSI指标~")
-        symbols=self.get_top()
-        for symbol in symbols:
-            symbol=str(symbol)
-            # symbol=re.sub(r'\D', '', symbol) 
-            self.exec_backtest(symbol=symbol)
-        # self.send_message("回测MACD指标结束~")
-        self.logger.info(f"回测BOLL_RSI指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
-        strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
-        for i,value in enumerate(self.stockList):
-            symbol,signal,strateDesc,strateName=value
-            self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
-        self.reset()
+        pass
+        # Strategy.back_test_info={
+        #     "win_count":0,
+        #     "loss_count":0,
+        #     "pnl":0
+        # }
+        # self.logger.info("开始回测BOLL_RSI指标~")
+        # symbols=self.get_top()
+        # for symbol in symbols:
+        #     symbol=str(symbol)
+        #     self.exec_backtest(symbol=symbol)
+        # self.logger.info(f"回测BOLL_RSI指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        # strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
+        # for i,value in enumerate(self.stockList):
+        #     symbol,signal,strateDesc,strateName=value
+        #     self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
+        # self.reset()
 
     def reset(self):
         self.stockList=[]
@@ -95,7 +93,7 @@ class Strategy(StrategyTemplate):
         # daily_df['macd_dea']=macd_dea
 
         # 增加250日最低价分位判断（当前价处于近1年最低10%区间）
-        lookback_period = 250  # 约1年
+        lookback_period = 250*3  # 约1年
         bottom_threshold = 0.3
         middle_threshold = 0.6
         top_threshold = 0.9
@@ -114,7 +112,7 @@ class Strategy(StrategyTemplate):
         weekly_df=weekly_format(daily_df)
         weekly_close = weekly_df['close'].values
         weekly_upper, weekly_middle, weekly_lower = talib.BBANDS(
-            weekly_close, timeperiod=20, nbdevup=2.2, nbdevdn=1.8, matype=0
+            weekly_close, timeperiod=20, nbdevup=2.0, nbdevdn=1.8, matype=0
         )
         weekly_df['weekly_upper']=weekly_upper
         weekly_df['weekly_lower']=weekly_lower
@@ -123,7 +121,7 @@ class Strategy(StrategyTemplate):
         monthly_df=monthly_format(daily_df)
         monthly_close = monthly_df['close'].values
         monthly_upper, monthly_middle, monthly_lower = talib.BBANDS(
-            monthly_close, timeperiod=20, nbdevup=2.2, nbdevdn=1.2, matype=0
+            monthly_close, timeperiod=20, nbdevup=2.0, nbdevdn=1.8, matype=0
         )
         monthly_df['monthly_middle'] = monthly_middle
         monthly_df['monthly_lower'] = monthly_lower
@@ -173,7 +171,6 @@ class Strategy(StrategyTemplate):
         buy_condition_bottom = (
             (daily_df['close'] <= daily_df['monthly_lower']) 
             & buy_condition_30
-            & daily_df['is_squeeze']
             & daily_df['monthly_trend_up']
         ) 
         buy_condition_middle = (
@@ -193,7 +190,7 @@ class Strategy(StrategyTemplate):
 
         daily_df['signal'] = 0
         daily_df.loc[buy_condition_bottom, 'signal'] = 1
-        daily_df.loc[buy_condition_middle, 'signal'] = 2
+        # daily_df.loc[buy_condition_middle, 'signal'] = 2
         # daily_df.loc[buy_condition_top, 'signal'] = 3
 
         daily_df.loc[sell_condition, 'signal'] = -1
