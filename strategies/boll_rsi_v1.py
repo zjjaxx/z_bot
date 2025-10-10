@@ -1,7 +1,9 @@
 from bot_core.strategyTemplate import StrategyTemplate
+from bot_core.tushare import TushareDataSource
 import pybroker as pb
 import talib
 import re
+import time
 from bot_server.form import StockModelForm,StrategyModelForm
 from bot_server.models import StockModel,StrategyModel
 from django.db import transaction
@@ -50,23 +52,33 @@ class Strategy(StrategyTemplate):
                 ctx.sell_shares =ctx.calc_target_shares(1)
 
     def beforeOpen(self, event):
-        pass
-        # Strategy.back_test_info={
-        #     "win_count":0,
-        #     "loss_count":0,
-        #     "pnl":0
-        # }
-        # self.logger.info("开始回测BOLL_RSI_V1指标~")
-        # symbols=self.get_top()
-        # for symbol in symbols:
-        #     symbol=str(symbol)
-        #     self.exec_backtest(symbol=symbol)
-        # self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
-        # strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
-        # for i,value in enumerate(self.stockList):
-        #     symbol,signal,strateDesc,strateName=value
-        #     self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
-        # self.reset()
+        Strategy.back_test_info={
+            "win_count":0,
+            "loss_count":0,
+            "pnl":0
+        }
+        self.logger.info("开始回测BOLL_RSI_V1指标~")
+        sz_list=self.get_sz_code()
+        sh_list=self.get_sh_code()
+        symbols=self.get_top()
+        for symbol in symbols:
+            symbol=str(symbol)
+            if symbol not in sz_list:
+                continue
+            self.exec_backtest(symbol=symbol+".SZ")
+            time.sleep(1)  # 每次循环延迟1秒
+        for symbol in symbols:
+            symbol=str(symbol)
+            if symbol not in sh_list:
+                continue
+            self.exec_backtest(symbol=symbol+".SH")
+            time.sleep(1)  # 每次循环延迟1秒
+        self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
+        for i,value in enumerate(self.stockList):
+            symbol,signal,strateDesc,strateName=value
+            self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
+        self.reset()
 
     def reset(self):
         self.stockList=[]
@@ -196,7 +208,7 @@ class Strategy(StrategyTemplate):
     def exec_backtest(self,symbol):
         boll_macd = pb.indicator('boll',self.calc_boll_macd)
         strategyContext = PBStrategy(
-            data_source=AKShare(),
+            data_source=TushareDataSource(symbol_type=".SZ"),
             start_date="20150219",
             end_date=datetime.now(),
             config=PBStrategyConfig(return_signals=True))

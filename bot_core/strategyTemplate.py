@@ -157,6 +157,20 @@ class StrategyTemplate:
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    def get_sh_code(self):
+        try: 
+            sh_df=pd.read_excel("./strategies/data/sh.xlsx", dtype={"代码": str})
+            return sh_df['代码'].to_numpy()
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    def get_sz_code(self):
+        try: 
+            sz_df=pd.read_excel("./strategies/data/sz.xlsx", dtype={"代码": str})
+            return sz_df['代码'].to_numpy()
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
     def get_top(self):
         try: 
             top_df=pd.read_excel("./strategies/data/middle.xlsx", dtype={"代码": str})
