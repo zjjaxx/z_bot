@@ -8,6 +8,7 @@ This code is licensed under Apache 2.0 with Commons Clause license
 
 from datetime import datetime
 from typing import Optional
+import time
 import tushare as ts
 import akshare
 import pandas as pd
@@ -48,14 +49,23 @@ class TushareDataSource(DataSource):
         if formatted_tf in TushareDataSource._tf_to_period:
             period = TushareDataSource._tf_to_period[formatted_tf]
             for i in range(len(symbols_list)):
-                temp_df = ts.pro_bar(
-                    ts_code=symbols_simple[i], 
-                    adj=adjust if adjust is not None else "", 
-                    start_date=start_date_str, end_date=end_date_str
-                )
-                if not temp_df.columns.empty:
-                    temp_df["symbol"] = symbols_list[i]
-                result = pd.concat([result, temp_df], ignore_index=True)
+                # 添加重试机制，直到请求成功
+                success = False
+                while not success:
+                    try:
+                        temp_df = ts.pro_bar(
+                            ts_code=symbols_simple[i], 
+                            adj=adjust if adjust is not None else "", 
+                            start_date=start_date_str, end_date=end_date_str
+                        )
+                        # 检查是否获取到了有效数据
+                        if temp_df is not None and not temp_df.empty:
+                            temp_df["symbol"] = symbols_list[i]
+                            result = pd.concat([result, temp_df], ignore_index=True)
+                        success = True
+                    except Exception as e:
+                        print(f"获取数据失败: {e}，1秒后重试...")
+                        time.sleep(1)  # 等待1秒后重新请求
         if result.columns.empty:
             return pd.DataFrame(
                 columns=[
