@@ -5,7 +5,8 @@ r"""Contains extension classes."""
 This code is licensed under Apache 2.0 with Commons Clause license
 (see LICENSE for details).
 """
-
+import os
+from logbook import Logger, StreamHandler, FileHandler
 from datetime import datetime
 from typing import Optional
 import time
@@ -26,10 +27,31 @@ class TushareDataSource(DataSource):
         "1day": "daily",
         "1week": "weekly",
     }
+     
+
+    def initLogger(self, name='logInfo', log_type='stdout', filepath='logInfo.log', loglevel='DEBUG'):
+        """Log对象
+        :param name: log 名字
+        :param :logtype: 'stdout' 输出到屏幕, 'file' 输出到指定文件
+        :param :filename: log 文件名
+        :param :loglevel: 设定log等级 ['CRITICAL', 'ERROR', 'WARNING', 'NOTICE', 'INFO', 'DEBUG', 'TRACE', 'NOTSET']
+        :return log handler object
+        """
+        self.logger = Logger(name)
+        if log_type == 'stdout':
+            StreamHandler(sys.stdout, level=loglevel).push_application()
+        if log_type == 'file':
+            if os.path.isdir(filepath) and not os.path.exists(filepath):
+                os.makedirs(os.path.dirname(filepath))
+            file_handler = FileHandler(filepath, level=loglevel)
+            self.logger.handlers.append(file_handler)
+
 
     def __init__(self,symbol_type):   
         super().__init__()  
-        self.symbol_type=symbol_type       
+        self.symbol_type=symbol_type   
+            # 初始化日志
+        self.initLogger( name='logInfo', log_type='file', filepath='./logger/info.log', loglevel='DEBUG')    
 
     def _fetch_data(
         self,
@@ -64,8 +86,8 @@ class TushareDataSource(DataSource):
                             result = pd.concat([result, temp_df], ignore_index=True)
                         success = True
                     except Exception as e:
-                        print(f"获取数据失败: {e}，1秒后重试...")
-                        time.sleep(1)  # 等待1秒后重新请求
+                        self.logger.error(f"获取数据失败: {e}，1秒后重试...")
+                        time.sleep(3)  # 等待1秒后重新请求
         if result.columns.empty:
             return pd.DataFrame(
                 columns=[

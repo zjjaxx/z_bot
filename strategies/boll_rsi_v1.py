@@ -60,19 +60,15 @@ class Strategy(StrategyTemplate):
         self.logger.info("开始回测BOLL_RSI_V1指标~")
         sz_list=self.get_sz_code()
         sh_list=self.get_sh_code()
-        symbols=self.get_top()
-        for symbol in symbols:
+        for symbol in sz_list:
+            print("回测股票:",symbol)
             symbol=str(symbol)
-            if symbol not in sz_list:
-                continue
             self.exec_backtest(symbol=symbol+".SZ")
-            time.sleep(1.5)  # 每次循环延迟1秒
-        for symbol in symbols:
+            time.sleep(2)  # 每次循环延迟2秒
+        for symbol in sh_list:
             symbol=str(symbol)
-            if symbol not in sh_list:
-                continue
             self.exec_backtest(symbol=symbol+".SH")
-            time.sleep(1.5)  # 每次循环延迟1秒
+            time.sleep(2)  # 每次循环延迟2秒
         self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
         for i,value in enumerate(self.stockList):
