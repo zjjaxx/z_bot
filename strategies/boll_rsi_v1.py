@@ -66,13 +66,13 @@ class Strategy(StrategyTemplate):
             if symbol not in sz_list:
                 continue
             self.exec_backtest(symbol=symbol+".SZ")
-            time.sleep(1)  # 每次循环延迟1秒
+            time.sleep(1.5)  # 每次循环延迟1秒
         for symbol in symbols:
             symbol=str(symbol)
             if symbol not in sh_list:
                 continue
             self.exec_backtest(symbol=symbol+".SH")
-            time.sleep(1)  # 每次循环延迟1秒
+            time.sleep(1.5)  # 每次循环延迟1秒
         self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
         for i,value in enumerate(self.stockList):
