@@ -50,23 +50,29 @@ class Strategy(StrategyTemplate):
                 ctx.sell_shares =ctx.calc_target_shares(1)
 
     def beforeOpen(self, event):
-        pass
-        # Strategy.back_test_info={
-        #     "win_count":0,
-        #     "loss_count":0,
-        #     "pnl":0
-        # }
-        # self.logger.info("开始回测BOLL_rsi_v2指标~")
-        # symbols=self.get_top()
-        # for symbol in symbols:
-        #     symbol=str(symbol)
-        #     self.exec_backtest(symbol=symbol)
-        # self.logger.info(f"回测BOLL_rsi_v2指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
-        # strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
-        # for i,value in enumerate(self.stockList):
-        #     symbol,signal,strateDesc,strateName=value
-        #     self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
-        # self.reset()
+        Strategy.back_test_info={
+            "win_count":0,
+            "loss_count":0,
+            "pnl":0
+        }
+        self.logger.info("开始回测BOLL_rsi_v2指标~")
+        sz_list=self.get_sz_code()
+        sh_list=self.get_sh_code()
+        for symbol in sz_list:
+            print("回测股票:",symbol)
+            symbol=str(symbol)
+            self.exec_backtest(symbol=symbol+".SZ")
+            time.sleep(1.5)  # 每次循环延迟1.5秒
+        for symbol in sh_list:
+            symbol=str(symbol)
+            self.exec_backtest(symbol=symbol+".SH")
+            time.sleep(1.5)  # 每次循环延迟1.5秒
+        self.logger.info(f"回测BOLL_rsi_v2指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
+        for i,value in enumerate(self.stockList):
+            symbol,signal,strateDesc,strateName=value
+            self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
+        self.reset()
 
     def reset(self):
         self.stockList=[]
@@ -229,7 +235,7 @@ class Strategy(StrategyTemplate):
             self.stockList.append([
                 symbol,
                 signal,
-                "boll_rsi_v1策略: </br> 选股：A股市值大于400亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨之上，趋势向上，同时股价在历史低位判断买点 </br>",
+                "boll_rsi_v2策略: </br> 选股：A股市值大于500亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在30均线附近，趋势向上，同时股价在历史低位判断买点 </br>",
                 self.name
             ])
           
