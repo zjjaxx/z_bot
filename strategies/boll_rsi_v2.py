@@ -12,6 +12,8 @@ from .base.CustomAkShare import CustomAKShare
 from numba import njit
 import pandas as pd
 import numpy as np
+import time
+from bot_core.tushare import TushareDataSource
 from .utils.k_format import weekly_format,monthly_format,convert_bar_data_to_df
 pb.enable_data_source_cache('cache_data')
 class Strategy(StrategyTemplate):
@@ -202,7 +204,7 @@ class Strategy(StrategyTemplate):
     def exec_backtest(self,symbol):
         boll_macd = pb.indicator('boll',self.calc_boll_macd)
         strategyContext = PBStrategy(
-            data_source=AKShare(),
+            data_source=TushareDataSource(symbol_type=".SZ"),
             start_date="20210219",
             end_date=datetime.now(),
             config=PBStrategyConfig(return_signals=True))
