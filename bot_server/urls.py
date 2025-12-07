@@ -10,4 +10,8 @@ urlpatterns = [
     path('virtual_list/', views.virtual_list, name='virtual_list'),
     path('strategy_top_list/', views.strategy_top_list, name='strategy_top_list'),
     path('getStockCyq/', views.getStockCyq, name='getStockCyq'),
+    path('getStrategyOrder/', views.getStrategyOrder, name='getStrategyOrder'),
+    path('getStrategyTrade/', views.getStrategyTrade, name='getStrategyTrade'),
+    path('getStrategySymbol/', views.getStrategySymbol, name='getStrategySymbol'),
+    path('getStrategyList/', views.getStrategyList, name='getStrategyList'),
 ]

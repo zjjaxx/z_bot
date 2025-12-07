@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import akshare as ak
 from django.http import HttpResponse,JsonResponse,HttpResponseServerError
-from .models import StockModel,StrategyModel
+from .models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade
 from .util.time import setAction
 from django.utils import timezone
 from datetime import datetime, time, timedelta
@@ -69,7 +69,6 @@ def stock_dayly_recommand(request):
             "msg": "服务暂时不可用，请稍后重试",
             "data": e
         }, status=500)
-    
 def strategy_history_list(request):
     try:
         strategies=StrategyModel.objects.values()
@@ -93,7 +92,44 @@ def strategy_top_list(request):
             "msg": "服务暂时不可用，请稍后重试",
             "data": e
         }, status=500)
-    
+def getStrategySymbol(request):
+    try:
+        strategy_name=request.GET.get("strategy_name")
+        strategy_symbols=StrategyOrder.objects.filter(strategy_name=strategy_name).values_list("symbol",flat=True).distinct()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategy_symbols)})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)  
+def getStrategyOrder(request):
+    try:
+        strategy_name=request.GET.get("strategy_name")
+        # 按date字段降序排列
+        strategy_orders=StrategyOrder.objects.filter(strategy_name=strategy_name).order_by('-date').values()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategy_orders)})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
+def getStrategyTrade(request):
+    try:
+        strategy_name=request.GET.get("strategy_name")
+        # 按date字段降序排列
+        strategy_trades=StratepyTrade.objects.filter(strategy_name=strategy_name).order_by('-entry_date').values()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategy_trades)})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
 def getStockCyq(request):
     try:
         print(request.GET.get("code"))
@@ -115,6 +151,16 @@ def getStockCyq(request):
     except Exception as e:
         print(e)
     # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)
+def getStrategyList(request):
+    try:
+        strategies=StrategyBase.objects.values()
+        return JsonResponse({"success":True,"msg":"ok","data":list(strategies)})
+    except Exception as e:
         return JsonResponse({
             "success": False,
             "msg": "服务暂时不可用，请稍后重试",

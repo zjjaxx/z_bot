@@ -71,6 +71,7 @@ class Strategy(StrategyTemplate):
             time.sleep(1.5)  # 每次循环延迟1.5秒
         self.logger.info(f"回测BOLL_rsi_v2指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
+        self.save_strategy_base([2,self.name,"周线下轨,30月线且趋势向上,股价近3年内较最高点跌去70%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
         for i,value in enumerate(self.stockList):
             symbol,signal,strateDesc,strateName=value
             self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
@@ -219,6 +220,17 @@ class Strategy(StrategyTemplate):
         all_pnl=total_pnl+unrealized_pnl
         win_rate=result.metrics_df[result.metrics_df['name']=='win_rate'].iloc[0,1]
         pnl_rate_per_year=all_pnl/initial_market_value/2.33*100
+        # 保存订单信息
+        orders_df = result.orders[["type","symbol","date","shares","fill_price"]]
+        orders_array = orders_df.to_numpy()
+        for order in orders_array:
+            self.save_strategy_order(order,self.name)
+        # 保存交易信息
+        trades_df = result.trades[["symbol","entry_date","exit_date","entry","exit","shares","pnl","agg_pnl","return_pct","bars","pnl_per_bar"]]
+        trades_array = trades_df.to_numpy()
+        for trade in trades_array:
+            self.save_strategy_trade(trade,self.name)
+
         if all_pnl>0:
             Strategy.back_test_info['win_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl

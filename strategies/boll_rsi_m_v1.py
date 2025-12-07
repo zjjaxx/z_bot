@@ -15,16 +15,19 @@ from numba import njit
 import pandas as pd
 import numpy as np
 from .utils.k_format import weekly_format,monthly_format,convert_bar_data_to_df
+# 移除全局调试模式检测，直接禁用bootstrap计算
 pb.enable_data_source_cache('cache_data')
 class Strategy(StrategyTemplate):
     # unique唯一
-    name='boll_rsi_v1'
+    order=2
+    name='boll_rsi_m_v1'
     back_test_info={
         "win_count":0,
         "loss_count":0,
         "pnl":0
     }
     def init(self):
+        self.order=2
         self.stockList=[]
         print(Strategy.name," Strategy init")
 
@@ -35,7 +38,7 @@ class Strategy(StrategyTemplate):
         if not ctx.long_pos():
             # Buy if the next bar is predicted to have a positive return:
             if ctx.indicator('boll')[-1] ==1:
-                # ctx.stop_profit_pct = 60
+                ctx.stop_profit_pct = 50
                 # ctx.stop_loss_pct = 10
                 ctx.buy_shares = ctx.calc_target_shares(1)
             elif ctx.indicator('boll')[-1] ==2:
@@ -57,7 +60,7 @@ class Strategy(StrategyTemplate):
             "loss_count":0,
             "pnl":0
         }
-        self.logger.info("开始回测BOLL_RSI_V1指标~")
+        self.logger.info("开始回测BOLL_RSI_M_V1指标~")
         sz_list=self.get_sz_code()
         sh_list=self.get_sh_code()
         for symbol in sz_list:
@@ -69,11 +72,13 @@ class Strategy(StrategyTemplate):
             symbol=str(symbol)
             self.exec_backtest(symbol=symbol+".SH")
             time.sleep(1.5)  # 每次循环延迟1.5秒
-        self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        self.logger.info(f"回测BOLL_RSI_M_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
-        self.save_strategy_base([1,self.name,"周线下轨,月线中轨且趋势向上,股价近3年内较最高点跌去70%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
+        # 保存策略
+        self.save_strategy_base([2,self.name,"周线下轨,月线中轨且趋势向上,股价近3年内较最高点跌去50%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
         for i,value in enumerate(self.stockList):
             symbol,signal,strateDesc,strateName=value
+            # 保存买入策略
             self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
         self.reset()
 
@@ -101,8 +106,8 @@ class Strategy(StrategyTemplate):
         # daily_df['macd_dea']=macd_dea
 
         # 增加250日最低价分位判断（当前价处于近1年最低10%区间）
-        lookback_period = 250*3  # 约1年
-        bottom_threshold = 0.3
+        lookback_period = 250*3 # 约1年
+        bottom_threshold = 0.5
         middle_threshold = 0.6
         top_threshold = 0.9
         daily_df['250_low'] = daily_df['close'].rolling(lookback_period).mean()
@@ -211,6 +216,8 @@ class Strategy(StrategyTemplate):
             config=PBStrategyConfig(return_signals=True,initial_cash=20000))
         strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[boll_macd])
         # calc_bootstrap=True
+        # 检查是否处于调试模式，如果是则禁用bootstrap计算
+        # 直接禁用bootstrap计算以解决调试器兼容性问题
         result = strategyContext.backtest(adjust="hfq",calc_bootstrap=True)
         signal=result.signals[symbol]['boll'].iloc[-1]
         total_pnl=result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1]
@@ -230,13 +237,15 @@ class Strategy(StrategyTemplate):
         trades_array = trades_df.to_numpy()
         for trade in trades_array:
             self.save_strategy_trade(trade,self.name)
-            
+
         if all_pnl>0:
             Strategy.back_test_info['win_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl
+
         elif all_pnl<0:
             Strategy.back_test_info['loss_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl
+
         if  signal>0:
             self.logger.info(f"code: {symbol} all_pnl:{str(all_pnl)} win_rate:{win_rate} trade_count:{trade_count} unrealized_pnl:{unrealized_pnl} signal:{signal}")
             self.logger.info(result.trades[["type",'entry_date',	'exit_date',"shares","pnl"]])
@@ -249,7 +258,7 @@ class Strategy(StrategyTemplate):
             self.stockList.append([
                 symbol,
                 signal,
-                "boll_rsi_v1策略: </br> 选股：A股市值大于500亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨附近，趋势向上，同时股价在历史低位判断买点 </br>",
+                "boll_rsi_m_v1策略: </br> 选股：A股市值大于500亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨附近，趋势向上，同时股价在历史低位判断买点 </br>",
                 self.name
             ])
           

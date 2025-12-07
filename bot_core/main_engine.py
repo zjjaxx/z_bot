@@ -24,9 +24,17 @@ class MainEngine:
                 self.strategies.append(strategy)
 
     def registryEvent(self):
-        for strategy in self.strategies:
-            self.event_engine.register(AKShareQuetationEngine.EventType,strategy.run)
-            self.event_engine.register("beforeOpen",strategy.beforeOpen)
+        # 根据策略的order属性排序
+        # 优先使用实例的order属性，如果没有则尝试使用类的order属性，如果都没有则默认为999
+        sorted_strategies = sorted(
+            self.strategies,
+            key=lambda s: getattr(s, 'order', getattr(s.__class__, 'order', 999))
+        )
+        
+        # 按排序后的顺序注册事件
+        for strategy in sorted_strategies:
+            self.event_engine.register(AKShareQuetationEngine.EventType, strategy.run)
+            self.event_engine.register("beforeOpen", strategy.beforeOpen)
 
     def start(self):
         self.event_engine.start()

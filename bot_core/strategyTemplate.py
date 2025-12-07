@@ -10,8 +10,8 @@ import akshare as ak
 import requests
 import numpy as np
 import json
-from bot_server.form import StockModelForm,StrategyModelForm
-from bot_server.models import StockModel,StrategyModel
+from bot_server.form import StockModelForm,StrategyModelForm,StrategyOrderModelForm,StrategyBaseModelForm,StratepyTradeModelForm
+from bot_server.models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade
 from django.db import transaction
 
 seachCount=50
@@ -247,4 +247,96 @@ class StrategyTemplate:
                         self.logger.info(strate_form.errors)
         except Exception as e:
             self.logger.info(f"An error occurred: {e}")
+    def save_strategy_base(self,info):
+        risk_coefficient,strategy_name,strategy_desc,strategy_rate,strategy_win_count,strategy_loss_count,strategy_total_count,strategy_total_profit=info
+        try:
+            with transaction.atomic():
+                strategy_base=StrategyBase.objects.filter(strategy_name=strategy_name).first()
+                if(not strategy_base):
+                    strategy_base_data = {
+                        "risk_coefficient":risk_coefficient,
+                        "strategy_name":strategy_name,
+                        "strategy_rate":strategy_rate,
+                        "strategy_desc":strategy_desc,
+                        "strategy_win_count":strategy_win_count,
+                        "strategy_loss_count":strategy_loss_count,
+                        "strategy_total_count":strategy_total_count,
+                        "strategy_total_profit":strategy_total_profit,
+                    }
+                    # 使用 StrategyBaseModelForm 创建表单并校验
+                    strategy_base_form = StrategyBaseModelForm(data=strategy_base_data)
+                    # 校验表单
+                    if strategy_base_form.is_valid():
+                        # 保存 StrategyBaseModel 实例
+                        strategy_base_form.save()
+                    else:
+                        self.logger.info(strategy_base_form.errors)
+                else:
+                    strategy_base.risk_coefficient=risk_coefficient
+                    strategy_base.strategy_rate=strategy_rate
+                    strategy_base.strategy_win_count=strategy_win_count
+                    strategy_base.strategy_desc=strategy_desc
+                    strategy_base.strategy_loss_count=strategy_loss_count
+                    strategy_base.strategy_total_count=strategy_total_count
+                    strategy_base.strategy_total_profit=strategy_total_profit
+                    strategy_base.save()
+        except Exception as e:
+            self.logger.info(f"An error occurred: {e}") 
+    def save_strategy_trade(self,trade,strategy_name):
+        symbol,entry_date,exit_date,entry,exit,shares,pnl,agg_pnl,return_pct,bars,pnl_per_bar=trade 
+        try:
+            with transaction.atomic():
+                strategy_trade=StratepyTrade.objects.filter(strategy_name=strategy_name,symbol=symbol,entry_date=entry_date).first()
+                if(strategy_trade):
+                    return False 
+                strategy_trade_data = {
+                    "strategy_name":strategy_name,
+                    "symbol":symbol,
+                    "entry_date":entry_date,
+                    "exit_date":exit_date,
+                    "entry":entry,
+                    "exit":exit,
+                    "shares":shares,
+                    "pnl":pnl,
+                    "agg_pnl":agg_pnl,
+                    "return_pct":return_pct,
+                    "bars":bars,
+                    "pnl_per_bar":pnl_per_bar,
+                }
+                # 使用 StratepyTradeModelForm 创建表单并校验
+                strategy_trade_form = StratepyTradeModelForm(data=strategy_trade_data)
+                # 校验表单
+                if strategy_trade_form.is_valid():
+                    # 保存 StratepyTradeModel 实例
+                    strategy_trade_form.save()
+                else:
+                    self.logger.info(strategy_trade_form.errors)
+        except Exception as e:
+            self.logger.info(f"An error occurred: {e}") 
 
+    def save_strategy_order(self,order,strategy_name):
+        type,symbol,date,shares,fill_price=order            
+        try:
+            with transaction.atomic():
+                strategy_order=StrategyOrder.objects.filter(strategy_name=strategy_name,symbol=symbol,date=date).first()
+                if(strategy_order):
+                    return False
+                strategy_order_data = {
+                    "strategy_name":strategy_name,
+                    "symbol":symbol,
+                    "date":date,
+                    "type":type,
+                    "shares":shares,
+                    "fill_price":fill_price,
+                }
+                # 使用 StrategyOrderModelForm 创建表单并校验
+                strategy_order_form = StrategyOrderModelForm(data=strategy_order_data)
+                # 校验表单
+                if strategy_order_form.is_valid():
+                    # 保存 StrategyOrderModel 实例
+                    strategy_order_form.save()
+                else:
+                    self.logger.info(strategy_order_form.errors)
+                
+        except Exception as e:
+            self.logger.info(f"An error occurred: {e}") 
