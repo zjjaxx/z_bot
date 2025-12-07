@@ -19,7 +19,7 @@ class BotServerConfig(AppConfig):
         ts.set_token('13120ee255c17b868d0e3523d0be88f6d805645738e8637720b994a3')
         pro = ts.pro_api()
         __thread=Thread(target=self.runTask,name="bot_task",daemon=True)
-        # __thread.start()
+        __thread.start()
 
     def runTask(self):
         main_engine=MainEngine()
