@@ -49,7 +49,7 @@ class QuetationEngine:
     
     def exec_schedule(self):
         self.job()
-        schedule.every().day.at("15:01:00","Asia/Shanghai").do(self.job)
+        schedule.every().day.at("20:01:00","Asia/Shanghai").do(self.job)
         while True:
             schedule.run_pending()
             time.sleep(1)
