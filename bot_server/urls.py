@@ -13,5 +13,6 @@ urlpatterns = [
     path('getStrategyOrder/', views.getStrategyOrder, name='getStrategyOrder'),
     path('getStrategyTrade/', views.getStrategyTrade, name='getStrategyTrade'),
     path('getStrategySymbol/', views.getStrategySymbol, name='getStrategySymbol'),
+    path('getStrategyOrderDetail/', views.getStrategyOrderDetail, name='getStrategyOrderDetail'),
     path('getStrategyList/', views.getStrategyList, name='getStrategyList'),
 ]
