@@ -229,8 +229,33 @@ class Strategy(StrategyTemplate):
         trades_df = result.trades[["symbol","entry_date","exit_date","entry","exit","shares","pnl","agg_pnl","return_pct","bars","pnl_per_bar"]]
         trades_array = trades_df.to_numpy()
         for trade in trades_array:
-            self.save_strategy_trade(trade,self.name)
-
+            self.save_strategy_trade(trade,self.name,symbol)
+        
+           # 保存指标信息
+        metrics_info=[
+            result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='unrealized_pnl'].iloc[0,1],   
+            result.metrics_df[result.metrics_df['name']=='total_return_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='max_drawdown'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='max_drawdown_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='avg_pnl'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='avg_return_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='avg_profit_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='avg_loss'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='avg_loss_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='largest_win_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='largest_loss'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='largest_loss_pct'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='sharpe'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='sortino'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='profit_factor'].iloc[0,1],    
+            result.metrics_df[result.metrics_df['name']=='ulcer_index'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='upi'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='equity_r2'].iloc[0,1],
+            result.metrics_df[result.metrics_df['name']=='std_error'].iloc[0,1],
+        ]
+        self.save_strategy_metrics(metrics_info,self.name,symbol)
+         
         if all_pnl>0:
             Strategy.back_test_info['win_count']+=1
             Strategy.back_test_info['pnl']+=all_pnl

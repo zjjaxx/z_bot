@@ -1,4 +1,4 @@
-from bot_server.models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade
+from bot_server.models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade,Metrics
 # 引入表单类
 from django import forms
 
@@ -35,3 +35,8 @@ class StratepyTradeModelForm(forms.ModelForm):
         model = StratepyTrade
         # 定义表单包含的字段
         fields = ('strategy_name','symbol','entry_date','exit_date','entry','exit','shares','pnl','agg_pnl','return_pct','bars','pnl_per_bar')
+
+class MetricsModelForm(forms.ModelForm):
+    class Meta:
+        model = Metrics
+        fields = ("strategy_name","symbol", "total_pnl","unrealized_pnl","total_return_pct","max_drawdown","max_drawdown_pct","avg_pnl","avg_return_pct","avg_profit_pct","avg_loss","avg_loss_pct","largest_win_pct","largest_loss","largest_loss_pct","sharpe","sortino","profit_factor","ulcer_index","upi","equity_r2","std_error")

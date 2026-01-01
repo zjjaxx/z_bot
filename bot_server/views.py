@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import akshare as ak
 from django.http import HttpResponse,JsonResponse,HttpResponseServerError
-from .models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade
+from .models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade,Metrics
 from .util.time import setAction
 from django.utils import timezone
 from datetime import datetime, time, timedelta
@@ -104,7 +104,19 @@ def getStrategySymbol(request):
             "msg": "服务暂时不可用，请稍后重试",
             "data": e
         }, status=500)  
-
+def metrics_list(request):
+    try:
+        strategy_name=request.GET.get("strategy_name")
+        symbol=request.GET.get("symbol")
+        metrics=Metrics.objects.filter(strategy_name=strategy_name,symbol=symbol).values().first()
+        return JsonResponse({"success":True,"msg":"ok","data":metrics})
+    except Exception as e:
+    # 记录完整错误堆栈
+        return JsonResponse({
+            "success": False,
+            "msg": "服务暂时不可用，请稍后重试",
+            "data": e
+        }, status=500)  
 def getStrategyOrderDetail(request):
     try:
         strategy_name=request.GET.get("strategy_name")

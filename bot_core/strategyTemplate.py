@@ -10,8 +10,8 @@ import akshare as ak
 import requests
 import numpy as np
 import json
-from bot_server.form import StockModelForm,StrategyModelForm,StrategyOrderModelForm,StrategyBaseModelForm,StratepyTradeModelForm
-from bot_server.models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade
+from bot_server.form import StockModelForm,StrategyModelForm,StrategyOrderModelForm,StrategyBaseModelForm,StratepyTradeModelForm,MetricsModelForm
+from bot_server.models import StockModel,StrategyModel,StrategyOrder,StrategyBase,StratepyTrade,Metrics
 from django.db import transaction
 
 seachCount=50
@@ -157,6 +157,13 @@ class StrategyTemplate:
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
+    def get_code_by_name(self,path):
+        try: 
+            df=pd.read_excel(path, dtype={"代码": str})
+            return df['代码'].to_numpy()
+        except:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            print(repr(traceback.format_exception(exc_type,exc_value,exc_traceback)))
     def get_sh_code(self):
         try: 
             sh_df=pd.read_excel("./strategies/data/sh.xlsx", dtype={"代码": str})
@@ -247,6 +254,67 @@ class StrategyTemplate:
                         self.logger.info(strate_form.errors)
         except Exception as e:
             self.logger.info(f"An error occurred: {e}")
+    def save_strategy_metrics(self,info,strategy_name,symbol):
+        total_pnl,unrealized_pnl,total_return_pct,max_drawdown,max_drawdown_pct,avg_pnl,avg_return_pct,avg_profit_pct,avg_loss,avg_loss_pct,largest_win_pct,largest_loss,largest_loss_pct,sharpe,sortino,profit_factor,ulcer_index,upi,equity_r2,std_error=info
+        try:
+            with transaction.atomic():
+                metrics=Metrics.objects.filter(strategy_name=strategy_name,symbol=symbol).first()
+                if(not metrics):
+                    metrics_data = {
+                        "strategy_name":strategy_name,
+                        "symbol":symbol,
+                        "total_pnl":total_pnl,
+                        "unrealized_pnl":unrealized_pnl,
+                        "total_return_pct":total_return_pct,
+                        "max_drawdown":max_drawdown,
+                        "max_drawdown_pct":max_drawdown_pct,
+                        "avg_pnl":avg_pnl,
+                        "avg_return_pct":avg_return_pct,
+                        "avg_profit_pct":avg_profit_pct,
+                        "avg_loss":avg_loss,
+                        "avg_loss_pct":avg_loss_pct,
+                        "largest_win_pct":largest_win_pct,
+                        "largest_loss":largest_loss,
+                        "largest_loss_pct":largest_loss_pct,
+                        "sharpe":sharpe,
+                        "sortino":sortino,
+                        "profit_factor":profit_factor,
+                        "ulcer_index":ulcer_index,
+                        "upi":upi,
+                        "equity_r2":equity_r2,
+                        "std_error":std_error,
+                    }
+                    # 使用 MetricsModelForm 创建表单并校验
+                    metrics_form = MetricsModelForm(data=metrics_data)
+                    # 校验表单
+                    if metrics_form.is_valid():
+                        # 保存 MetricsModel 实例
+                        metrics_form.save()
+                    else:
+                        self.logger.info(metrics_form.errors)
+                else:
+                    metrics.total_pnl=total_pnl
+                    metrics.unrealized_pnl=unrealized_pnl
+                    metrics.total_return_pct=total_return_pct
+                    metrics.max_drawdown=max_drawdown
+                    metrics.max_drawdown_pct=max_drawdown_pct
+                    metrics.avg_pnl=avg_pnl
+                    metrics.avg_return_pct=avg_return_pct
+                    metrics.avg_profit_pct=avg_profit_pct
+                    metrics.avg_loss=avg_loss
+                    metrics.avg_loss_pct=avg_loss_pct
+                    metrics.largest_win_pct=largest_win_pct
+                    metrics.largest_loss=largest_loss
+                    metrics.largest_loss_pct=largest_loss_pct
+                    metrics.sharpe=sharpe
+                    metrics.sortino=sortino
+                    metrics.profit_factor=profit_factor
+                    metrics.ulcer_index=ulcer_index
+                    metrics.equity_r2=equity_r2
+                    metrics.std_error=std_error
+                    metrics.save()
+        except Exception as e:
+            self.logger.info(f"An error occurred: {e}")        
     def save_strategy_base(self,info):
         risk_coefficient,strategy_name,strategy_desc,strategy_rate,strategy_win_count,strategy_loss_count,strategy_total_count,strategy_total_profit=info
         try:

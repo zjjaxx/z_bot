@@ -15,4 +15,5 @@ urlpatterns = [
     path('getStrategySymbol/', views.getStrategySymbol, name='getStrategySymbol'),
     path('getStrategyOrderDetail/', views.getStrategyOrderDetail, name='getStrategyOrderDetail'),
     path('getStrategyList/', views.getStrategyList, name='getStrategyList'),
+    path('metrics_list/', views.metrics_list, name='metrics_list'),
 ]

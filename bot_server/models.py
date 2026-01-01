@@ -128,3 +128,46 @@ class StratepyTrade(models.Model):
     created = models.DateTimeField(default=timezone.now)
     # 更新时间。每次更新时自动更新为当前时间
     updated = models.DateTimeField(auto_now=True)
+
+class Metrics(models.Model):
+     # 策略名称
+    strategy_name = models.CharField(max_length=100)
+    # 股票代码
+    symbol = models.CharField(max_length=10)
+    # 总收益
+    total_pnl=models.FloatField()
+    # 未实现盈亏
+    unrealized_pnl=models.FloatField()
+    # 总回报百分比
+    total_return_pct=models.FloatField()
+    # 最大回撤
+    max_drawdown=models.FloatField()
+    # 最大回撤百分比
+    max_drawdown_pct=models.FloatField()
+    # 平均收益率
+    avg_pnl=models.FloatField()
+    # 平均回报率
+    avg_return_pct=models.FloatField()
+    # 平均利润率
+    avg_profit_pct=models.FloatField()
+    # 平均损失
+    avg_loss=models.FloatField()
+    # 平均损失百分比
+    avg_loss_pct=models.FloatField()
+    # 最大收益
+    largest_win_pct=models.FloatField()
+    # 最大亏损
+    largest_loss=models.FloatField()
+    # 最大亏损百分比
+    largest_loss_pct= models.FloatField()
+    # 夏普率
+    sharpe=models.FloatField()
+    # 索提诺比率
+    sortino=models.FloatField()
+    # 盈利系数
+    profit_factor=models.FloatField()
+    # 溃疡指数
+    ulcer_index=models.FloatField()
+    upi=models.FloatField()
+    equity_r2=models.FloatField()
+    std_error=models.FloatField()

@@ -18,7 +18,8 @@ from .utils.k_format import weekly_format,monthly_format,convert_bar_data_to_df
 pb.enable_data_source_cache('cache_data')
 class Strategy(StrategyTemplate):
     # unique唯一
-    name='boll_rsi_v1'
+    order=2
+    name='wfg'
     back_test_info={
         "win_count":0,
         "loss_count":0,
@@ -57,9 +58,9 @@ class Strategy(StrategyTemplate):
             "loss_count":0,
             "pnl":0
         }
-        self.logger.info("开始回测BOLL_RSI_V1指标~")
-        sz_list=self.get_sz_code()
-        sh_list=self.get_sh_code()
+        self.logger.info("开始回测WFG指标~")
+        sz_list=self.get_code_by_name("./strategies/data/wfg_sz.xlsx")
+        sh_list=self.get_code_by_name("./strategies/data/wfg_sh.xlsx")
         for symbol in sz_list:
             print("回测股票:",symbol)
             symbol=str(symbol)
@@ -69,7 +70,7 @@ class Strategy(StrategyTemplate):
             symbol=str(symbol)
             self.exec_backtest(symbol=symbol+".SH")
             time.sleep(1.5)  # 每次循环延迟1.5秒
-        self.logger.info(f"回测BOLL_RSI_V1指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
+        self.logger.info(f"回测WFG指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
         self.save_strategy_base([1,self.name,"周线下轨,月线中轨且趋势向上,股价近3年内较最高点跌去70%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
         for i,value in enumerate(self.stockList):
@@ -273,7 +274,7 @@ class Strategy(StrategyTemplate):
             self.stockList.append([
                 symbol,
                 signal,
-                "boll_rsi_v1策略: </br> 选股：A股市值大于500亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨附近，趋势向上，同时股价在历史低位判断买点 </br>",
+                "WFG策略: </br> 选股：A股市值大于500亿 </br> 买点条件判断：</br> 1.当前股票在周K级别突破boll下轨，并且月线在中轨附近，趋势向上，同时股价在历史低位判断买点 </br>",
                 self.name
             ])
           
