@@ -2,3 +2,5 @@
 info.log
 .pybrokercache
 __pycache__
+strategies/data/wfg_sh.xlsx
+strategies/data/wfg_sz.xlsx

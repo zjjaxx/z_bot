@@ -16,3 +16,4 @@ TA-Lib==0.4.32
 tushare==1.4.24
 yahooquery==2.3.7
 django-cors-headers
+openpyxl==3.1.2
