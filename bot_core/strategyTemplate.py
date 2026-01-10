@@ -204,6 +204,12 @@ class StrategyTemplate:
 
     def save_strategy(self,info):
         symbol,signal,strateDesc,strateName,strateBackTestRate,strateLossCount,strateWinCount=info
+        if symbol.endswith("sh"):
+            df=pd.read_excel("./strategies/data/wfg_sh.xlsx", dtype={"代码": str})
+            dividend_yield=df[df["代码"]==symbol]["股息率"].values[0]
+        elif symbol.endswith("sz"):
+            df=pd.read_excel("./strategies/data/wfg_sz.xlsx", dtype={"代码": str})
+            dividend_yield=df[df["代码"]==symbol]["股息率"].values[0]
         try:
             with transaction.atomic():
                 # 1. 检查 StockModel 
@@ -227,6 +233,7 @@ class StrategyTemplate:
                     existing_strategy.strateLossCount=strateLossCount
                     existing_strategy.strateWinCount=strateWinCount
                     existing_strategy.strateBackTestRate=strateBackTestRate
+                    existing_strategy.dividend_yield=dividend_yield
                     # existing_strategy.strateOperateTime=datetime.now()
                     existing_strategy.save()
                 # 不存在 买入
@@ -240,7 +247,8 @@ class StrategyTemplate:
                         "strateOperate":signal,
                         "strateLossCount":strateLossCount,
                         "strateWinCount":strateWinCount,
-                        "strateBackTestRate":strateBackTestRate
+                        "strateBackTestRate":strateBackTestRate,
+                        "dividend_yield":dividend_yield,
                         # "strateOperateTime":datetime.now(),
                     }
 
