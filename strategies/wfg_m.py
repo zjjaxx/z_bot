@@ -72,7 +72,7 @@ class Strategy(StrategyTemplate):
             time.sleep(1.5)  # 每次循环延迟1.5秒
         self.logger.info(f"回测WFG_M指标结束~ 回测总计: 胜场{Strategy.back_test_info['win_count']} 负场:{Strategy.back_test_info['loss_count']} 总收益{Strategy.back_test_info['pnl']}")
         strateBackTestRate=Strategy.back_test_info['win_count']/(Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'])
-        self.save_strategy_base([1,self.name,"周线下轨,月线中轨且趋势向上,股价近3年内较最高点跌去70%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
+        self.save_strategy_base([1,self.name,"周线下轨,月线中轨且趋势向上,股价近3年内较最高点跌去50%",strateBackTestRate,Strategy.back_test_info['win_count'],Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']+Strategy.back_test_info['loss_count'],Strategy.back_test_info['pnl']])
         for i,value in enumerate(self.stockList):
             symbol,signal,strateDesc,strateName=value
             self.save_strategy([symbol,signal,strateDesc,strateName,strateBackTestRate,Strategy.back_test_info['loss_count'],Strategy.back_test_info['win_count']])
@@ -129,6 +129,7 @@ class Strategy(StrategyTemplate):
         # 月K
         monthly_df=monthly_format(daily_df)
         monthly_close = monthly_df['close'].values
+        mothly_ma_60=talib.MA(monthly_close,timeperiod=60)
         monthly_upper, monthly_middle, monthly_lower = talib.BBANDS(
             monthly_close, timeperiod=20, nbdevup=2.0, nbdevdn=1.2, matype=0
         )
@@ -211,7 +212,6 @@ class Strategy(StrategyTemplate):
             end_date=datetime.now(),
             config=PBStrategyConfig(return_signals=True,initial_cash=20000))
         strategyContext.add_execution(fn=self.buy_cmma_cross, symbols=symbol, indicators=[boll_macd])
-        # calc_bootstrap=True
         result = strategyContext.backtest(adjust="hfq",calc_bootstrap=True)
         signal=result.signals[symbol]['boll'].iloc[-1]
         total_pnl=result.metrics_df[result.metrics_df['name']=='total_pnl'].iloc[0,1]

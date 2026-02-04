@@ -20,8 +20,6 @@ class StrategyBase(models.Model):
     ]
     # 策略名称
     strategy_name = models.CharField(max_length=100)
-    # 股息率
-    dividend_yield = models.FloatField(blank=True)
     # 策略描述
     strategy_desc = models.CharField(max_length=1000,default="")
     # 风险系数
@@ -32,7 +30,8 @@ class StrategyBase(models.Model):
     strategy_win_count = models.IntegerField(default=0)
     # 败场次数
     strategy_loss_count = models.IntegerField(default=0)
-    # 总交易次数   strategy_total_count = models.IntegerField(default=0)
+    # 总交易次数
+    strategy_total_count = models.IntegerField(default=0)
     # 策略总盈亏金额
     strategy_total_profit = models.FloatField(default=0)
     # 创建时间。默认使用当前时间
