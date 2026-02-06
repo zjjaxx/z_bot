@@ -5,7 +5,7 @@ import pandas as pd
 
 def crawl_stock_data(url,output):
     with sync_playwright() as p:
-        browser = p.chromium.launch(channel="chrome", headless=True)
+        browser = p.chromium.launch(channel="chromium", headless=True)
         page = browser.new_page()
         try:
             # 导航到页面
