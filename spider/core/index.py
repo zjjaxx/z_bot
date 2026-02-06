@@ -5,8 +5,8 @@ import pandas as pd
 
 def crawl_stock_data(url,output):
     with sync_playwright() as p:
-        browser = p.chromium.launch(channel="chromium", headless=True)
-        page = browser.new_page()
+        browser = p.chromium.launch(executable_path="/root/.cache/ms-playwright/chromium-1194/chrome-linux/chrome",headless=True)
+        page = browser.new_page() 
         try:
             # 导航到页面
             page.goto(url)
